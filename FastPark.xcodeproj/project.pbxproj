@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C6DFD3222D58C54800B2A893 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD3182D58C54800B2A893 /* AppDelegate.swift */; };
+		C6DFD3232D58C54800B2A893 /* FastPark.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD31A2D58C54800B2A893 /* FastPark.xcdatamodeld */; };
+		C6DFD3242D58C54800B2A893 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD31E2D58C54800B2A893 /* SceneDelegate.swift */; };
+		C6DFD3252D58C54800B2A893 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD31F2D58C54800B2A893 /* ViewController.swift */; };
+		C6DFD3262D58C54800B2A893 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6DFD3192D58C54800B2A893 /* Assets.xcassets */; };
+		C6DFD3282D58C54800B2A893 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6DFD31D2D58C54800B2A893 /* LaunchScreen.storyboard */; };
+		C6DFD32F2D58C66C00B2A893 /* Park.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD32E2D58C66C00B2A893 /* Park.swift */; };
+		C6DFD3312D58C67200B2A893 /* ParkDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD3302D58C67200B2A893 /* ParkDetails.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C6DFD2FD2D58C52100B2A893 /* FastPark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastPark.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6DFD3182D58C54800B2A893 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C6DFD3192D58C54800B2A893 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C6DFD31B2D58C54800B2A893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6DFD31C2D58C54800B2A893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C6DFD31E2D58C54800B2A893 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C6DFD31F2D58C54800B2A893 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C6DFD3212D58C54800B2A893 /* FastPark.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FastPark.xcdatamodel; sourceTree = "<group>"; };
+		C6DFD32E2D58C66C00B2A893 /* Park.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Park.swift; sourceTree = "<group>"; };
+		C6DFD3302D58C67200B2A893 /* ParkDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkDetails.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6DFD2FA2D58C52100B2A893 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C6DFD2F42D58C52100B2A893 = {
+			isa = PBXGroup;
+			children = (
+				C6DFD3202D58C54800B2A893 /* FastPark */,
+				C6DFD2FE2D58C52100B2A893 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C6DFD2FE2D58C52100B2A893 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6DFD2FD2D58C52100B2A893 /* FastPark.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6DFD3202D58C54800B2A893 /* FastPark */ = {
+			isa = PBXGroup;
+			children = (
+				C6DFD32D2D58C62800B2A893 /* App */,
+				C6DFD32C2D58C56900B2A893 /* Resources */,
+				C6DFD32B2D58C55300B2A893 /* ViewModel */,
+				C6DFD32A2D58C55000B2A893 /* View */,
+				C6DFD3292D58C54B00B2A893 /* Model */,
+			);
+			path = FastPark;
+			sourceTree = "<group>";
+		};
+		C6DFD3292D58C54B00B2A893 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C6DFD32E2D58C66C00B2A893 /* Park.swift */,
+				C6DFD3302D58C67200B2A893 /* ParkDetails.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C6DFD32A2D58C55000B2A893 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C6DFD31F2D58C54800B2A893 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C6DFD32B2D58C55300B2A893 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C6DFD32C2D58C56900B2A893 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C6DFD31D2D58C54800B2A893 /* LaunchScreen.storyboard */,
+				C6DFD31A2D58C54800B2A893 /* FastPark.xcdatamodeld */,
+				C6DFD3192D58C54800B2A893 /* Assets.xcassets */,
+				C6DFD31B2D58C54800B2A893 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C6DFD32D2D58C62800B2A893 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C6DFD3182D58C54800B2A893 /* AppDelegate.swift */,
+				C6DFD31E2D58C54800B2A893 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6DFD2FC2D58C52100B2A893 /* FastPark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6DFD3132D58C52200B2A893 /* Build configuration list for PBXNativeTarget "FastPark" */;
+			buildPhases = (
+				C6DFD2F92D58C52100B2A893 /* Sources */,
+				C6DFD2FA2D58C52100B2A893 /* Frameworks */,
+				C6DFD2FB2D58C52100B2A893 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FastPark;
+			packageProductDependencies = (
+			);
+			productName = FastPark;
+			productReference = C6DFD2FD2D58C52100B2A893 /* FastPark.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6DFD2F52D58C52100B2A893 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					C6DFD2FC2D58C52100B2A893 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+				};
+			};
+			buildConfigurationList = C6DFD2F82D58C52100B2A893 /* Build configuration list for PBXProject "FastPark" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C6DFD2F42D58C52100B2A893;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C6DFD2FE2D58C52100B2A893 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6DFD2FC2D58C52100B2A893 /* FastPark */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6DFD2FB2D58C52100B2A893 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6DFD3262D58C54800B2A893 /* Assets.xcassets in Resources */,
+				C6DFD3282D58C54800B2A893 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6DFD2F92D58C52100B2A893 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6DFD3222D58C54800B2A893 /* AppDelegate.swift in Sources */,
+				C6DFD3232D58C54800B2A893 /* FastPark.xcdatamodeld in Sources */,
+				C6DFD32F2D58C66C00B2A893 /* Park.swift in Sources */,
+				C6DFD3312D58C67200B2A893 /* ParkDetails.swift in Sources */,
+				C6DFD3242D58C54800B2A893 /* SceneDelegate.swift in Sources */,
+				C6DFD3252D58C54800B2A893 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C6DFD31D2D58C54800B2A893 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6DFD31C2D58C54800B2A893 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C6DFD3142D58C52200B2A893 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DU4MNZ89TN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FastPark/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mertziya.FastPark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C6DFD3152D58C52200B2A893 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DU4MNZ89TN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FastPark/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mertziya.FastPark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C6DFD3162D58C52200B2A893 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C6DFD3172D58C52200B2A893 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6DFD2F82D58C52100B2A893 /* Build configuration list for PBXProject "FastPark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6DFD3162D58C52200B2A893 /* Debug */,
+				C6DFD3172D58C52200B2A893 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6DFD3132D58C52200B2A893 /* Build configuration list for PBXNativeTarget "FastPark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6DFD3142D58C52200B2A893 /* Debug */,
+				C6DFD3152D58C52200B2A893 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C6DFD31A2D58C54800B2A893 /* FastPark.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C6DFD3212D58C54800B2A893 /* FastPark.xcdatamodel */,
+			);
+			currentVersion = C6DFD3212D58C54800B2A893 /* FastPark.xcdatamodel */;
+			path = FastPark.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C6DFD2F52D58C52100B2A893 /* Project object */;
+}
