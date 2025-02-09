@@ -10,11 +10,19 @@
 		C6DFD3222D58C54800B2A893 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD3182D58C54800B2A893 /* AppDelegate.swift */; };
 		C6DFD3232D58C54800B2A893 /* FastPark.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD31A2D58C54800B2A893 /* FastPark.xcdatamodeld */; };
 		C6DFD3242D58C54800B2A893 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD31E2D58C54800B2A893 /* SceneDelegate.swift */; };
-		C6DFD3252D58C54800B2A893 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD31F2D58C54800B2A893 /* ViewController.swift */; };
+		C6DFD3252D58C54800B2A893 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD31F2D58C54800B2A893 /* MainVC.swift */; };
 		C6DFD3262D58C54800B2A893 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6DFD3192D58C54800B2A893 /* Assets.xcassets */; };
 		C6DFD3282D58C54800B2A893 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6DFD31D2D58C54800B2A893 /* LaunchScreen.storyboard */; };
 		C6DFD32F2D58C66C00B2A893 /* Park.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD32E2D58C66C00B2A893 /* Park.swift */; };
 		C6DFD3312D58C67200B2A893 /* ParkDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD3302D58C67200B2A893 /* ParkDetails.swift */; };
+		C6DFD3332D58C91100B2A893 /* ParkMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD3322D58C91100B2A893 /* ParkMapView.swift */; };
+		C6DFD33C2D58FC3300B2A893 /* SideBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD33A2D58FC3300B2A893 /* SideBarVC.swift */; };
+		C6DFD33D2D58FC3300B2A893 /* SideBarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6DFD33B2D58FC3300B2A893 /* SideBarVC.xib */; };
+		C6DFD3422D5919BD00B2A893 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD3402D5919BD00B2A893 /* SearchVC.swift */; };
+		C6DFD3432D5919BD00B2A893 /* SearchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6DFD3412D5919BD00B2A893 /* SearchVC.xib */; };
+		C6DFD3452D591EB300B2A893 /* PresentationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD3442D591EB300B2A893 /* PresentationVC.swift */; };
+		C6DFD3472D59231700B2A893 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD3462D59231700B2A893 /* Constants.swift */; };
+		C6DFD3492D592EE400B2A893 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD3482D592EE400B2A893 /* Notifications.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,10 +32,18 @@
 		C6DFD31B2D58C54800B2A893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6DFD31C2D58C54800B2A893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6DFD31E2D58C54800B2A893 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C6DFD31F2D58C54800B2A893 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C6DFD31F2D58C54800B2A893 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		C6DFD3212D58C54800B2A893 /* FastPark.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FastPark.xcdatamodel; sourceTree = "<group>"; };
 		C6DFD32E2D58C66C00B2A893 /* Park.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Park.swift; sourceTree = "<group>"; };
 		C6DFD3302D58C67200B2A893 /* ParkDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkDetails.swift; sourceTree = "<group>"; };
+		C6DFD3322D58C91100B2A893 /* ParkMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkMapView.swift; sourceTree = "<group>"; };
+		C6DFD33A2D58FC3300B2A893 /* SideBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarVC.swift; sourceTree = "<group>"; };
+		C6DFD33B2D58FC3300B2A893 /* SideBarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideBarVC.xib; sourceTree = "<group>"; };
+		C6DFD3402D5919BD00B2A893 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		C6DFD3412D5919BD00B2A893 /* SearchVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchVC.xib; sourceTree = "<group>"; };
+		C6DFD3442D591EB300B2A893 /* PresentationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationVC.swift; sourceTree = "<group>"; };
+		C6DFD3462D59231700B2A893 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C6DFD3482D592EE400B2A893 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +76,10 @@
 		C6DFD3202D58C54800B2A893 /* FastPark */ = {
 			isa = PBXGroup;
 			children = (
+				C6DFD3382D58D14600B2A893 /* Helpers */,
 				C6DFD32D2D58C62800B2A893 /* App */,
 				C6DFD32C2D58C56900B2A893 /* Resources */,
+				C6DFD3392D58D15900B2A893 /* Network */,
 				C6DFD32B2D58C55300B2A893 /* ViewModel */,
 				C6DFD32A2D58C55000B2A893 /* View */,
 				C6DFD3292D58C54B00B2A893 /* Model */,
@@ -81,7 +99,8 @@
 		C6DFD32A2D58C55000B2A893 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C6DFD31F2D58C54800B2A893 /* ViewController.swift */,
+				C6DFD3352D58CA7600B2A893 /* Controllers */,
+				C6DFD3342D58CA6A00B2A893 /* CustomViews */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -111,6 +130,43 @@
 				C6DFD31E2D58C54800B2A893 /* SceneDelegate.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		C6DFD3342D58CA6A00B2A893 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				C6DFD3322D58C91100B2A893 /* ParkMapView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		C6DFD3352D58CA7600B2A893 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C6DFD31F2D58C54800B2A893 /* MainVC.swift */,
+				C6DFD33A2D58FC3300B2A893 /* SideBarVC.swift */,
+				C6DFD33B2D58FC3300B2A893 /* SideBarVC.xib */,
+				C6DFD3402D5919BD00B2A893 /* SearchVC.swift */,
+				C6DFD3412D5919BD00B2A893 /* SearchVC.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C6DFD3382D58D14600B2A893 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C6DFD3442D591EB300B2A893 /* PresentationVC.swift */,
+				C6DFD3462D59231700B2A893 /* Constants.swift */,
+				C6DFD3482D592EE400B2A893 /* Notifications.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C6DFD3392D58D15900B2A893 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,7 +230,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6DFD3432D5919BD00B2A893 /* SearchVC.xib in Resources */,
 				C6DFD3262D58C54800B2A893 /* Assets.xcassets in Resources */,
+				C6DFD33D2D58FC3300B2A893 /* SideBarVC.xib in Resources */,
 				C6DFD3282D58C54800B2A893 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,12 +244,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6DFD3492D592EE400B2A893 /* Notifications.swift in Sources */,
 				C6DFD3222D58C54800B2A893 /* AppDelegate.swift in Sources */,
+				C6DFD3472D59231700B2A893 /* Constants.swift in Sources */,
 				C6DFD3232D58C54800B2A893 /* FastPark.xcdatamodeld in Sources */,
 				C6DFD32F2D58C66C00B2A893 /* Park.swift in Sources */,
+				C6DFD3422D5919BD00B2A893 /* SearchVC.swift in Sources */,
 				C6DFD3312D58C67200B2A893 /* ParkDetails.swift in Sources */,
 				C6DFD3242D58C54800B2A893 /* SceneDelegate.swift in Sources */,
-				C6DFD3252D58C54800B2A893 /* ViewController.swift in Sources */,
+				C6DFD3452D591EB300B2A893 /* PresentationVC.swift in Sources */,
+				C6DFD33C2D58FC3300B2A893 /* SideBarVC.swift in Sources */,
+				C6DFD3332D58C91100B2A893 /* ParkMapView.swift in Sources */,
+				C6DFD3252D58C54800B2A893 /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
