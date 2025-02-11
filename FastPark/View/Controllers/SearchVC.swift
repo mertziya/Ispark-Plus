@@ -42,7 +42,7 @@ extension SearchVC{
         menuButton.backgroundColor = .clear
         menuButton.addTarget(self, action: #selector(menuButtonTapped), for: .touchUpInside)
         
-        searchTF.attributedPlaceholder = NSAttributedString(string: "Ara", attributes: [
+        searchTF.attributedPlaceholder = NSAttributedString(string: "Semt Ara", attributes: [
             .foregroundColor : UIColor.logo
         ])
         
@@ -64,6 +64,16 @@ extension SearchVC{
         searchTF.rightView = rightPaddingView
         searchTF.rightViewMode = .whileEditing
         
+        rightPaddingView.isUserInteractionEnabled = true
+        let xmarkTapped = UITapGestureRecognizer(target: self, action: #selector(xmarkTapped))
+        rightPaddingView.addGestureRecognizer(xmarkTapped)
+        
+        
+        //End Editing when the view is tapped:
+        view.isUserInteractionEnabled = true
+        let viewTappedGesture = UITapGestureRecognizer(target: self, action: #selector(closeKeyboard))
+        view.addGestureRecognizer(viewTappedGesture)
+        
         searchTF.addTarget(self, action: #selector(searchBarClicked), for: .editingDidBegin)
     }
    
@@ -73,14 +83,29 @@ extension SearchVC{
 // MARK: - Actions:
 extension SearchVC{
     @objc private func searchBarClicked(){
+        handleStartEditing()
         NotificationCenter.default.post(name: .searchBarClicked, object: nil, userInfo: nil)
     }
   
     @objc private func closeKeyboard(){
-        view.endEditing(true)
+        handleEndEditing()
     }
     
     @objc private func menuButtonTapped(){
         NotificationCenter.default.post(name: .menuButtonTapped, object: nil, userInfo: nil)
+    }
+    
+    @objc private func xmarkTapped(){
+        handleEndEditing()
+        view.endEditing(true)
+    }
+    
+    private func handleStartEditing(){
+        searchTF.placeholder = ""
+    }
+    private func handleEndEditing(){
+        view.endEditing(true)
+        searchTF.placeholder = "Semt Ara"
+        searchTF.text = ""
     }
 }

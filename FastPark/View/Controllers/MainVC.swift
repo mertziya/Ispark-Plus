@@ -16,11 +16,15 @@ class MainVC: UIViewController {
     private var sidebarVC: SideBarVC? // For handling the sidebar functionality, this child view controller is used.
     
     // MARK: - UI Elements:
-    private var mapView = ParkMapView()
+    var mapView = ParkMapView()
+    
+    private var searchIcon = UIButton()
+    private var hideIcon = UIButton()
 
     // MARK: - Lifecycles:
     override func viewDidLoad() {
         super.viewDidLoad()
+        MapVM.shared.delegate = self
         
         setupUIConstraints()
         setupUIDesignandFunction()
@@ -28,13 +32,14 @@ class MainVC: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(handlePresentationShrinked), name: .presentationShrinked, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(showSideBar), name: .menuButtonTapped, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(hideSidebar), name: .shouldHideSideBar, object: nil)
+        
+
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         presentSearchBar()
-        
         
     }
                                                
@@ -54,13 +59,27 @@ extension MainVC : UIViewControllerTransitioningDelegate{
     private func setupUIConstraints(){
         view.backgroundColor = .systemBackground
         view.addSubview(mapView)
+        view.addSubview(searchIcon)
+        view.addSubview(hideIcon)
                 
         mapView.translatesAutoresizingMaskIntoConstraints = false
+        searchIcon.translatesAutoresizingMaskIntoConstraints = false
+        hideIcon.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             mapView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
             mapView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
             mapView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0),
             mapView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0),
+            
+            searchIcon.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -12),
+            searchIcon.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -128),
+            searchIcon.heightAnchor.constraint(equalToConstant: 32),
+            searchIcon.widthAnchor.constraint(equalToConstant: 100),
+            
+            hideIcon.bottomAnchor.constraint(equalTo: searchIcon.topAnchor, constant: -8),
+            hideIcon.centerXAnchor.constraint(equalTo: searchIcon.centerXAnchor),
+            hideIcon.heightAnchor.constraint(equalToConstant: 32),
+            hideIcon.widthAnchor.constraint(equalToConstant: 100),
             
         ])
     }
@@ -71,6 +90,36 @@ extension MainVC : UIViewControllerTransitioningDelegate{
         // Hides the sidebar when the map is clicked.
         let mapTappedGesture = UITapGestureRecognizer(target: self, action: #selector(hideSidebar))
         mapView.addGestureRecognizer(mapTappedGesture)
+        
+        // configure search icon:
+        searchIcon.backgroundColor = .systemRed
+        searchIcon.setImage(UIImage(systemName: "magnifyingglass"), for: .normal)
+        searchIcon.setTitle("Search", for: .normal)
+        searchIcon.setTitleColor(.black, for: .normal)
+        searchIcon.tintColor = .black
+        searchIcon.layer.cornerRadius = 32 / 2
+        
+        searchIcon.layer.shadowColor = UIColor.systemBackground.cgColor
+        searchIcon.layer.shadowOffset = CGSize(width: 4, height: 4) // Controls the direction
+        searchIcon.layer.shadowOpacity = 1.0 // Adjust the visibility
+        searchIcon.layer.shadowRadius = 6 // Controls the blur
+        
+        searchIcon.addTarget(self, action: #selector(handleSearchIconTapped), for: .touchUpInside)
+        
+        
+        // Configure Hide Icon:
+        hideIcon.setTitle("Hide", for: .normal)
+        hideIcon.setTitleColor(.textfieldBackground, for: .normal)
+        hideIcon.backgroundColor = .logo
+        hideIcon.setImage(UIImage(systemName: "eye.slash"), for: .normal)
+        hideIcon.tintColor = .textfieldBackground
+        hideIcon.layer.cornerRadius = 32 / 2
+        
+        hideIcon.layer.shadowColor = UIColor.systemBackground.cgColor
+        hideIcon.layer.shadowOffset = CGSize(width: 4, height: 4) // Controls the direction
+        hideIcon.layer.shadowOpacity = 1.0 // Adjust the visibility
+        hideIcon.layer.shadowRadius = 6 // Controls the blur
+        
     }
     
     private func presentSearchBar() {
@@ -82,7 +131,7 @@ extension MainVC : UIViewControllerTransitioningDelegate{
         self.present(searchVC, animated: true)
     }
     func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
-        return BottomSheetPresentationController(presentedViewController: presented, presenting: presenting)
+        return SearchVCPresentation(presentedViewController: presented, presenting: presenting)
     }
 }
 
@@ -127,6 +176,10 @@ extension MainVC{
             }
         }
     }
+    
+    @objc private func handleSearchIconTapped(){
+        MapVM.shared.fetchAllParks()
+    }
 
     private func toggleSidebar() {
         let sidebar = SideBarVC()
@@ -147,9 +200,24 @@ extension MainVC{
         view.addSubview(add.view)
         add.didMove(toParent: self)
     }
-   
-  
+}
 
+// MARK: - Map View Model
+extension MainVC : MapVMDelegate{
+    func isLoadingParks(isLoading: Bool) {
+        DispatchQueue.main.async {
+            isLoading ? LoadingView.showLoading(on: self , loadingMessage: NSLocalizedString("Autoparks are being loaded", comment: "")) : LoadingView.hideLoading(from: self)
+        }
+    }
+    
+    func didReturnWith(error: any Error) {
+        Alerts.showErrorAlert(on: self, title: "Error", message: error.localizedDescription)
+    }
+    
+    func didFetchParks(with parks: [Park]) {
+        self.mapView.configureAnnotations(parks: parks)
+        self.mapView.focusMap(latitude: 40.9793606, longitude: 29.0417213, zoomLevel: 0.7)
+    }
 }
 
 

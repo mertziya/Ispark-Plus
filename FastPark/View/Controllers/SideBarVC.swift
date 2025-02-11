@@ -28,8 +28,7 @@ extension SideBarVC{
         swipeIndicatorView.layer.cornerRadius = 4 / 2
         
         sideBarContentView.isUserInteractionEnabled = true
-        let sidebarSwipeRightGesture = UISwipeGestureRecognizer(target: self, action: #selector(swipedToRight))
-        sidebarSwipeRightGesture.direction = .right
+        let sidebarSwipeRightGesture = UIPanGestureRecognizer(target: self, action: #selector(dragView(_:)))
         sideBarContentView.addGestureRecognizer(sidebarSwipeRightGesture)
     }
 }
@@ -38,7 +37,38 @@ extension SideBarVC{
 // MARK: - Actions:
 extension SideBarVC{
     
-    @objc private func swipedToRight(){
-        NotificationCenter.default.post(name: .shouldHideSideBar, object: nil)
+    // Handle closing the sidebar smoothly
+    @objc private func dragView(_ gesture : UIPanGestureRecognizer){
+        let translation = gesture.translation(in: sideBarContentView)
+        let isSwipedRightReallyFast = gesture.velocity(in: sideBarContentView).x > 1000
+        var newX: CGFloat = 0
+        
+        switch gesture.state{
+        case .changed,.began:
+            newX = translation.x + 24 // 24 is the distance of sidebarcontentview from view initially
+            if newX < 24 {newX = 24}
+            sideBarContentView.frame = CGRect(x: newX,
+                                              y: sideBarContentView.frame.minY,
+                                              width: sideBarContentView.bounds.width,
+                                              height: sideBarContentView.bounds.height)
+        case .ended:
+            if sideBarContentView.frame.minX > 80 || isSwipedRightReallyFast{
+                view.frame = CGRect(x: sideBarContentView.frame.minX + 40,
+                                    y: view.frame.minY,
+                                    width: view.bounds.width,
+                                    height: view.bounds.height)
+                NotificationCenter.default.post(name: .shouldHideSideBar, object: nil)
+            }else{
+                UIView.animate(withDuration: 0.2) { [self] in
+                    self.sideBarContentView.frame = CGRect(x: 24,
+                                                      y: sideBarContentView.frame.minY,
+                                                      width: sideBarContentView.bounds.width,
+                                                      height: sideBarContentView.bounds.height)
+                }
+            }
+        default:
+            break
+        }
     }
+    
 }

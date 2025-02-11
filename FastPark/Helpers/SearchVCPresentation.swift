@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 
-class BottomSheetPresentationController: UIPresentationController {
+class SearchVCPresentation: UIPresentationController {
     
     private var panGestureRecognizer: UIPanGestureRecognizer!
     private var initialHeight: CGFloat = 110 // Initial height
@@ -67,12 +67,12 @@ class BottomSheetPresentationController: UIPresentationController {
         guard let containerView = containerView, let _ = presentedView else { return }
         
         let translation = gesture.translation(in: containerView)
-        
+        var newHeight : CGFloat = 100
         switch gesture.state {
         case .changed:
-            let pixelsSwiped = abs(translation.y)
+            let pixelsSwiped = (translation.y > 0) ? translation.y : 0
             if currentHeight == initialHeight{
-                let newHeight = max(initialHeight - translation.y, 100) // Prevent negative height
+                newHeight = initialHeight - translation.y
                 updatePresentedViewHeight(newHeight)
             }else if currentHeight == expandedHeight{
                 let newHeight = expandedHeight - pixelsSwiped
@@ -86,7 +86,7 @@ class BottomSheetPresentationController: UIPresentationController {
                     animateHeightChange(to: expandedHeight)
                     currentHeight = expandedHeight
                     NotificationCenter.default.post(name: .presentatonExpanded, object: nil)
-                }else if currentHeight == expandedHeight{
+                }else if currentHeight == expandedHeight && translation.y > 0{
                     animateHeightChange(to: initialHeight)
                     currentHeight = initialHeight
                     NotificationCenter.default.post(name: .presentationShrinked, object: nil)
