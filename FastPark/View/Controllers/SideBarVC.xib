@@ -41,7 +41,7 @@
                             </constraints>
                         </imageView>
                     </subviews>
-                    <color key="backgroundColor" name="BarBackground"/>
+                    <color key="backgroundColor" name="TextfieldBackground"/>
                     <constraints>
                         <constraint firstItem="sIj-4I-HiP" firstAttribute="centerY" secondItem="Rt2-oa-2re" secondAttribute="centerY" id="5Q4-fM-QJI"/>
                         <constraint firstItem="sIj-4I-HiP" firstAttribute="leading" secondItem="Rt2-oa-2re" secondAttribute="leading" constant="4" id="PNv-cT-Cky"/>
@@ -64,11 +64,11 @@
     </objects>
     <resources>
         <image name="square.and.arrow.up" catalog="system" width="110" height="128"/>
-        <namedColor name="BarBackground">
-            <color red="0.96470588450000005" green="0.96078431610000004" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
         <namedColor name="SwipeIndicatorColor">
             <color red="0.74901962280000001" green="0.74509805439999999" blue="0.75294119120000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="TextfieldBackground">
+            <color red="0.90588235859999999" green="0.90196079019999997" blue="0.90588235859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

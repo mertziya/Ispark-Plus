@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailsContentView" customModule="FastPark" customModuleProvider="target">
+            <connections>
+                <outlet property="ParkTypeType" destination="rAt-nK-AR8" id="Lqb-fs-mVT"/>
+                <outlet property="address" destination="Flc-Na-PIL" id="tUZ-C7-e5l"/>
+                <outlet property="addressLabel" destination="T08-TV-CUF" id="xAH-PQ-vFv"/>
+                <outlet property="autoparkNameLabel" destination="7ZI-YE-wd8" id="B3i-rN-C5X"/>
+                <outlet property="capacityLabel" destination="bPl-sb-dHt" id="rqU-af-MyV"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="s9X-P9-9mv"/>
+                <outlet property="currentlyOpened" destination="YMb-47-Zb1" id="bXP-Gy-6kL"/>
+                <outlet property="fullnessLabel" destination="hD3-9L-kaR" id="nJj-F0-QOp"/>
+                <outlet property="fullnessProgress" destination="FbW-XX-AMT" id="4bB-GE-KvC"/>
+                <outlet property="parkTypeLabel" destination="C7j-FW-OVO" id="m7D-nP-hSW"/>
+                <outlet property="tarifeLabel" destination="PWN-y2-R9n" id="lLj-MK-vrK"/>
+                <outlet property="tarifeTable" destination="sCc-4c-6bj" id="038-RC-kat"/>
+                <outlet property="tarifestack" destination="99y-Rj-S8Q" id="1eW-oU-gbC"/>
+                <outlet property="updateTimeLabel" destination="zBk-y2-Ubp" id="ffc-Xo-Ftd"/>
+                <outlet property="workHoursHours" destination="Eyk-TF-CYf" id="Low-0Y-vGD"/>
+                <outlet property="workhoursLabel" destination="VaS-MP-a5Y" id="cpr-Wd-BEo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="1000"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ZI-YE-wd8">
+                    <rect key="frame" x="40" y="8" width="313" height="67.666666666666671"/>
+                    <string key="text">0265 Akçam Sokak
+ (İş Bankası Önü)</string>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="BBO-BB-h3T">
+                    <rect key="frame" x="28" y="115.66666666666666" width="337" height="65.666666666666657"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doluluk:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPl-sb-dHt">
+                            <rect key="frame" x="0.0" y="0.0" width="337" height="24.333333333333332"/>
+                            <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2kl-VN-DI6">
+                            <rect key="frame" x="0.0" y="36.333333333333329" width="337" height="29.333333333333329"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="YUu-zA-2ZJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="337" height="17.333333333333332"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 saat 22 dakika önce güncellendi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBk-y2-Ubp">
+                                            <rect key="frame" x="0.0" y="0.0" width="279.66666666666669" height="17.333333333333332"/>
+                                            <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32/72" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hD3-9L-kaR">
+                                            <rect key="frame" x="279.66666666666669" y="0.0" width="57.333333333333314" height="17.333333333333332"/>
+                                            <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="FbW-XX-AMT">
+                                    <rect key="frame" x="0.0" y="25.333333333333343" width="337" height="4"/>
+                                </progressView>
+                            </subviews>
+                            <color key="tintColor" red="0.0" green="0.45882352941176469" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="YUu-zA-2ZJ" secondAttribute="trailing" id="HpV-gl-Fmj"/>
+                                <constraint firstItem="YUu-zA-2ZJ" firstAttribute="leading" secondItem="2kl-VN-DI6" secondAttribute="leading" id="ySi-Xe-E6Z"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Dbl-on-727">
+                    <rect key="frame" x="28" y="261.33333333333331" width="337" height="56.666666666666686"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Çalışma Saatleri:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VaS-MP-a5Y">
+                            <rect key="frame" x="0.0" y="0.0" width="337" height="24.333333333333332"/>
+                            <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="left" semanticContentAttribute="forceLeftToRight" distribution="equalCentering" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dUk-wX-f13">
+                            <rect key="frame" x="0.0" y="36.333333333333371" width="337" height="20.333333333333329"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24 Hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eyk-TF-CYf">
+                                    <rect key="frame" x="0.0" y="0.0" width="70.333333333333329" height="20.333333333333332"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoO-cB-VWX">
+                                    <rect key="frame" x="157.33333333333334" y="0.0" width="7.6666666666666572" height="20.333333333333332"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Şu Anda Açık" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMb-47-Zb1">
+                                    <rect key="frame" x="236.66666666666671" y="0.0" width="100.33333333333334" height="20.333333333333332"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="TNo-wt-dBL">
+                    <rect key="frame" x="28" y="398" width="337" height="53.666666666666686"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Park Tipi:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C7j-FW-OVO">
+                            <rect key="frame" x="0.0" y="0.0" width="337" height="24.333333333333332"/>
+                            <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kapalı Otopark" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAt-nK-AR8">
+                            <rect key="frame" x="0.0" y="36.333333333333314" width="337" height="17.333333333333329"/>
+                            <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="99y-Rj-S8Q">
+                    <rect key="frame" x="28" y="531.66666666666663" width="337" height="168.33333333333337"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tarife:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWN-y2-R9n">
+                            <rect key="frame" x="0.0" y="0.0" width="337" height="24.333333333333332"/>
+                            <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="sCc-4c-6bj">
+                            <rect key="frame" x="0.0" y="36.333333333333371" width="337" height="132"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="7Um-mB-POV">
+                    <rect key="frame" x="28" y="780" width="337" height="70.666666666666629"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adres:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T08-TV-CUF">
+                            <rect key="frame" x="0.0" y="0.0" width="337" height="24.333333333333332"/>
+                            <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Flc-Na-PIL">
+                            <rect key="frame" x="0.0" y="36.333333333333371" width="337" height="34.333333333333343"/>
+                            <string key="text">4 LEVENT METRO ÇIKIŞI AKÇAM
+SOKAK BEŞİKTAŞ</string>
+                            <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="TextfieldBackground"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="BBO-BB-h3T" secondAttribute="trailing" constant="28" id="2LE-HC-XSv"/>
+                <constraint firstItem="BBO-BB-h3T" firstAttribute="top" secondItem="7ZI-YE-wd8" secondAttribute="bottom" constant="40" id="8Wm-gk-W9E"/>
+                <constraint firstItem="7Um-mB-POV" firstAttribute="top" secondItem="99y-Rj-S8Q" secondAttribute="bottom" constant="80" id="Czg-kd-PzF"/>
+                <constraint firstItem="TNo-wt-dBL" firstAttribute="top" secondItem="Dbl-on-727" secondAttribute="bottom" constant="80" id="G0H-ee-tet"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="7Um-mB-POV" secondAttribute="trailing" constant="28" id="INn-Hi-aEy"/>
+                <constraint firstItem="TNo-wt-dBL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="28" id="O9p-GC-h1N"/>
+                <constraint firstItem="99y-Rj-S8Q" firstAttribute="top" secondItem="TNo-wt-dBL" secondAttribute="bottom" constant="80" id="P3W-0w-WoV"/>
+                <constraint firstItem="7ZI-YE-wd8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="Q41-5V-RRe"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="99y-Rj-S8Q" secondAttribute="trailing" constant="28" id="Tnf-qY-15g"/>
+                <constraint firstItem="Dbl-on-727" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="28" id="WlZ-Bv-UwI"/>
+                <constraint firstItem="Dbl-on-727" firstAttribute="top" secondItem="BBO-BB-h3T" secondAttribute="bottom" constant="80" id="Yr9-pB-mVr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="7ZI-YE-wd8" secondAttribute="trailing" constant="40" id="bw0-gw-gjx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Dbl-on-727" secondAttribute="trailing" constant="28" id="ftS-6C-atD"/>
+                <constraint firstItem="99y-Rj-S8Q" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="28" id="lyY-MS-Z07"/>
+                <constraint firstItem="BBO-BB-h3T" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="28" id="mqG-eG-sgG"/>
+                <constraint firstItem="7Um-mB-POV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="28" id="nzE-M9-Vfz"/>
+                <constraint firstItem="7ZI-YE-wd8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="tn9-9i-HEy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="TNo-wt-dBL" secondAttribute="trailing" constant="28" id="uCn-xn-N2J"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="83" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="TextfieldBackground">
+            <color red="0.90588235859999999" green="0.90196079019999997" blue="0.90588235859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

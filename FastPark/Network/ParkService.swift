@@ -37,6 +37,27 @@ class ParkService{
         }.resume()
     }
     
+    static func fetchParkDetails(parkID : Int , completion : @escaping (Result<ParkDetails,Error>) -> ()){
+        guard let url = UrlEndpoints.getParkDetailsWith(id: parkID) else{completion(.failure(ErrorTypes.urlError)) ; return}
+        let session = URLSession.shared
+        let request = URLRequest(url: url)
+        
+        session.dataTask(with: request) { data, _, error in
+            if let error = error{
+                completion(.failure(error))
+            }else if let data = data{
+                do{
+                    let detailsContainer = try JSONDecoder().decode([ParkDetails].self, from: data)
+                    let details = detailsContainer.first!
+                    completion(.success(details))
+                }catch{
+                    completion(.failure(error))
+                }
+            }else{
+                completion(.failure(ErrorTypes.responseError))
+            }
+        }.resume()
+    }
 }
 
 

@@ -42,7 +42,7 @@ extension SearchVC{
         menuButton.backgroundColor = .clear
         menuButton.addTarget(self, action: #selector(menuButtonTapped), for: .touchUpInside)
         
-        searchTF.attributedPlaceholder = NSAttributedString(string: "Semt Ara", attributes: [
+        searchTF.attributedPlaceholder = NSAttributedString(string: NSLocalizedString("Search District", comment: ""), attributes: [
             .foregroundColor : UIColor.logo
         ])
         

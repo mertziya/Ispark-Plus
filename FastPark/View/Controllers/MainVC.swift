@@ -12,6 +12,7 @@ import CoreLocation
 class MainVC: UIViewController {
     
     // MARK: - Properties:
+    let mapVM = MapVM()
     
     private var sidebarVC: SideBarVC? // For handling the sidebar functionality, this child view controller is used.
     
@@ -24,7 +25,7 @@ class MainVC: UIViewController {
     // MARK: - Lifecycles:
     override func viewDidLoad() {
         super.viewDidLoad()
-        MapVM.shared.delegate = self
+        mapVM.delegate = self
         
         setupUIConstraints()
         setupUIDesignandFunction()
@@ -32,14 +33,19 @@ class MainVC: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(handlePresentationShrinked), name: .presentationShrinked, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(showSideBar), name: .menuButtonTapped, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(hideSidebar), name: .shouldHideSideBar, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(handleAnnotationClick(_:)), name: .annotationClicked, object: nil)
         
-
+        
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
         presentSearchBar()
+        DispatchQueue.main.async {
+            self.mapView.setupUserLocation()
+            self.mapView.setPositionOnMap()
+        }
         
     }
                                                
@@ -48,6 +54,7 @@ class MainVC: UIViewController {
         NotificationCenter.default.removeObserver(self, name: .presentationShrinked, object: nil)
         NotificationCenter.default.removeObserver(self, name: .menuButtonTapped, object: nil)
         NotificationCenter.default.removeObserver(self, name: .shouldHideSideBar, object: nil)
+        NotificationCenter.default.removeObserver(self, name: .annotationClicked, object: nil)
     }
 }
 
@@ -73,13 +80,13 @@ extension MainVC : UIViewControllerTransitioningDelegate{
             
             searchIcon.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -12),
             searchIcon.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -128),
-            searchIcon.heightAnchor.constraint(equalToConstant: 32),
-            searchIcon.widthAnchor.constraint(equalToConstant: 100),
+            searchIcon.heightAnchor.constraint(equalToConstant: 36),
+            searchIcon.widthAnchor.constraint(equalToConstant: 128),
             
             hideIcon.bottomAnchor.constraint(equalTo: searchIcon.topAnchor, constant: -8),
             hideIcon.centerXAnchor.constraint(equalTo: searchIcon.centerXAnchor),
             hideIcon.heightAnchor.constraint(equalToConstant: 32),
-            hideIcon.widthAnchor.constraint(equalToConstant: 100),
+            hideIcon.widthAnchor.constraint(equalToConstant: 128),
             
         ])
     }
@@ -92,15 +99,15 @@ extension MainVC : UIViewControllerTransitioningDelegate{
         mapView.addGestureRecognizer(mapTappedGesture)
         
         // configure search icon:
-        searchIcon.backgroundColor = .systemRed
+        searchIcon.backgroundColor = .link
         searchIcon.setImage(UIImage(systemName: "magnifyingglass"), for: .normal)
-        searchIcon.setTitle("Search", for: .normal)
-        searchIcon.setTitleColor(.black, for: .normal)
-        searchIcon.tintColor = .black
+        searchIcon.setTitle(NSLocalizedString("Search All", comment: ""), for: .normal)
+        searchIcon.setTitleColor(.textfieldBackground, for: .normal)
+        searchIcon.tintColor = .textfieldBackground
         searchIcon.layer.cornerRadius = 32 / 2
         
-        searchIcon.layer.shadowColor = UIColor.systemBackground.cgColor
-        searchIcon.layer.shadowOffset = CGSize(width: 4, height: 4) // Controls the direction
+        searchIcon.layer.shadowColor = UIColor.black.cgColor
+        searchIcon.layer.shadowOffset = CGSize(width: 2, height: 2) // Controls the direction
         searchIcon.layer.shadowOpacity = 1.0 // Adjust the visibility
         searchIcon.layer.shadowRadius = 6 // Controls the blur
         
@@ -108,17 +115,19 @@ extension MainVC : UIViewControllerTransitioningDelegate{
         
         
         // Configure Hide Icon:
-        hideIcon.setTitle("Hide", for: .normal)
+        hideIcon.setTitle(NSLocalizedString("Clear", comment: ""), for: .normal)
         hideIcon.setTitleColor(.textfieldBackground, for: .normal)
         hideIcon.backgroundColor = .logo
         hideIcon.setImage(UIImage(systemName: "eye.slash"), for: .normal)
         hideIcon.tintColor = .textfieldBackground
         hideIcon.layer.cornerRadius = 32 / 2
         
-        hideIcon.layer.shadowColor = UIColor.systemBackground.cgColor
-        hideIcon.layer.shadowOffset = CGSize(width: 4, height: 4) // Controls the direction
+        hideIcon.layer.shadowColor = UIColor.black.cgColor
+        hideIcon.layer.shadowOffset = CGSize(width: 2, height: 2) // Controls the direction
         hideIcon.layer.shadowOpacity = 1.0 // Adjust the visibility
         hideIcon.layer.shadowRadius = 6 // Controls the blur
+        
+        hideIcon.addTarget(self, action: #selector(handleHideButton), for: .touchUpInside)
         
     }
     
@@ -178,7 +187,21 @@ extension MainVC{
     }
     
     @objc private func handleSearchIconTapped(){
-        MapVM.shared.fetchAllParks()
+        mapVM.fetchAllParks()
+    }
+    
+    @objc private func handleHideButton(){
+        DispatchQueue.main.async {
+            self.mapView.clearAnnotations()
+        }
+    }
+    
+    @objc private func handleAnnotationClick(_ notification: Notification) {
+        if let parkID = notification.object as? Int {
+            presentParkDetailsVC(with: parkID)
+        } else {
+            Alerts.showErrorAlert(on: self, title: NSLocalizedString("Error", comment: ""), message: NSLocalizedString("Park doesn't exist", comment: ""))
+        }
     }
 
     private func toggleSidebar() {
@@ -200,13 +223,25 @@ extension MainVC{
         view.addSubview(add.view)
         add.didMove(toParent: self)
     }
+    
+    private func presentParkDetailsVC(with parkID : Int){
+        let parkDetailsVC = ParkDetailsVC()
+        parkDetailsVC.parkID = parkID
+        
+        // Check if there's already a presented view controller
+        if let presentedVC = self.presentedViewController {
+            presentedVC.present(parkDetailsVC, animated: true)
+        } else {
+            self.present(parkDetailsVC, animated: true)
+        }
+    }
 }
 
 // MARK: - Map View Model
 extension MainVC : MapVMDelegate{
     func isLoadingParks(isLoading: Bool) {
         DispatchQueue.main.async {
-            isLoading ? LoadingView.showLoading(on: self , loadingMessage: NSLocalizedString("Autoparks are being loaded", comment: "")) : LoadingView.hideLoading(from: self)
+            isLoading ? LoadingView.showLoading(on: self , loadingMessage: NSLocalizedString("Autoparks are loading...", comment: "")) : LoadingView.hideLoading(from: self)
         }
     }
     
@@ -215,10 +250,10 @@ extension MainVC : MapVMDelegate{
     }
     
     func didFetchParks(with parks: [Park]) {
-        self.mapView.configureAnnotations(parks: parks)
-        self.mapView.focusMap(latitude: 40.9793606, longitude: 29.0417213, zoomLevel: 0.7)
+        DispatchQueue.main.async {
+            self.mapView.configureAnnotations(parks: parks)
+        }
     }
+    
+    func didFetchParkDetails(with detail: ParkDetails) {} // Won't be used
 }
-
-
-

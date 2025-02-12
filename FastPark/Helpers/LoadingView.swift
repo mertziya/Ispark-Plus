@@ -21,7 +21,7 @@ class LoadingView {
         let loadingLabel = UILabel()
         loadingLabel.text = loadingMessage
         loadingLabel.textColor = .label.withAlphaComponent(0.7)
-        loadingLabel.font = UIFont.systemFont(ofSize: 18, weight: .regular)
+        loadingLabel.font = UIFont.systemFont(ofSize: 24, weight: .regular)
         loadingLabel.textAlignment = .center
         loadingLabel.translatesAutoresizingMaskIntoConstraints = false
         

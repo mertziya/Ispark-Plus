@@ -6,4 +6,23 @@
   
 */
 
-"Autoparks are being loaded" = "Autoparks are being loaded";
+
+"Autoparks are loading..." = "Autoparks are loading...";
+"Search All" = "Search All";
+"Clear" = "Clear";
+"Search District" = "Search District";
+"Park doesn't exist" = "Park doesn't exist";
+"Error" = "Error";
+"GO" = "GO";
+"ADD" = "ADD";
+"KAPALI OTOPARK" = "CLOSED AUTOPARK";
+"AÇIK OTOPARK" = "OPEN AUTOPARK";
+"YOL ÜSTÜ" = "ON THE ROAD";
+"0-1 Saat" = "0-1 Hours";
+"1-2 Saat" = "1-2 Hours";
+"2-4 Saat" = "2-4 Hours";
+"4-8 Saat" = "4-8 Hours";
+"8-12 Saat" = "8-12 Hours";
+"Tam Gün" = "Daily";
+"24 Saat" = "24 Hours";
+

@@ -31,6 +31,12 @@
 		C6DFD35E2D5B4DEA00B2A893 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD35D2D5B4DEA00B2A893 /* Alerts.swift */; };
 		C6DFD3602D5B95DA00B2A893 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD35F2D5B95DA00B2A893 /* LoadingView.swift */; };
 		C6DFD3712D5BC33500B2A893 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6DFD36F2D5BC33500B2A893 /* Localizable.strings */; };
+		C6DFD37B2D5BD12D00B2A893 /* ParkDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD3792D5BD12D00B2A893 /* ParkDetailsVC.swift */; };
+		C6DFD37E2D5C0BFA00B2A893 /* HapticFeedBackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD37D2D5C0BFA00B2A893 /* HapticFeedBackManager.swift */; };
+		C6DFD3862D5CB16B00B2A893 /* DetailsContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6DFD3852D5CB16B00B2A893 /* DetailsContentView.xib */; };
+		C6DFD3882D5CB20A00B2A893 /* DetailsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD3872D5CB20A00B2A893 /* DetailsContentView.swift */; };
+		C6DFD38D2D5CF2E200B2A893 /* PriceListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD38B2D5CF2E200B2A893 /* PriceListCell.swift */; };
+		C6DFD38E2D5CF2E200B2A893 /* PriceListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6DFD38C2D5CF2E200B2A893 /* PriceListCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +67,12 @@
 		C6DFD35F2D5B95DA00B2A893 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		C6DFD3702D5BC33500B2A893 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = FastPark/en.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
 		C6DFD3762D5BC39800B2A893 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = ../tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C6DFD3792D5BD12D00B2A893 /* ParkDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkDetailsVC.swift; sourceTree = "<group>"; };
+		C6DFD37D2D5C0BFA00B2A893 /* HapticFeedBackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedBackManager.swift; sourceTree = "<group>"; };
+		C6DFD3852D5CB16B00B2A893 /* DetailsContentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsContentView.xib; sourceTree = "<group>"; };
+		C6DFD3872D5CB20A00B2A893 /* DetailsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsContentView.swift; sourceTree = "<group>"; };
+		C6DFD38B2D5CF2E200B2A893 /* PriceListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceListCell.swift; sourceTree = "<group>"; };
+		C6DFD38C2D5CF2E200B2A893 /* PriceListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PriceListCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +168,10 @@
 			children = (
 				C6DFD3502D5A517600B2A893 /* Annotation */,
 				C6DFD3322D58C91100B2A893 /* ParkMapView.swift */,
+				C6DFD3852D5CB16B00B2A893 /* DetailsContentView.xib */,
+				C6DFD3872D5CB20A00B2A893 /* DetailsContentView.swift */,
+				C6DFD38B2D5CF2E200B2A893 /* PriceListCell.swift */,
+				C6DFD38C2D5CF2E200B2A893 /* PriceListCell.xib */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -168,6 +184,7 @@
 				C6DFD33B2D58FC3300B2A893 /* SideBarVC.xib */,
 				C6DFD3402D5919BD00B2A893 /* SearchVC.swift */,
 				C6DFD3412D5919BD00B2A893 /* SearchVC.xib */,
+				C6DFD3792D5BD12D00B2A893 /* ParkDetailsVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -180,6 +197,7 @@
 				C6DFD3482D592EE400B2A893 /* Notifications.swift */,
 				C6DFD35D2D5B4DEA00B2A893 /* Alerts.swift */,
 				C6DFD35F2D5B95DA00B2A893 /* LoadingView.swift */,
+				C6DFD37D2D5C0BFA00B2A893 /* HapticFeedBackManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -272,7 +290,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6DFD38E2D5CF2E200B2A893 /* PriceListCell.xib in Resources */,
 				C6DFD3712D5BC33500B2A893 /* Localizable.strings in Resources */,
+				C6DFD3862D5CB16B00B2A893 /* DetailsContentView.xib in Resources */,
 				C6DFD3432D5919BD00B2A893 /* SearchVC.xib in Resources */,
 				C6DFD3262D58C54800B2A893 /* Assets.xcassets in Resources */,
 				C6DFD33D2D58FC3300B2A893 /* SideBarVC.xib in Resources */,
@@ -288,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6DFD3492D592EE400B2A893 /* Notifications.swift in Sources */,
+				C6DFD38D2D5CF2E200B2A893 /* PriceListCell.swift in Sources */,
 				C6DFD3222D58C54800B2A893 /* AppDelegate.swift in Sources */,
 				C6DFD3472D59231700B2A893 /* Constants.swift in Sources */,
 				C6DFD3232D58C54800B2A893 /* FastPark.xcdatamodeld in Sources */,
@@ -304,8 +325,11 @@
 				C6DFD3332D58C91100B2A893 /* ParkMapView.swift in Sources */,
 				C6DFD34B2D5A03BC00B2A893 /* ParkService.swift in Sources */,
 				C6DFD35E2D5B4DEA00B2A893 /* Alerts.swift in Sources */,
+				C6DFD3882D5CB20A00B2A893 /* DetailsContentView.swift in Sources */,
 				C6DFD3602D5B95DA00B2A893 /* LoadingView.swift in Sources */,
 				C6DFD3252D58C54800B2A893 /* MainVC.swift in Sources */,
+				C6DFD37E2D5C0BFA00B2A893 /* HapticFeedBackManager.swift in Sources */,
+				C6DFD37B2D5BD12D00B2A893 /* ParkDetailsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

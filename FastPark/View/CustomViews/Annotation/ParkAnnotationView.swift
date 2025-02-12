@@ -12,6 +12,7 @@ import MapKit
 class ParkAnnotationView: MKAnnotationView {
 
     let bottomTriangle = UIImageView() // for creating the buttom section of the bubble like appeareance
+    var parkID : Int?
     
     private let titleLabel = UILabel()
     private var annotationFrame = CGRect(){
@@ -34,6 +35,11 @@ class ParkAnnotationView: MKAnnotationView {
         self.backgroundColor = .white
         self.layer.cornerRadius = 10
         self.clipsToBounds = false
+        
+        // make the annotation Clickable:
+        self.isUserInteractionEnabled = true
+        let annotationClickedGesture = UITapGestureRecognizer(target: self, action: #selector(annotationClicked))
+        self.addGestureRecognizer(annotationClickedGesture)
 
         // bottom line
         bottomTriangle.image = UIImage(systemName: "arrowtriangle.down.fill")
@@ -65,9 +71,12 @@ class ParkAnnotationView: MKAnnotationView {
     }
 
     func configure(with annotation: ParkAnnotation) {
+        self.parkID = annotation.parkID
+        
         titleLabel.text = annotation.title
         annotationFrame = annotation.annotationFrame ?? CGRect(x: 0, y: 0, width: 50, height: 20)
         if annotation.isOpen! {
+            self.titleLabel.textColor = .black
             guard let fullness = annotation.fullness else{return}
             switch fullness{
             case ..<0.5:
@@ -86,7 +95,13 @@ class ParkAnnotationView: MKAnnotationView {
                 break
             }
         }else{
-            // TODO: - Handle the closed annotation view here
+            self.backgroundColor = .barBackground
+            self.bottomTriangle.tintColor = .barBackground
+            self.titleLabel.textColor = .logo
         }
+    }
+    
+    @objc private func annotationClicked(){
+        NotificationCenter.default.post(name: .annotationClicked, object: self.parkID ?? 0)
     }
 }

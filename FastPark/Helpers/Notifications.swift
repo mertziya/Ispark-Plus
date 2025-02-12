@@ -14,4 +14,5 @@ extension Notification.Name{
     static let menuButtonTapped = Notification.Name("MenuButtonTapped")
     static let sideBarClosed = Notification.Name("SideBarClosed")
     static let shouldHideSideBar = Notification.Name("shouldHideSideBar")
+    static let annotationClicked = Notification.Name("annotationClicked")
 }

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="98" id="KGk-i7-Jjw" customClass="PriceListCell" customModule="FastPark" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="373" height="98"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="373" height="98"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dm5-E5-f8B">
+                        <rect key="frame" x="8" y="4" width="357" height="90"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ocu-TL-TVh">
+                                <rect key="frame" x="0.0" y="0.0" width="357" height="90"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="0-1 Saat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2C-fw-Ffe">
+                                        <rect key="frame" x="0.0" y="0.0" width="119" height="90"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="LogoColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKr-X7-DzZ">
+                                        <rect key="frame" x="119" y="0.0" width="119" height="90"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="LogoColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="80,00tl" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wsI-KN-LbY">
+                                        <rect key="frame" x="238" y="0.0" width="119" height="90"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="LogoColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="BarBackground"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ocu-TL-TVh" secondAttribute="bottom" id="Ie7-Cd-nYk"/>
+                            <constraint firstItem="ocu-TL-TVh" firstAttribute="leading" secondItem="dm5-E5-f8B" secondAttribute="leading" id="K50-cK-8tL"/>
+                            <constraint firstAttribute="trailing" secondItem="ocu-TL-TVh" secondAttribute="trailing" id="f3G-5H-fb3"/>
+                            <constraint firstItem="ocu-TL-TVh" firstAttribute="top" secondItem="dm5-E5-f8B" secondAttribute="top" id="lpf-Cd-MWd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="dm5-E5-f8B" secondAttribute="trailing" constant="8" id="A3z-eP-ei4"/>
+                    <constraint firstAttribute="bottom" secondItem="dm5-E5-f8B" secondAttribute="bottom" constant="4" id="Ekj-J2-vFf"/>
+                    <constraint firstItem="dm5-E5-f8B" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="FnI-rU-Smd"/>
+                    <constraint firstItem="dm5-E5-f8B" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="tpQ-f0-Y20"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="containerView" destination="dm5-E5-f8B" id="LUs-bl-dHB"/>
+                <outlet property="parkTimeLabel" destination="E2C-fw-Ffe" id="zh0-WN-fwm"/>
+                <outlet property="priceLabel" destination="wsI-KN-LbY" id="ed2-68-4De"/>
+            </connections>
+            <point key="canvasLocation" x="107.63358778625954" y="-70.422535211267615"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="BarBackground">
+            <color red="0.96470588450000005" green="0.96078431610000004" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="LogoColor">
+            <color red="0.50196081400000003" green="0.50196081400000003" blue="0.52156865600000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

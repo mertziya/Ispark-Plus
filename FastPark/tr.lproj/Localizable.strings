@@ -6,5 +6,28 @@
   
 */
 
-"Autoparks are being loaded" = "Otoparklar Yükleniyor";
-
+"Autoparks are loading..." = "Otoparklar Yükleniyor...";
+"Search All" = "Tümünü Ara";
+"Clear" = "Temizle";
+"Search District" = "Semt Ara";
+"Park doesn't exist" = "Park Mevcut Değil";
+"Error" = "Hata";
+"GO" = "GİT";
+"ADD" = "EKLE";
+"Capacity:" = "Kapasite:";
+"Days " = "Gün ";
+"Hours " = "Saat ";
+"Minutes " = "Dakika ";
+"ago" = "önce";
+"Last Update:" = "Son Güncelleme";
+"Updated Now" = "Şimdi Güncellendi";
+"Work Hours:" = "Çalışma Saatleri:";
+"Closed" = "Şu Anda Kapalı";
+"Open" = "Şu Anda Açık";
+"Park Type:" = "Park Tipi:";
+"Address:" = "Adres:";
+"Price List:" = "Tarife:";
+"Monthly" = "Aylık";
+"Open in Maps" = "Haritalarda Aç";
+"Choose an app to open directions" = "Yönlendirmeyi almak için bir uygulama seç";
+"Cancel" = "Vazgeç";

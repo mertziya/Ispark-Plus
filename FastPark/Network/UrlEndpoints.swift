@@ -9,4 +9,7 @@ import Foundation
 
 class UrlEndpoints{
     static let getAllParksUrl = URL(string: "https://api.ibb.gov.tr/ispark/Park")
+    static func getParkDetailsWith(id : Int) -> URL?{
+        return URL(string: "https://api.ibb.gov.tr/ispark/ParkDetay?id=\(id)")
+    }
 }
