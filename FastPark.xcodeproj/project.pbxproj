@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C6DFD3222D58C54800B2A893 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD3182D58C54800B2A893 /* AppDelegate.swift */; };
-		C6DFD3232D58C54800B2A893 /* FastPark.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD31A2D58C54800B2A893 /* FastPark.xcdatamodeld */; };
 		C6DFD3242D58C54800B2A893 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD31E2D58C54800B2A893 /* SceneDelegate.swift */; };
 		C6DFD3252D58C54800B2A893 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD31F2D58C54800B2A893 /* MainVC.swift */; };
 		C6DFD3262D58C54800B2A893 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6DFD3192D58C54800B2A893 /* Assets.xcassets */; };
@@ -37,6 +36,15 @@
 		C6DFD3882D5CB20A00B2A893 /* DetailsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD3872D5CB20A00B2A893 /* DetailsContentView.swift */; };
 		C6DFD38D2D5CF2E200B2A893 /* PriceListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD38B2D5CF2E200B2A893 /* PriceListCell.swift */; };
 		C6DFD38E2D5CF2E200B2A893 /* PriceListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6DFD38C2D5CF2E200B2A893 /* PriceListCell.xib */; };
+		C6DFD3922D5D4B9200B2A893 /* ilceler.json in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD3912D5D4B9200B2A893 /* ilceler.json */; };
+		C6DFD3942D5D4E5C00B2A893 /* SearchVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD3932D5D4E5B00B2A893 /* SearchVM.swift */; };
+		C6DFD3962D5D501900B2A893 /* District.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD3952D5D501900B2A893 /* District.swift */; };
+		C6DFD3972D5D54E000B2A893 /* ilceler.json in Resources */ = {isa = PBXBuildFile; fileRef = C6DFD3912D5D4B9200B2A893 /* ilceler.json */; };
+		C6DFD3992D5E1A2200B2A893 /* SearchHistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD3982D5E1A2200B2A893 /* SearchHistoryService.swift */; };
+		C6DFD39C2D5E20CB00B2A893 /* HistoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD39A2D5E20CB00B2A893 /* HistoryCollectionViewCell.swift */; };
+		C6DFD39D2D5E20CB00B2A893 /* HistoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6DFD39B2D5E20CB00B2A893 /* HistoryCollectionViewCell.xib */; };
+		C6DFD3A02D5F792900B2A893 /* SearchListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD39E2D5F792900B2A893 /* SearchListCell.swift */; };
+		C6DFD3A12D5F792900B2A893 /* SearchListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6DFD39F2D5F792900B2A893 /* SearchListCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +55,6 @@
 		C6DFD31C2D58C54800B2A893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6DFD31E2D58C54800B2A893 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C6DFD31F2D58C54800B2A893 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
-		C6DFD3212D58C54800B2A893 /* FastPark.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FastPark.xcdatamodel; sourceTree = "<group>"; };
 		C6DFD32E2D58C66C00B2A893 /* Park.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Park.swift; sourceTree = "<group>"; };
 		C6DFD3302D58C67200B2A893 /* ParkDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkDetails.swift; sourceTree = "<group>"; };
 		C6DFD3322D58C91100B2A893 /* ParkMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkMapView.swift; sourceTree = "<group>"; };
@@ -73,6 +80,14 @@
 		C6DFD3872D5CB20A00B2A893 /* DetailsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsContentView.swift; sourceTree = "<group>"; };
 		C6DFD38B2D5CF2E200B2A893 /* PriceListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceListCell.swift; sourceTree = "<group>"; };
 		C6DFD38C2D5CF2E200B2A893 /* PriceListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PriceListCell.xib; sourceTree = "<group>"; };
+		C6DFD3912D5D4B9200B2A893 /* ilceler.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ilceler.json; sourceTree = "<group>"; };
+		C6DFD3932D5D4E5B00B2A893 /* SearchVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVM.swift; sourceTree = "<group>"; };
+		C6DFD3952D5D501900B2A893 /* District.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = District.swift; sourceTree = "<group>"; };
+		C6DFD3982D5E1A2200B2A893 /* SearchHistoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryService.swift; sourceTree = "<group>"; };
+		C6DFD39A2D5E20CB00B2A893 /* HistoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		C6DFD39B2D5E20CB00B2A893 /* HistoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		C6DFD39E2D5F792900B2A893 /* SearchListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListCell.swift; sourceTree = "<group>"; };
+		C6DFD39F2D5F792900B2A893 /* SearchListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchListCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +137,7 @@
 			children = (
 				C6DFD32E2D58C66C00B2A893 /* Park.swift */,
 				C6DFD3302D58C67200B2A893 /* ParkDetails.swift */,
+				C6DFD3952D5D501900B2A893 /* District.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -139,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				C6DFD34E2D5A0CC400B2A893 /* MapVM.swift */,
+				C6DFD3932D5D4E5B00B2A893 /* SearchVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -147,9 +164,9 @@
 			isa = PBXGroup;
 			children = (
 				C6DFD31D2D58C54800B2A893 /* LaunchScreen.storyboard */,
-				C6DFD31A2D58C54800B2A893 /* FastPark.xcdatamodeld */,
 				C6DFD3192D58C54800B2A893 /* Assets.xcassets */,
 				C6DFD31B2D58C54800B2A893 /* Info.plist */,
+				C6DFD3912D5D4B9200B2A893 /* ilceler.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -172,6 +189,10 @@
 				C6DFD3872D5CB20A00B2A893 /* DetailsContentView.swift */,
 				C6DFD38B2D5CF2E200B2A893 /* PriceListCell.swift */,
 				C6DFD38C2D5CF2E200B2A893 /* PriceListCell.xib */,
+				C6DFD39A2D5E20CB00B2A893 /* HistoryCollectionViewCell.swift */,
+				C6DFD39B2D5E20CB00B2A893 /* HistoryCollectionViewCell.xib */,
+				C6DFD39E2D5F792900B2A893 /* SearchListCell.swift */,
+				C6DFD39F2D5F792900B2A893 /* SearchListCell.xib */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -207,6 +228,7 @@
 			children = (
 				C6DFD34C2D5A0ADA00B2A893 /* UrlEndpoints.swift */,
 				C6DFD34A2D5A03BC00B2A893 /* ParkService.swift */,
+				C6DFD3982D5E1A2200B2A893 /* SearchHistoryService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -290,11 +312,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6DFD3972D5D54E000B2A893 /* ilceler.json in Resources */,
 				C6DFD38E2D5CF2E200B2A893 /* PriceListCell.xib in Resources */,
 				C6DFD3712D5BC33500B2A893 /* Localizable.strings in Resources */,
+				C6DFD39D2D5E20CB00B2A893 /* HistoryCollectionViewCell.xib in Resources */,
 				C6DFD3862D5CB16B00B2A893 /* DetailsContentView.xib in Resources */,
 				C6DFD3432D5919BD00B2A893 /* SearchVC.xib in Resources */,
 				C6DFD3262D58C54800B2A893 /* Assets.xcassets in Resources */,
+				C6DFD3A12D5F792900B2A893 /* SearchListCell.xib in Resources */,
 				C6DFD33D2D58FC3300B2A893 /* SideBarVC.xib in Resources */,
 				C6DFD3282D58C54800B2A893 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -308,10 +333,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6DFD3492D592EE400B2A893 /* Notifications.swift in Sources */,
+				C6DFD3942D5D4E5C00B2A893 /* SearchVM.swift in Sources */,
 				C6DFD38D2D5CF2E200B2A893 /* PriceListCell.swift in Sources */,
 				C6DFD3222D58C54800B2A893 /* AppDelegate.swift in Sources */,
 				C6DFD3472D59231700B2A893 /* Constants.swift in Sources */,
-				C6DFD3232D58C54800B2A893 /* FastPark.xcdatamodeld in Sources */,
+				C6DFD3A02D5F792900B2A893 /* SearchListCell.swift in Sources */,
+				C6DFD39C2D5E20CB00B2A893 /* HistoryCollectionViewCell.swift in Sources */,
+				C6DFD3922D5D4B9200B2A893 /* ilceler.json in Sources */,
 				C6DFD35C2D5A578200B2A893 /* ParkAnnotationView.swift in Sources */,
 				C6DFD34D2D5A0ADA00B2A893 /* UrlEndpoints.swift in Sources */,
 				C6DFD32F2D58C66C00B2A893 /* Park.swift in Sources */,
@@ -320,10 +348,12 @@
 				C6DFD3522D5A518D00B2A893 /* ParkAnnotation.swift in Sources */,
 				C6DFD3242D58C54800B2A893 /* SceneDelegate.swift in Sources */,
 				C6DFD3452D591EB300B2A893 /* SearchVCPresentation.swift in Sources */,
+				C6DFD3992D5E1A2200B2A893 /* SearchHistoryService.swift in Sources */,
 				C6DFD34F2D5A0CC400B2A893 /* MapVM.swift in Sources */,
 				C6DFD33C2D58FC3300B2A893 /* SideBarVC.swift in Sources */,
 				C6DFD3332D58C91100B2A893 /* ParkMapView.swift in Sources */,
 				C6DFD34B2D5A03BC00B2A893 /* ParkService.swift in Sources */,
+				C6DFD3962D5D501900B2A893 /* District.swift in Sources */,
 				C6DFD35E2D5B4DEA00B2A893 /* Alerts.swift in Sources */,
 				C6DFD3882D5CB20A00B2A893 /* DetailsContentView.swift in Sources */,
 				C6DFD3602D5B95DA00B2A893 /* LoadingView.swift in Sources */,
@@ -555,19 +585,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		C6DFD31A2D58C54800B2A893 /* FastPark.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				C6DFD3212D58C54800B2A893 /* FastPark.xcdatamodel */,
-			);
-			currentVersion = C6DFD3212D58C54800B2A893 /* FastPark.xcdatamodel */;
-			path = FastPark.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = C6DFD2F52D58C52100B2A893 /* Project object */;
 }

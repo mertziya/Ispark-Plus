@@ -34,8 +34,7 @@ class MainVC: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(showSideBar), name: .menuButtonTapped, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(hideSidebar), name: .shouldHideSideBar, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(handleAnnotationClick(_:)), name: .annotationClicked, object: nil)
-        
-        
+        NotificationCenter.default.addObserver(self, selector: #selector(handleDistrictSelected(_:)), name: .districtSelected, object: nil)
         
     }
     
@@ -79,11 +78,11 @@ extension MainVC : UIViewControllerTransitioningDelegate{
             mapView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0),
             
             searchIcon.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -12),
-            searchIcon.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -128),
+            searchIcon.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -136),
             searchIcon.heightAnchor.constraint(equalToConstant: 36),
             searchIcon.widthAnchor.constraint(equalToConstant: 128),
             
-            hideIcon.bottomAnchor.constraint(equalTo: searchIcon.topAnchor, constant: -8),
+            hideIcon.bottomAnchor.constraint(equalTo: searchIcon.topAnchor, constant: -16),
             hideIcon.centerXAnchor.constraint(equalTo: searchIcon.centerXAnchor),
             hideIcon.heightAnchor.constraint(equalToConstant: 32),
             hideIcon.widthAnchor.constraint(equalToConstant: 128),
@@ -156,7 +155,6 @@ extension MainVC{
     
     @objc private func hideSidebar() {
         view.endEditing(true)
-        
         guard let sidebar = sidebarVC else { return }
         
         UIView.animate(withDuration: 0.3, animations: {
@@ -171,6 +169,7 @@ extension MainVC{
     }
     
     @objc private func handlePresentationExpanded(){
+        // MARK: - Get Districts Search History Here:
         DispatchQueue.main.async {
             UIView.animate(withDuration: 0.5) {
                 self.mapView.alpha = 0.6
@@ -198,7 +197,8 @@ extension MainVC{
     
     @objc private func handleAnnotationClick(_ notification: Notification) {
         if let parkID = notification.object as? Int {
-            presentParkDetailsVC(with: parkID)
+            presentParkDetailsVC(with: parkID)            
+            
         } else {
             Alerts.showErrorAlert(on: self, title: NSLocalizedString("Error", comment: ""), message: NSLocalizedString("Park doesn't exist", comment: ""))
         }
@@ -235,6 +235,20 @@ extension MainVC{
             self.present(parkDetailsVC, animated: true)
         }
     }
+    
+    @objc private func handleDistrictSelected(_ notification : Notification){
+        self.mapView.alpha = 1
+        if let district = notification.object as? District{
+            
+            mapVM.fetchParksWith(districtName: district.district ?? "")
+            DispatchQueue.main.async {
+                self.mapView.focusMap(latitude: Double(district.lat!)!, longitude: Double(district.lng!)!, zoomLevel: 0.03)
+            }
+            SearchHistoryService.saveDistrict(district)
+            
+        }
+    }
+    
 }
 
 // MARK: - Map View Model
@@ -246,11 +260,14 @@ extension MainVC : MapVMDelegate{
     }
     
     func didReturnWith(error: any Error) {
-        Alerts.showErrorAlert(on: self, title: "Error", message: error.localizedDescription)
+        DispatchQueue.main.async {
+            Alerts.showErrorAlert(on: self, title: NSLocalizedString("Warning", comment: ""), message: error.localizedDescription)
+        }
     }
     
     func didFetchParks(with parks: [Park]) {
         DispatchQueue.main.async {
+            self.mapView.clearAnnotations()
             self.mapView.configureAnnotations(parks: parks)
         }
     }

@@ -36,6 +36,13 @@ class DetailsContentView : UIView{
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var address: UILabel!
     
+    
+    @IBOutlet weak var coverView1: UIView!
+    @IBOutlet weak var coverView2: UIView!
+    @IBOutlet weak var coverView3: UIView!
+    @IBOutlet weak var coverView4: UIView!
+    
+    
     // MARK: - Properties:
     private var priceList : [PriceList] = []{
         didSet{
@@ -61,7 +68,13 @@ class DetailsContentView : UIView{
         contentView.frame = bounds
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         addSubview(contentView)
-   }
+
+        adjustCoverView(view: coverView1)
+        adjustCoverView(view: coverView2)
+        adjustCoverView(view: coverView3)
+        adjustCoverView(view: coverView4)
+        
+    }
     
     func configureDetails(details : ParkDetails){
         autoparkNameLabel.text = details.parkName
@@ -168,7 +181,7 @@ extension DetailsContentView : UITableViewDelegate , UITableViewDataSource{
             var updatedNow = ""
             if day == "" && hour == "" && minute == "" {updatedNow = NSLocalizedString("Updated Now", comment: "")}
             
-            let updateTime = "\(NSLocalizedString("Last Update:", comment: "")) \(day)\(hour)\(minute) \(NSLocalizedString("ago", comment: ""))"
+            let updateTime = "\(NSLocalizedString("Last Update:", comment: "")) \(day)\(hour)\(minute)\(NSLocalizedString("ago", comment: ""))"
             
             if updatedNow == "" { return updateTime}
             else                { return updatedNow }
@@ -259,6 +272,13 @@ extension DetailsContentView : UITableViewDelegate , UITableViewDataSource{
         }
     }
     
+    private func adjustCoverView(view : UIView){
+        view.layer.cornerRadius = 12
+        view.layer.shadowRadius = 12
+        view.layer.shadowOpacity = 0.3
+        view.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+        view.layer.shadowColor = UIColor.black.cgColor
+    }
 }
 
 

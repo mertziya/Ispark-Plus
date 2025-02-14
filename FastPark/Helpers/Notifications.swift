@@ -15,4 +15,5 @@ extension Notification.Name{
     static let sideBarClosed = Notification.Name("SideBarClosed")
     static let shouldHideSideBar = Notification.Name("shouldHideSideBar")
     static let annotationClicked = Notification.Name("annotationClicked")
+    static let districtSelected = Notification.Name("districtSelected")
 }

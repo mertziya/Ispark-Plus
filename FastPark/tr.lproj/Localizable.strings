@@ -19,7 +19,7 @@
 "Hours " = "Saat ";
 "Minutes " = "Dakika ";
 "ago" = "önce";
-"Last Update:" = "Son Güncelleme";
+"Last Update:" = "Son Güncelleme:";
 "Updated Now" = "Şimdi Güncellendi";
 "Work Hours:" = "Çalışma Saatleri:";
 "Closed" = "Şu Anda Kapalı";
@@ -31,3 +31,15 @@
 "Open in Maps" = "Haritalarda Aç";
 "Choose an app to open directions" = "Yönlendirmeyi almak için bir uygulama seç";
 "Cancel" = "Vazgeç";
+"Warning" = "Uyarı";
+"There are no isparks nearby!" = "Bu bölgede hiç ispark yok!";
+"Clear" = "Temizle";
+"Districts History" = "Semt Geçmişi";
+"Okay" = "Tamam";
+"Autoparks History" = "Otopark Geçmişi";
+"No History" = "Arama Geçmişi Yok";
+"Delete History" = "Geçmişi Sil";
+"Are you sure you want to delete history?" = "Arama geçmişinini silmek istediğinden emin misin?";
+
+
+

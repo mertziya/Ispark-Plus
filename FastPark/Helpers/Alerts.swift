@@ -23,6 +23,23 @@ class Alerts{
         }
     }
     
+    static func confirmationAlert(on vc: UIViewController ,  title : String  , message : String , completion: @escaping () -> ()) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: NSLocalizedString("Cancel", comment: ""), style: .cancel)
+        let action2 = UIAlertAction(title: NSLocalizedString("Okay", comment: ""), style: .default) { _ in
+            completion()
+        }
+        alert.addAction(action)
+        alert.addAction(action2)
+        
+        // Check if there's already a presented view controller
+        if let presentedVC = vc.presentedViewController {
+            presentedVC.present(alert, animated: true)
+        } else {
+            vc.present(alert, animated: true)
+        }
+    }
+    
     static func openMapsAlert(at viewController : UIViewController, lat : String , lng : String){
         let appleMapsURL = URL(string: "http://maps.apple.com/?daddr=\(lat),\(lng)")!
         let googleMapsAppURL = URL(string: "comgooglemaps://?daddr=\(lat),\(lng)&directionsmode=driving")!

@@ -7,11 +7,6 @@
 
 import Foundation
 
-enum ErrorTypes: Error{
-    case urlError
-    case responseError
-}
-
 class ParkService{
     
     static func fetchAllIsparks(completion : @escaping (Result<[Park],Error>) -> () ){
@@ -61,3 +56,20 @@ class ParkService{
 }
 
 
+
+enum ErrorTypes: Error{
+    case urlError
+    case responseError
+    case noParksError
+}
+
+extension ErrorTypes: LocalizedError {
+    var errorDescription: String? {
+        switch self {
+        case .noParksError:
+            return NSLocalizedString("There are no isparks nearby!", comment: "")
+        default:
+            return "Error"
+        }
+    }
+}

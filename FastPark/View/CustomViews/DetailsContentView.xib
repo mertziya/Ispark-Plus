@@ -18,6 +18,10 @@
                 <outlet property="autoparkNameLabel" destination="7ZI-YE-wd8" id="B3i-rN-C5X"/>
                 <outlet property="capacityLabel" destination="bPl-sb-dHt" id="rqU-af-MyV"/>
                 <outlet property="contentView" destination="iN0-l3-epB" id="s9X-P9-9mv"/>
+                <outlet property="coverView1" destination="T8S-ph-bb1" id="dPw-Ed-PBR"/>
+                <outlet property="coverView2" destination="6kB-vx-gbO" id="fu7-kn-Qax"/>
+                <outlet property="coverView3" destination="v2l-eJ-7GA" id="uGd-s7-gpo"/>
+                <outlet property="coverView4" destination="ZN4-XB-3LM" id="XcX-hb-LiI"/>
                 <outlet property="currentlyOpened" destination="YMb-47-Zb1" id="bXP-Gy-6kL"/>
                 <outlet property="fullnessLabel" destination="hD3-9L-kaR" id="nJj-F0-QOp"/>
                 <outlet property="fullnessProgress" destination="FbW-XX-AMT" id="4bB-GE-KvC"/>
@@ -43,6 +47,10 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T8S-ph-bb1">
+                    <rect key="frame" x="20" y="107.66666666666666" width="353" height="105.66666666666666"/>
+                    <color key="backgroundColor" name="TextfieldBackground"/>
+                </view>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="BBO-BB-h3T">
                     <rect key="frame" x="28" y="115.66666666666666" width="337" height="65.666666666666657"/>
                     <subviews>
@@ -84,6 +92,10 @@
                         </stackView>
                     </subviews>
                 </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6kB-vx-gbO">
+                    <rect key="frame" x="20" y="253.33333333333334" width="353" height="92.666666666666657"/>
+                    <color key="backgroundColor" name="TextfieldBackground"/>
+                </view>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Dbl-on-727">
                     <rect key="frame" x="28" y="261.33333333333331" width="337" height="56.666666666666686"/>
                     <subviews>
@@ -93,22 +105,16 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <stackView opaque="NO" contentMode="left" semanticContentAttribute="forceLeftToRight" distribution="equalCentering" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dUk-wX-f13">
+                        <stackView opaque="NO" contentMode="left" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="dUk-wX-f13">
                             <rect key="frame" x="0.0" y="36.333333333333371" width="337" height="20.333333333333329"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24 Hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eyk-TF-CYf">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="24 Hours" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eyk-TF-CYf">
                                     <rect key="frame" x="0.0" y="0.0" width="70.333333333333329" height="20.333333333333332"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoO-cB-VWX">
-                                    <rect key="frame" x="157.33333333333334" y="0.0" width="7.6666666666666572" height="20.333333333333332"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Şu Anda Açık" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMb-47-Zb1">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Şu Anda Açık" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMb-47-Zb1">
                                     <rect key="frame" x="236.66666666666671" y="0.0" width="100.33333333333334" height="20.333333333333332"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
@@ -118,6 +124,10 @@
                         </stackView>
                     </subviews>
                 </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v2l-eJ-7GA">
+                    <rect key="frame" x="20" y="386" width="353" height="93.666666666666686"/>
+                    <color key="backgroundColor" name="TextfieldBackground"/>
+                </view>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="TNo-wt-dBL">
                     <rect key="frame" x="28" y="398" width="337" height="53.666666666666686"/>
                     <subviews>
@@ -150,6 +160,13 @@
                         </tableView>
                     </subviews>
                 </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZN4-XB-3LM">
+                    <rect key="frame" x="20" y="768" width="353" height="100"/>
+                    <color key="backgroundColor" name="TextfieldBackground"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="eOB-g9-ipz"/>
+                    </constraints>
+                </view>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="7Um-mB-POV">
                     <rect key="frame" x="28" y="780" width="337" height="70.666666666666629"/>
                     <subviews>
@@ -174,26 +191,41 @@ SOKAK BEŞİKTAŞ</string>
             <color key="backgroundColor" name="TextfieldBackground"/>
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="BBO-BB-h3T" secondAttribute="trailing" constant="28" id="2LE-HC-XSv"/>
+                <constraint firstItem="v2l-eJ-7GA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="6G3-Rb-aaU"/>
                 <constraint firstItem="BBO-BB-h3T" firstAttribute="top" secondItem="7ZI-YE-wd8" secondAttribute="bottom" constant="40" id="8Wm-gk-W9E"/>
+                <constraint firstItem="T8S-ph-bb1" firstAttribute="top" secondItem="7ZI-YE-wd8" secondAttribute="bottom" constant="32" id="9SQ-JP-FUr"/>
                 <constraint firstItem="7Um-mB-POV" firstAttribute="top" secondItem="99y-Rj-S8Q" secondAttribute="bottom" constant="80" id="Czg-kd-PzF"/>
                 <constraint firstItem="TNo-wt-dBL" firstAttribute="top" secondItem="Dbl-on-727" secondAttribute="bottom" constant="80" id="G0H-ee-tet"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="7Um-mB-POV" secondAttribute="trailing" constant="28" id="INn-Hi-aEy"/>
+                <constraint firstItem="ZN4-XB-3LM" firstAttribute="top" secondItem="99y-Rj-S8Q" secondAttribute="bottom" constant="68" id="J5s-Bm-71v"/>
                 <constraint firstItem="TNo-wt-dBL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="28" id="O9p-GC-h1N"/>
+                <constraint firstItem="ZN4-XB-3LM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Osy-3g-Peu"/>
                 <constraint firstItem="99y-Rj-S8Q" firstAttribute="top" secondItem="TNo-wt-dBL" secondAttribute="bottom" constant="80" id="P3W-0w-WoV"/>
                 <constraint firstItem="7ZI-YE-wd8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="Q41-5V-RRe"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="99y-Rj-S8Q" secondAttribute="trailing" constant="28" id="Tnf-qY-15g"/>
+                <constraint firstItem="6kB-vx-gbO" firstAttribute="top" secondItem="BBO-BB-h3T" secondAttribute="bottom" constant="72" id="Tyu-9A-Ngu"/>
                 <constraint firstItem="Dbl-on-727" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="28" id="WlZ-Bv-UwI"/>
                 <constraint firstItem="Dbl-on-727" firstAttribute="top" secondItem="BBO-BB-h3T" secondAttribute="bottom" constant="80" id="Yr9-pB-mVr"/>
+                <constraint firstItem="v2l-eJ-7GA" firstAttribute="top" secondItem="6kB-vx-gbO" secondAttribute="bottom" constant="40" id="Zl3-0Y-1TS"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="7ZI-YE-wd8" secondAttribute="trailing" constant="40" id="bw0-gw-gjx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="v2l-eJ-7GA" secondAttribute="trailing" constant="20" id="crd-5k-ha6"/>
+                <constraint firstItem="99y-Rj-S8Q" firstAttribute="top" secondItem="v2l-eJ-7GA" secondAttribute="bottom" constant="52" id="d0N-gY-JRP"/>
+                <constraint firstItem="Dbl-on-727" firstAttribute="top" secondItem="T8S-ph-bb1" secondAttribute="bottom" constant="48" id="fo9-Rg-Plq"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Dbl-on-727" secondAttribute="trailing" constant="28" id="ftS-6C-atD"/>
+                <constraint firstItem="T8S-ph-bb1" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="iWO-xD-ewR"/>
+                <constraint firstItem="TNo-wt-dBL" firstAttribute="top" secondItem="6kB-vx-gbO" secondAttribute="bottom" constant="52" id="jxO-55-3vC"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="T8S-ph-bb1" secondAttribute="trailing" constant="20" id="kJb-tK-LVI"/>
                 <constraint firstItem="99y-Rj-S8Q" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="28" id="lyY-MS-Z07"/>
                 <constraint firstItem="BBO-BB-h3T" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="28" id="mqG-eG-sgG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="6kB-vx-gbO" secondAttribute="trailing" constant="20" id="nKW-t4-baH"/>
+                <constraint firstItem="6kB-vx-gbO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="njA-S0-fGt"/>
                 <constraint firstItem="7Um-mB-POV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="28" id="nzE-M9-Vfz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ZN4-XB-3LM" secondAttribute="trailing" constant="20" id="ogh-I1-Xzb"/>
                 <constraint firstItem="7ZI-YE-wd8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="tn9-9i-HEy"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="TNo-wt-dBL" secondAttribute="trailing" constant="28" id="uCn-xn-N2J"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="83" y="-11"/>
+            <point key="canvasLocation" x="81.679389312977094" y="-11.267605633802818"/>
         </view>
     </objects>
     <resources>

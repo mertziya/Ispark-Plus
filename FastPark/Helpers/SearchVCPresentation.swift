@@ -34,6 +34,7 @@ class SearchVCPresentation: UIPresentationController {
         NotificationCenter.default.addObserver(self, selector: #selector(expandVC), name: .searchBarClicked, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(hideView), name: .menuButtonTapped, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(unhideView), name: .sideBarClosed, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(shrinkVC), name: .districtSelected, object: nil)
 
         return CGRect(x: 0,
                       y: containerView.bounds.height - currentHeight!,
@@ -44,7 +45,7 @@ class SearchVCPresentation: UIPresentationController {
         NotificationCenter.default.removeObserver(self, name: .searchBarClicked, object: nil)
         NotificationCenter.default.removeObserver(self, name: .menuButtonTapped, object: nil)
         NotificationCenter.default.removeObserver(self, name: .sideBarClosed, object: nil)
-
+        NotificationCenter.default.removeObserver(self, name: .districtSelected, object: nil)
     }
     
     override func presentationTransitionWillBegin() {

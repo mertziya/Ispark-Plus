@@ -1,0 +1,3395 @@
+[
+    {
+        "district" : "ADALAR",
+        "neighborhood" : "BURGAZADA MAH",
+        "lat": "40.8675",
+        "lng": "29.0511"
+    },
+    {
+        "district" : "ADALAR",
+        "neighborhood" : "MADEN MAH",
+        "lat": "40.8700",
+        "lng": "29.1200"
+    },
+    {
+        "district" : "ADALAR",
+        "neighborhood" : "NİZAM MAH",
+        "lat": "40.8750",
+        "lng": "29.1350"
+    },
+    {
+        "district" : "ADALAR",
+        "neighborhood" : "HEYBELİADA MAH",
+        "lat": "40.8758",
+        "lng": "29.0869"
+    },
+    {
+        "district" : "ADALAR",
+        "neighborhood" : "KINALIADA MAH",
+        "lat": "40.9087378",
+        "lng": "29.0439936"
+    },
+    
+    
+    
+    {
+        "district" : "KADIKÖY",
+        "neighborhood": "BOSTANCI MAH",
+        "lat": "40.9500",
+        "lng": "29.1000"
+    },
+    {
+        "district" : "KADIKÖY",
+        "neighborhood": "CADDEBOSTAN MAH",
+        "lat": "40.9675",
+        "lng": "29.0667"
+    },
+    {
+        "district" : "KADIKÖY",
+        "neighborhood": "CAFERAĞA MAH",
+        "lat": "40.9833",
+        "lng": "29.0333"
+    },
+    {
+        "district" : "KADIKÖY",
+        "neighborhood": "EĞİTİM MAH",
+        "lat": "40.9833",
+        "lng": "29.0667"
+    },
+    {
+        "district" : "KADIKÖY",
+        "neighborhood": "HASANPAŞA MAH",
+        "lat": "40.9833",
+        "lng": "29.0500"
+    },
+    {
+        "district" : "KADIKÖY",
+        "neighborhood": "ERENKÖY MAH",
+        "lat": "40.9667",
+        "lng": "29.0833"
+    },
+    {
+        "district" : "KADIKÖY",
+        "neighborhood": "FENERBAHÇE MAH",
+        "lat": "40.9667",
+        "lng": "29.0333"
+    },
+    {
+        "district" : "KADIKÖY",
+        "neighborhood": "FENERYOLU MAH",
+        "lat": "40.9833",
+        "lng": "29.0500"
+    },
+    {
+        "district" : "KADIKÖY",
+        "neighborhood": "ZÜHTÜPAŞA MAH",
+        "lat": "40.9833",
+        "lng": "29.0333"
+    },
+    {
+        "district" : "KADIKÖY",
+        "neighborhood": "DUMLUPINAR MAH",
+        "lat": "40.9833",
+        "lng": "29.0667"
+    },
+    {
+        "district" : "KADIKÖY",
+        "neighborhood": "FİKİRTEPE MAH",
+        "lat": "40.9833",
+        "lng": "29.0667"
+    },
+    {
+        "district" : "KADIKÖY",
+        "neighborhood": "GÖZTEPE MAH",
+        "lat": "40.9667",
+        "lng": "29.0833"
+    },
+    {
+        "district" : "KADIKÖY",
+        "neighborhood": "ACIBADEM MAH",
+        "lat": "40.9833",
+        "lng": "29.0500"
+    },
+    {
+        "district" : "KADIKÖY",
+        "neighborhood": "KOŞUYOLU MAH",
+        "lat": "40.9833",
+        "lng": "29.0500"
+    },
+    {
+        "district" : "KADIKÖY",
+        "neighborhood": "KOZYATAĞI MAH",
+        "lat": "40.9667",
+        "lng": "29.1000"
+    },
+    {
+        "district" : "KADIKÖY",
+        "neighborhood": "MERDİVENKÖY MAH",
+        "lat": "40.9833",
+        "lng": "29.0667"
+    },
+    {
+        "district" : "KADIKÖY",
+        "neighborhood": "19 MAYIS MAH",
+        "lat": "40.9833",
+        "lng": "29.0667"
+    },
+    {
+        "district" : "KADIKÖY",
+        "neighborhood": "OSMANAĞA MAH",
+        "lat": "40.9833",
+        "lng": "29.0333"
+    },
+    {
+        "district" : "KADIKÖY",
+        "neighborhood": "RASİMPAŞA MAH",
+        "lat": "40.9833",
+        "lng": "29.0333"
+    },
+    {
+        "district" : "KADIKÖY",
+        "neighborhood": "SAHRAYICEDİT MAH",
+        "lat": "40.9667",
+        "lng": "29.1000"
+    },
+    {
+        "district" : "KADIKÖY",
+        "neighborhood": "SUADİYE MAH",
+        "lat": "40.9500",
+        "lng": "29.1000"
+    },
+    
+    
+    
+    {
+        "district": "ARNAVUTKÖY",
+        "neighborhood": "ANADOLU MAH",
+        "lat": "41.2000",
+        "lng": "28.7333"
+    },
+    {
+        "district": "ARNAVUTKÖY",
+        "neighborhood": "ARNAVUTKÖY MERKEZ MAH",
+        "lat": "41.1833",
+        "lng": "28.7333"
+    },
+    {
+        "district": "ARNAVUTKÖY",
+        "neighborhood": "İMRAHOR MAH",
+        "lat": "41.1667",
+        "lng": "28.7167"
+    },
+    {
+        "district": "ARNAVUTKÖY",
+        "neighborhood": "İSLAMBEY MAH",
+        "lat": "41.1833",
+        "lng": "28.7500"
+    },
+    {
+        "district": "ARNAVUTKÖY",
+        "neighborhood": "MUSTAFA KEMAL PAŞA MAH",
+        "lat": "41.2000",
+        "lng": "28.7500"
+    },
+    {
+        "district": "ARNAVUTKÖY",
+        "neighborhood": "NENEHATUN MAH",
+        "lat": "41.1833",
+        "lng": "28.7667"
+    },
+    {
+        "district": "ARNAVUTKÖY",
+        "neighborhood": "YAVUZ SELİM MAH",
+        "lat": "41.2000",
+        "lng": "28.7167"
+    },
+    {
+        "district": "ARNAVUTKÖY",
+        "neighborhood": "ADNAN MENDERES MAH",
+        "lat": "41.1667",
+        "lng": "28.7333"
+    },
+    {
+        "district": "ARNAVUTKÖY",
+        "neighborhood": "BAKLALI MAH",
+        "lat": "41.2333",
+        "lng": "28.7000"
+    },
+    {
+        "district": "ARNAVUTKÖY",
+        "neighborhood": "BALABAN MAH",
+        "lat": "41.2500",
+        "lng": "28.7500"
+    },
+    {
+        "district": "ARNAVUTKÖY",
+        "neighborhood": "BOYALIK MAH",
+        "lat": "41.2667",
+        "lng": "28.7333"
+    },
+    {
+        "district": "ARNAVUTKÖY",
+        "neighborhood": "ÇİLİNGİR MAH",
+        "lat": "41.2000",
+        "lng": "28.7000"
+    },
+    {
+        "district": "ARNAVUTKÖY",
+        "neighborhood": "DURSUNKÖY MAH",
+        "lat": "41.2333",
+        "lng": "28.7500"
+    },
+    {
+        "district": "ARNAVUTKÖY",
+        "neighborhood": "DURUSU MAH",
+        "lat": "41.2667",
+        "lng": "28.7167"
+    },
+    {
+        "district": "ARNAVUTKÖY",
+        "neighborhood": "FATİH MAH",
+        "lat": "41.1833",
+        "lng": "28.7000"
+    },
+    {
+        "district": "ARNAVUTKÖY",
+        "neighborhood": "HACIMAŞLI MAH",
+        "lat": "41.2833",
+        "lng": "28.7500"
+    },
+    {
+        "district": "ARNAVUTKÖY",
+        "neighborhood": "KARABURUN MAH",
+        "lat": "41.3000",
+        "lng": "28.6500"
+    },
+    {
+        "district": "ARNAVUTKÖY",
+        "neighborhood": "SAZLIBOSNA MAH",
+        "lat": "41.2333",
+        "lng": "28.7667"
+    },
+    {
+        "district": "ARNAVUTKÖY",
+        "neighborhood": "TAYAKADIN MAH",
+        "lat": "41.2000",
+        "lng": "28.7833"
+    },
+    {
+        "district": "ARNAVUTKÖY",
+        "neighborhood": "TERKOS MAH",
+        "lat": "41.3167",
+        "lng": "28.7000"
+    },
+    
+
+    {
+        "district": "ATAŞEHİR",
+        "neighborhood": "ATATÜRK MAH",
+        "lat": "40.9876",
+        "lng": "29.1163"
+      },
+      {
+        "district": "ATAŞEHİR",
+        "neighborhood": "FERHATPAŞA MAH",
+        "lat": "40.9921",
+        "lng": "29.1845"
+      },
+      {
+        "district": "ATAŞEHİR",
+        "neighborhood": "İÇERENKÖY MAH",
+        "lat": "40.9698",
+        "lng": "29.1116"
+      },
+      {
+        "district": "ATAŞEHİR",
+        "neighborhood": "İNÖNÜ MAH",
+        "lat": "40.9823",
+        "lng": "29.1402"
+      },
+      {
+        "district": "ATAŞEHİR",
+        "neighborhood": "KAYIŞDAĞI MAH",
+        "lat": "40.9845",
+        "lng": "29.1627"
+      },
+      {
+        "district": "ATAŞEHİR",
+        "neighborhood": "KÜÇÜKBAKKALKÖY MAH",
+        "lat": "40.9789",
+        "lng": "29.1234"
+      },
+      {
+        "district": "ATAŞEHİR",
+        "neighborhood": "AŞIKVEYSEL MAH",
+        "lat": "40.9952",
+        "lng": "29.1517"
+      },
+      {
+        "district": "ATAŞEHİR",
+        "neighborhood": "MUSTAFA KEMAL MAH",
+        "lat": "40.9870",
+        "lng": "29.0985"
+      },
+      {
+        "district": "ATAŞEHİR",
+        "neighborhood": "ESATPAŞA MAH",
+        "lat": "40.9928",
+        "lng": "29.0821"
+      },
+      {
+        "district": "ATAŞEHİR",
+        "neighborhood": "FETİH MAH",
+        "lat": "40.9983",
+        "lng": "29.0725"
+      },
+      {
+        "district": "ATAŞEHİR",
+        "neighborhood": "ÖRNEK MAH",
+        "lat": "40.9874",
+        "lng": "29.0936"
+      },
+      {
+        "district": "ATAŞEHİR",
+        "neighborhood": "MEVLANA MAH",
+        "lat": "40.9959",
+        "lng": "29.1723"
+      },
+      {
+        "district": "ATAŞEHİR",
+        "neighborhood": "MİMAR SİNAN MAH",
+        "lat": "40.9901",
+        "lng": "29.1328"
+      },
+      {
+        "district": "ATAŞEHİR",
+        "neighborhood": "YENİ ÇAMLICA MAH",
+        "lat": "40.9967",
+        "lng": "29.1475"
+      },
+      {
+        "district": "ATAŞEHİR",
+        "neighborhood": "YENİŞEHİR MAH",
+        "lat": "40.9934",
+        "lng": "29.1598"
+      },
+      {
+        "district": "ATAŞEHİR",
+        "neighborhood": "BARBAROS MAH",
+        "lat": "40.9842",
+        "lng": "29.0987"
+      },
+      {
+        "district": "ATAŞEHİR",
+        "neighborhood": "YENİSAHRA MAH",
+        "lat": "40.9829",
+        "lng": "29.0834"
+      },
+      
+  
+    {
+      "district": "AVCILAR",
+      "neighborhood": "AMBARLI MAH",
+      "lat": "40.9736",
+      "lng": "28.7225"
+    },
+    {
+      "district": "AVCILAR",
+      "neighborhood": "DENİZKÖŞKLER MAH",
+      "lat": "40.9765",
+      "lng": "28.7189"
+    },
+    {
+      "district": "AVCILAR",
+      "neighborhood": "CİHANGİR MAH",
+      "lat": "40.9812",
+      "lng": "28.7231"
+    },
+    {
+      "district": "AVCILAR",
+      "neighborhood": "MERKEZ MAH",
+      "lat": "40.9820",
+      "lng": "28.7210"
+    },
+    {
+      "district": "AVCILAR",
+      "neighborhood": "FİRUZKÖY MAH",
+      "lat": "40.9835",
+      "lng": "28.6987"
+    },
+    {
+      "district": "AVCILAR",
+      "neighborhood": "YEŞİLKENT MAH",
+      "lat": "40.9900",
+      "lng": "28.6900"
+    },
+    {
+      "district": "AVCILAR",
+      "neighborhood": "GÜMÜŞPALA MAH",
+      "lat": "40.9875",
+      "lng": "28.7275"
+    },
+    {
+      "district": "AVCILAR",
+      "neighborhood": "MUSTAFA KEMALPAŞA MAH",
+      "lat": "40.9840",
+      "lng": "28.7300"
+    },
+    {
+      "district": "AVCILAR",
+      "neighborhood": "TAHTAKALE MAH",
+      "lat": "40.9950",
+      "lng": "28.7000"
+    },
+    {
+      "district": "AVCILAR",
+      "neighborhood": "ÜNİVERSİTE MAH",
+      "lat": "40.9800",
+      "lng": "28.7200"
+    },
+    
+
+      {
+        "district": "BAĞCILAR",
+        "neighborhood": "15 TEMMUZ MAH",
+        "lat": "41.0400",
+        "lng": "28.8500"
+      },
+      {
+        "district": "BAĞCILAR",
+        "neighborhood": "BAĞLAR MAH",
+        "lat": "41.0350",
+        "lng": "28.8600"
+      },
+      {
+        "district": "BAĞCILAR",
+        "neighborhood": "GÜNEŞLİ MAH",
+        "lat": "41.0500",
+        "lng": "28.8200"
+      },
+      {
+        "district": "BAĞCILAR",
+        "neighborhood": "HÜRRİYET MAH",
+        "lat": "41.0300",
+        "lng": "28.8700"
+      },
+      {
+        "district": "BAĞCILAR",
+        "neighborhood": "KİRAZLI MAH",
+        "lat": "41.0400",
+        "lng": "28.8300"
+      },
+      {
+        "district": "BAĞCILAR",
+        "neighborhood": "YENİMAHALLE MAH",
+        "lat": "41.0250",
+        "lng": "28.8450"
+      },
+      {
+        "district": "BAĞCILAR",
+        "neighborhood": "100. YIL MAH",
+        "lat": "41.0450",
+        "lng": "28.8400"
+      },
+      {
+        "district": "BAĞCILAR",
+        "neighborhood": "DEMİRKAPI MAH",
+        "lat": "41.0500",
+        "lng": "28.8300"
+      },
+      {
+        "district": "BAĞCILAR",
+        "neighborhood": "FATİH MAH",
+        "lat": "41.0350",
+        "lng": "28.8500"
+      },
+      {
+        "district": "BAĞCILAR",
+        "neighborhood": "GÖZTEPE MAH",
+        "lat": "41.0300",
+        "lng": "28.8600"
+      },
+      {
+        "district": "BAĞCILAR",
+        "neighborhood": "KEMALPAŞA MAH",
+        "lat": "41.0400",
+        "lng": "28.8700"
+      },
+      {
+        "district": "BAĞCILAR",
+        "neighborhood": "MAHMUTBEY MAH",
+        "lat": "41.0600",
+        "lng": "28.8000"
+      },
+      
+      
+      
+
+    {
+      "district": "BAHÇELİEVLER",
+      "neighborhood": "BAHÇELİEVLER MAH",
+      "lat": "41.0026",
+      "lng": "28.8693"
+    },
+    {
+      "district": "BAHÇELİEVLER",
+      "neighborhood": "CUMHURİYET MAH",
+      "lat": "40.9940",
+      "lng": "28.8570"
+    },
+    {
+      "district": "BAHÇELİEVLER",
+      "neighborhood": "SİYAVUŞPAŞA MAH",
+      "lat": "41.0000",
+      "lng": "28.8600"
+    },
+    {
+      "district": "BAHÇELİEVLER",
+      "neighborhood": "SOĞANLI MAH",
+      "lat": "41.0050",
+      "lng": "28.8700"
+    },
+    {
+      "district": "BAHÇELİEVLER",
+      "neighborhood": "HÜRRİYET MAH",
+      "lat": "40.9980",
+      "lng": "28.8600"
+    },
+    {
+      "district": "BAHÇELİEVLER",
+      "neighborhood": "KOCASİNAN MERKEZ MAH",
+      "lat": "41.0100",
+      "lng": "28.8500"
+    },
+    {
+      "district": "BAHÇELİEVLER",
+      "neighborhood": "ŞİRİNEVLER MAH",
+      "lat": "40.9900",
+      "lng": "28.8600"
+    },
+    {
+      "district": "BAHÇELİEVLER",
+      "neighborhood": "ÇOBANÇEŞME MAH",
+      "lat": "40.9850",
+      "lng": "28.8500"
+    },
+    {
+      "district": "BAHÇELİEVLER",
+      "neighborhood": "FEVZİ ÇAKMAK MAH",
+      "lat": "40.9950",
+      "lng": "28.8700"
+    },
+    {
+      "district": "BAHÇELİEVLER",
+      "neighborhood": "YENİBOSNA MERKEZ MAH",
+      "lat": "40.9800",
+      "lng": "28.8400"
+    },
+    {
+      "district": "BAHÇELİEVLER",
+      "neighborhood": "ZAFER MAH",
+      "lat": "40.9900",
+      "lng": "28.8500"
+    },
+    
+
+      {
+        "district": "BAKIRKÖY",
+        "neighborhood": "YEŞİLKÖY MAH",
+        "lat": "40.9644",
+        "lng": "28.8220"
+      },
+      {
+        "district": "BAKIRKÖY",
+        "neighborhood": "YEŞİLKÖY SB MAH",
+        "lat": "40.9644",
+        "lng": "28.8220"
+      },
+      {
+        "district": "BAKIRKÖY",
+        "neighborhood": "YEŞİLYURT MAH",
+        "lat": "40.9690",
+        "lng": "28.8500"
+      },
+      {
+        "district": "BAKIRKÖY",
+        "neighborhood": "ZEYTİNLİK MAH",
+        "lat": "40.9760",
+        "lng": "28.8750"
+      },
+      {
+        "district": "BAKIRKÖY",
+        "neighborhood": "ZUHURATBABA MAH",
+        "lat": "40.9800",
+        "lng": "28.8800"
+      },
+      
+
+    {
+      "district": "BAYRAMPAŞA",
+      "neighborhood": "ALTINTEPSİ MAH",
+      "lat": "41.0333",
+      "lng": "28.9000"
+    },
+    {
+      "district": "BAYRAMPAŞA",
+      "neighborhood": "TERAZİDERE MAH",
+      "lat": "41.0400",
+      "lng": "28.9100"
+    },
+    {
+      "district": "BAYRAMPAŞA",
+      "neighborhood": "VATAN MAH",
+      "lat": "41.0280",
+      "lng": "28.9200"
+    },
+    {
+      "district": "BAYRAMPAŞA",
+      "neighborhood": "İSMET PAŞA MAH",
+      "lat": "41.0450",
+      "lng": "28.9050"
+    },
+    {
+      "district": "BAYRAMPAŞA",
+      "neighborhood": "KARTALTEPE MAH",
+      "lat": "41.0380",
+      "lng": "28.8950"
+    },
+    {
+      "district": "BAYRAMPAŞA",
+      "neighborhood": "MURATPAŞA MAH",
+      "lat": "41.0350",
+      "lng": "28.9100"
+    },
+    {
+      "district": "BAYRAMPAŞA",
+      "neighborhood": "ORTAMAHALLE MAH",
+      "lat": "41.0300",
+      "lng": "28.9050"
+    },
+    {
+      "district": "BAYRAMPAŞA",
+      "neighborhood": "YENİDOĞAN MAH",
+      "lat": "41.0250",
+      "lng": "28.9100"
+    },
+    {
+      "district": "BAYRAMPAŞA",
+      "neighborhood": "CEVATPAŞA MAH",
+      "lat": "41.0500",
+      "lng": "28.9000"
+    },
+    {
+      "district": "BAYRAMPAŞA",
+      "neighborhood": "KOCATEPE MAH",
+      "lat": "41.0517",
+      "lng": "28.8922"
+    },
+    {
+      "district": "BAYRAMPAŞA",
+      "neighborhood": "YILDIRIM MAH",
+      "lat": "41.0450",
+      "lng": "28.8900"
+    },
+
+      {
+        "district": "BAŞAKŞEHİR",
+        "neighborhood": "ALTINŞEHİR MAH",
+        "lat": "41.0931",
+        "lng": "28.8025"
+      },
+      {
+        "district": "BAŞAKŞEHİR",
+        "neighborhood": "GÜVERCİNTEPE MAH",
+        "lat": "41.1012",
+        "lng": "28.7856"
+      },
+      {
+        "district": "BAŞAKŞEHİR",
+        "neighborhood": "KAYABAŞI MAH",
+        "lat": "41.1103",
+        "lng": "28.8104"
+      },
+      {
+        "district": "BAŞAKŞEHİR",
+        "neighborhood": "ŞAHİNTEPE MAH",
+        "lat": "41.0867",
+        "lng": "28.7758"
+      },
+      {
+        "district": "BAŞAKŞEHİR",
+        "neighborhood": "BAHÇEŞEHİR 1. KISIM MAH",
+        "lat": "41.0765",
+        "lng": "28.6754"
+      },
+      {
+        "district": "BAŞAKŞEHİR",
+        "neighborhood": "BAHÇEŞEHİR 2. KISIM MAH",
+        "lat": "41.0700",
+        "lng": "28.6800"
+      },
+      {
+        "district": "BAŞAKŞEHİR",
+        "neighborhood": "BAŞAK MAH",
+        "lat": "41.0930",
+        "lng": "28.8100"
+      },
+      {
+        "district": "BAŞAKŞEHİR",
+        "neighborhood": "BAŞAKŞEHİR MAH",
+        "lat": "41.1120",
+        "lng": "28.8100"
+      },
+      {
+        "district": "BAŞAKŞEHİR",
+        "neighborhood": "İKİTELLİ OSB MAH",
+        "lat": "41.0800",
+        "lng": "28.8100"
+      },
+      {
+        "district": "BAŞAKŞEHİR",
+        "neighborhood": "ZİYA GÖKALP MAH",
+        "lat": "41.0700",
+        "lng": "28.8200"
+      },
+      {
+        "district": "BAŞAKŞEHİR",
+        "neighborhood": "ŞAMLAR MAH",
+        "lat": "41.1200",
+        "lng": "28.8000"
+      },
+
+    {
+      "district": "BEŞİKTAŞ",
+      "neighborhood": "ABBASAĞA MAH",
+      "lat": "41.0450",
+      "lng": "29.0100"
+    },
+    {
+      "district": "BEŞİKTAŞ",
+      "neighborhood": "CİHANNÜMA MAH",
+      "lat": "41.0430",
+      "lng": "29.0150"
+    },
+    {
+      "district": "BEŞİKTAŞ",
+      "neighborhood": "SİNANPAŞA MAH",
+      "lat": "41.0410",
+      "lng": "29.0080"
+    },
+    {
+      "district": "BEŞİKTAŞ",
+      "neighborhood": "AKAT MAH",
+      "lat": "41.0790",
+      "lng": "29.0200"
+    },
+    {
+      "district": "BEŞİKTAŞ",
+      "neighborhood": "ARNAVUTKÖY MAH",
+      "lat": "41.0670",
+      "lng": "29.0400"
+    },
+    {
+      "district": "BEŞİKTAŞ",
+      "neighborhood": "KURUÇEŞME MAH",
+      "lat": "41.0700",
+      "lng": "29.0450"
+    },
+    {
+      "district": "BEŞİKTAŞ",
+      "neighborhood": "BEBEK MAH",
+      "lat": "41.0781",
+      "lng": "29.0439"
+    },
+    {
+      "district": "BEŞİKTAŞ",
+      "neighborhood": "ETİLER MAH",
+      "lat": "41.0790",
+      "lng": "29.0300"
+    },
+    {
+      "district": "BEŞİKTAŞ",
+      "neighborhood": "BALMUMCU MAH",
+      "lat": "41.0600",
+      "lng": "29.0100"
+    },
+    {
+      "district": "BEŞİKTAŞ",
+      "neighborhood": "DİKİLİTAŞ MAH",
+      "lat": "41.0550",
+      "lng": "29.0150"
+    },
+    {
+      "district": "BEŞİKTAŞ",
+      "neighborhood": "GAYRETTEPE MAH",
+      "lat": "41.0600",
+      "lng": "29.0200"
+    },
+    {
+      "district": "BEŞİKTAŞ",
+      "neighborhood": "YILDIZ MAH",
+      "lat": "41.0450",
+      "lng": "29.0250"
+    },
+    {
+      "district": "BEŞİKTAŞ",
+      "neighborhood": "KÜLTÜR MAH",
+      "lat": "41.0500",
+      "lng": "29.0300"
+    },
+    {
+      "district": "BEŞİKTAŞ",
+      "neighborhood": "LEVAZIM MAH",
+      "lat": "41.0550",
+      "lng": "29.0350"
+    },
+    {
+      "district": "BEŞİKTAŞ",
+      "neighborhood": "NİSBETİYE MAH",
+      "lat": "41.0700",
+      "lng": "29.0250"
+    },
+    {
+      "district": "BEŞİKTAŞ",
+      "neighborhood": "ULUS MAH",
+      "lat": "41.0700",
+      "lng": "29.0500"
+    },
+    {
+      "district": "BEŞİKTAŞ",
+      "neighborhood": "KONAKLAR MAH",
+      "lat": "41.0800",
+      "lng": "29.0200"
+    },
+    {
+      "district": "BEŞİKTAŞ",
+      "neighborhood": "LEVENT MAH",
+      "lat": "41.0700",
+      "lng": "29.0300"
+    },
+    {
+      "district": "BEŞİKTAŞ",
+      "neighborhood": "MECİDİYE MAH",
+      "lat": "41.0450",
+      "lng": "29.0150"
+    },
+    {
+      "district": "BEŞİKTAŞ",
+      "neighborhood": "ORTAKÖY MAH",
+      "lat": "41.0500",
+      "lng": "29.0250"
+    },
+    {
+      "district": "BEŞİKTAŞ",
+      "neighborhood": "MURADİYE MAH",
+      "lat": "41.0400",
+      "lng": "29.0200"
+    },
+    {
+      "district": "BEŞİKTAŞ",
+      "neighborhood": "TÜRKALİ MAH",
+      "lat": "41.0450",
+      "lng": "29.0050"
+    },
+    {
+      "district": "BEŞİKTAŞ",
+      "neighborhood": "VİŞNEZADE MAH",
+      "lat": "41.0400",
+      "lng": "29.0000"
+    },
+
+      {
+        "district": "BEYKOZ",
+        "neighborhood": "ANADOLU HİSARI MAH",
+        "lat": "41.0836",
+        "lng": "29.0653"
+      },
+      {
+        "district": "BEYKOZ",
+        "neighborhood": "KANLICA MAH",
+        "lat": "41.0914",
+        "lng": "29.0639"
+      },
+      {
+        "district": "BEYKOZ",
+        "neighborhood": "KAVACIK MAH",
+        "lat": "41.0981",
+        "lng": "29.0889"
+      },
+      {
+        "district": "BEYKOZ",
+        "neighborhood": "GÜMÜŞSUYU MAH",
+        "lat": "41.1064",
+        "lng": "29.0911"
+      },
+      {
+        "district": "BEYKOZ",
+        "neighborhood": "MERKEZ MAH",
+        "lat": "41.1255",
+        "lng": "29.1053"
+      },
+      {
+        "district": "BEYKOZ",
+        "neighborhood": "YALIKÖY MAH",
+        "lat": "41.1301",
+        "lng": "29.1059"
+      },
+      {
+        "district": "BEYKOZ",
+        "neighborhood": "ÇUBUKLU MAH",
+        "lat": "41.1011",
+        "lng": "29.0867"
+      },
+      {
+        "district": "BEYKOZ",
+        "neighborhood": "RÜZGARLIBAHÇE MAH",
+        "lat": "41.1058",
+        "lng": "29.0975"
+      },
+      {
+        "district": "BEYKOZ",
+        "neighborhood": "GÖZTEPE MAH",
+        "lat": "41.1164",
+        "lng": "29.0994"
+      },
+      {
+        "district": "BEYKOZ",
+        "neighborhood": "PAŞABAHÇE MAH",
+        "lat": "41.1407",
+        "lng": "29.1078"
+      },
+      {
+        "district": "BEYKOZ",
+        "neighborhood": "ANADOLU KAVAĞI MAH",
+        "lat": "41.1786",
+        "lng": "29.0878"
+      },
+      {
+        "district": "BEYKOZ",
+        "neighborhood": "RİVA MAH",
+        "lat": "41.1990",
+        "lng": "29.2650"
+      },
+      {
+        "district": "BEYKOZ",
+        "neighborhood": "POLONEZKÖY MAH",
+        "lat": "41.1222",
+        "lng": "29.2469"
+      },
+      {
+        "district": "BEYKOZ",
+        "neighborhood": "ANADOLUFENERİ MAH",
+        "lat": "41.1869",
+        "lng": "29.1425"
+      },
+      
+      
+    {
+      "district": "BEYLİKDÜZÜ",
+      "neighborhood": "BARIŞ MAH",
+      "lat": "40.9820",
+      "lng": "28.6400"
+    },
+    {
+      "district": "BEYLİKDÜZÜ",
+      "neighborhood": "BÜYÜKŞEHİR MAH",
+      "lat": "40.9840",
+      "lng": "28.6450"
+    },
+    {
+      "district": "BEYLİKDÜZÜ",
+      "neighborhood": "CUMHURİYET MAH",
+      "lat": "40.9800",
+      "lng": "28.6500"
+    },
+    {
+      "district": "BEYLİKDÜZÜ",
+      "neighborhood": "KAVAKLI MAH",
+      "lat": "40.9700",
+      "lng": "28.6300"
+    },
+    {
+      "district": "BEYLİKDÜZÜ",
+      "neighborhood": "ADNAN KAHVECİ MAH",
+      "lat": "40.9900",
+      "lng": "28.6600"
+    },
+    {
+      "district": "BEYLİKDÜZÜ",
+      "neighborhood": "DEREAĞZI MAH",
+      "lat": "40.9750",
+      "lng": "28.6350"
+    },
+    {
+      "district": "BEYLİKDÜZÜ",
+      "neighborhood": "GÜRPINAR MAH",
+      "lat": "40.9600",
+      "lng": "28.6200"
+    },
+    {
+      "district": "BEYLİKDÜZÜ",
+      "neighborhood": "BEYLİKDÜZÜOSB MAH",
+      "lat": "40.9850",
+      "lng": "28.6500"
+    },
+    {
+      "district": "BEYLİKDÜZÜ",
+      "neighborhood": "MARMARA MAH",
+      "lat": "40.9700",
+      "lng": "28.6400"
+    },
+    {
+      "district": "BEYLİKDÜZÜ",
+      "neighborhood": "SAHİL MAH",
+      "lat": "40.9650",
+      "lng": "28.6250"
+    },
+    {
+      "district": "BEYLİKDÜZÜ",
+      "neighborhood": "YAKUPLU MAH",
+      "lat": "40.9500",
+      "lng": "28.6700"
+    },
+
+      {
+        "district": "BEYOĞLU",
+        "neighborhood": "ARAP CAMİ MAH",
+        "lat": "41.0247",
+        "lng": "28.9727"
+      },
+      {
+        "district": "BEYOĞLU",
+        "neighborhood": "CİHANGİR MAH",
+        "lat": "41.0298",
+        "lng": "28.9908"
+      },
+      {
+        "district": "BEYOĞLU",
+        "neighborhood": "FETİHTEPE MAH",
+        "lat": "41.0462",
+        "lng": "28.9529"
+      },
+      {
+        "district": "BEYOĞLU",
+        "neighborhood": "HALICIOĞLU MAH",
+        "lat": "41.0466",
+        "lng": "28.9449"
+      },
+      {
+        "district": "BEYOĞLU",
+        "neighborhood": "KAMER HATUN MAH",
+        "lat": "41.0360",
+        "lng": "28.9760"
+      },
+      {
+        "district": "BEYOĞLU",
+        "neighborhood": "TOMTOM MAH",
+        "lat": "41.0319",
+        "lng": "28.9807"
+      },
+      {
+        "district": "BEYOĞLU",
+        "neighborhood": "ŞEHİT MUHTAR MAH",
+        "lat": "41.0383",
+        "lng": "28.9848"
+      },
+      {
+        "district": "BEYOĞLU",
+        "neighborhood": "GÜMÜŞSUYU MAH",
+        "lat": "41.0354",
+        "lng": "28.9927"
+      },
+      {
+        "district": "BEYOĞLU",
+        "neighborhood": "TÜNEL MEYDANI",
+        "lat": "41.0296",
+        "lng": "28.9737"
+      },
+      {
+        "district": "BEYOĞLU",
+        "neighborhood": "İSTİKLAL CADDESİ",
+        "lat": "41.0319",
+        "lng": "28.9777"
+      },
+      
+    {
+      "district": "BÜYÜKÇEKMECE",
+      "neighborhood": "19 MAYIS MAH",
+      "lat": "41.0200",
+      "lng": "28.5800"
+    },
+    {
+      "district": "BÜYÜKÇEKMECE",
+      "neighborhood": "ALKENT 2000 MAH",
+      "lat": "41.0300",
+      "lng": "28.5500"
+    },
+    {
+      "district": "BÜYÜKÇEKMECE",
+      "neighborhood": "ATATÜRK MAH",
+      "lat": "41.0250",
+      "lng": "28.5600"
+    },
+    {
+      "district": "BÜYÜKÇEKMECE",
+      "neighborhood": "CUMHURİYET MAH",
+      "lat": "41.0150",
+      "lng": "28.5700"
+    },
+    {
+      "district": "BÜYÜKÇEKMECE",
+      "neighborhood": "ÇAKMAKLI MAH",
+      "lat": "41.0400",
+      "lng": "28.5900"
+    },
+    {
+      "district": "BÜYÜKÇEKMECE",
+      "neighborhood": "DİZDARİYE MAH",
+      "lat": "41.0100",
+      "lng": "28.5800"
+    },
+    {
+      "district": "BÜYÜKÇEKMECE",
+      "neighborhood": "FATİH MAH",
+      "lat": "41.0350",
+      "lng": "28.5700"
+    },
+    {
+      "district": "BÜYÜKÇEKMECE",
+      "neighborhood": "KARAAĞAÇ MAH",
+      "lat": "41.0500",
+      "lng": "28.6000"
+    },
+    {
+      "district": "BÜYÜKÇEKMECE",
+      "neighborhood": "PINARTEPE MAH",
+      "lat": "41.0200",
+      "lng": "28.5900"
+    },
+    {
+      "district": "BÜYÜKÇEKMECE",
+      "neighborhood": "CELALİYE MAH",
+      "lat": "41.0450",
+      "lng": "28.6200"
+    },
+    {
+      "district": "BÜYÜKÇEKMECE",
+      "neighborhood": "KAMİLOBA MAH",
+      "lat": "41.0467",
+      "lng": "28.4356"
+    },
+    {
+      "district": "BÜYÜKÇEKMECE",
+      "neighborhood": "BAHÇELİEVLER MAH",
+      "lat": "41.0150",
+      "lng": "28.5800"
+    },
+    {
+      "district": "BÜYÜKÇEKMECE",
+      "neighborhood": "GÜZELCE MAH",
+      "lat": "41.0006",
+      "lng": "28.5117"
+    },
+    {
+      "district": "BÜYÜKÇEKMECE",
+      "neighborhood": "KUMBURGAZ MAH",
+      "lat": "41.0211",
+      "lng": "28.4772"
+    },
+    {
+      "district": "BÜYÜKÇEKMECE",
+      "neighborhood": "YENİMAHALLE MAH",
+      "lat": "41.0300",
+      "lng": "28.5800"
+    },
+    {
+      "district": "BÜYÜKÇEKMECE",
+      "neighborhood": "EKİNOBA MAH",
+      "lat": "41.0250",
+      "lng": "28.5900"
+    },
+    {
+      "district": "BÜYÜKÇEKMECE",
+      "neighborhood": "MİMAR SİNAN MERKEZ MAH",
+      "lat": "41.0400",
+      "lng": "28.5500"
+    },
+    {
+      "district": "BÜYÜKÇEKMECE",
+      "neighborhood": "MİMAROBA MAH",
+      "lat": "41.0048",
+      "lng": "28.5357"
+    },
+    {
+      "district": "BÜYÜKÇEKMECE",
+      "neighborhood": "MURAT ÇEŞME MAH",
+      "lat": "41.0350",
+      "lng": "28.5600"
+    },
+    {
+      "district": "BÜYÜKÇEKMECE",
+      "neighborhood": "SİNANOBA MAH",
+      "lat": "41.0100",
+      "lng": "28.5400"
+    },
+    {
+      "district": "BÜYÜKÇEKMECE",
+      "neighborhood": "AHMEDİYE MAH",
+      "lat": "41.0920",
+      "lng": "28.5157"
+    },
+    {
+      "district": "BÜYÜKÇEKMECE",
+      "neighborhood": "HÜRRİYET MAH",
+      "lat": "41.0200",
+      "lng": "28.5700"
+    },
+    {
+      "district": "BÜYÜKÇEKMECE",
+      "neighborhood": "TÜRKOBA MAH",
+      "lat": "41.0336",
+      "lng": "28.5236"
+    },
+    {
+      "district": "BÜYÜKÇEKMECE",
+      "neighborhood": "ULUS MAH",
+      "lat": "41.0250",
+      "lng": "28.5800"
+    },
+
+      {
+        "district": "ÇATALCA",
+        "neighborhood": "AKALAN MAH",
+        "lat": "41.1806",
+        "lng": "28.4943"
+      },
+      {
+        "district": "ÇATALCA",
+        "neighborhood": "ATATÜRK MAH",
+        "lat": "41.1443",
+        "lng": "28.4587"
+      },
+      {
+        "district": "ÇATALCA",
+        "neighborhood": "ÇANAKÇA MAH",
+        "lat": "41.1567",
+        "lng": "28.4198"
+      },
+      {
+        "district": "ÇATALCA",
+        "neighborhood": "İHSANİYE MAH",
+        "lat": "41.2100",
+        "lng": "28.4267"
+      },
+      {
+        "district": "ÇATALCA",
+        "neighborhood": "KABAKÇA MAH",
+        "lat": "41.1571",
+        "lng": "28.4931"
+      },
+      {
+        "district": "ÇATALCA",
+        "neighborhood": "KARACAKÖY MERKEZ MAH",
+        "lat": "41.3069",
+        "lng": "28.3796"
+      },
+      {
+        "district": "ÇATALCA",
+        "neighborhood": "SUBAŞI MAH",
+        "lat": "41.1359",
+        "lng": "28.4737"
+      },
+      {
+        "district": "ÇATALCA",
+        "neighborhood": "YALIKÖY MAH",
+        "lat": "41.3722",
+        "lng": "28.4067"
+      },
+      {
+        "district": "ÇATALCA",
+        "neighborhood": "OVAYENİCE MAH",
+        "lat": "41.1464",
+        "lng": "28.3549"
+      },
+      {
+        "district": "ÇATALCA",
+        "neighborhood": "FERHATPAŞA MAH",
+        "lat": "41.1392",
+        "lng": "28.4597"
+      },
+
+      
+      
+    {
+      "district": "ÇEKMEKÖY",
+      "neighborhood": "ALEMDAĞ MAH",
+      "lat": "41.0467",
+      "lng": "29.2761"
+    },
+    {
+      "district": "ÇEKMEKÖY",
+      "neighborhood": "ÇATALMEŞE MAH",
+      "lat": "41.0489",
+      "lng": "29.2225"
+    },
+    {
+      "district": "ÇEKMEKÖY",
+      "neighborhood": "EKŞİOĞLU MAH",
+      "lat": "41.0300",
+      "lng": "29.2100"
+    },
+    {
+      "district": "ÇEKMEKÖY",
+      "neighborhood": "NİŞANTEPE MAH",
+      "lat": "41.0600",
+      "lng": "29.2500"
+    },
+    {
+      "district": "ÇEKMEKÖY",
+      "neighborhood": "ÇAMLIK MAH",
+      "lat": "41.0400",
+      "lng": "29.2200"
+    },
+    {
+      "district": "ÇEKMEKÖY",
+      "neighborhood": "HAMİDİYE MAH",
+      "lat": "41.0500",
+      "lng": "29.2300"
+    },
+    {
+      "district": "ÇEKMEKÖY",
+      "neighborhood": "MEHMET AKİF MAH",
+      "lat": "41.0350",
+      "lng": "29.2400"
+    },
+    {
+      "district": "ÇEKMEKÖY",
+      "neighborhood": "MERKEZ MAH",
+      "lat": "41.0450",
+      "lng": "29.2500"
+    },
+    {
+      "district": "ÇEKMEKÖY",
+      "neighborhood": "MİMAR SİNAN MAH",
+      "lat": "41.0550",
+      "lng": "29.2600"
+    },
+    {
+      "district": "ÇEKMEKÖY",
+      "neighborhood": "HÜSEYİNLİ MAH",
+      "lat": "41.1206",
+      "lng": "29.2952"
+    },
+    {
+      "district": "ÇEKMEKÖY",
+      "neighborhood": "KOÇULLU MAH",
+      "lat": "41.0790",
+      "lng": "29.3475"
+    },
+    {
+      "district": "ÇEKMEKÖY",
+      "neighborhood": "ÖMERLİ MAH",
+      "lat": "41.0789",
+      "lng": "29.3333"
+    },
+    {
+      "district": "ÇEKMEKÖY",
+      "neighborhood": "REŞADİYE MAH",
+      "lat": "41.1000",
+      "lng": "29.3500"
+    },
+    {
+      "district": "ÇEKMEKÖY",
+      "neighborhood": "SIRAPINAR MAH",
+      "lat": "41.1019",
+      "lng": "29.3255"
+    },
+    {
+      "district": "ÇEKMEKÖY",
+      "neighborhood": "AYDINLAR MAH",
+      "lat": "41.0300",
+      "lng": "29.2700"
+    },
+    {
+      "district": "ÇEKMEKÖY",
+      "neighborhood": "CUMHURİYET MAH",
+      "lat": "41.0400",
+      "lng": "29.2800"
+    },
+    {
+      "district": "ÇEKMEKÖY",
+      "neighborhood": "GÜNGÖREN MAH",
+      "lat": "41.0500",
+      "lng": "29.2900"
+    },
+    {
+      "district": "ÇEKMEKÖY",
+      "neighborhood": "KİRAZLIDERE MAH",
+      "lat": "41.0600",
+      "lng": "29.3000"
+    },
+    {
+      "district": "ÇEKMEKÖY",
+      "neighborhood": "SOĞUKPINAR MAH",
+      "lat": "41.0700",
+      "lng": "29.3100"
+    },
+    {
+      "district": "ÇEKMEKÖY",
+      "neighborhood": "SULTANÇİFTLİĞİ MAH",
+      "lat": "41.0800",
+      "lng": "29.3200"
+    },
+    {
+      "district": "ÇEKMEKÖY",
+      "neighborhood": "TAŞDELEN MAH",
+      "lat": "41.0900",
+      "lng": "29.3300"
+    },
+  
+    {
+      "district": "ESENLER",
+      "neighborhood": "BİRLİK MAH",
+      "lat": "41.0570",
+      "lng": "28.8890"
+    },
+    {
+      "district": "ESENLER",
+      "neighborhood": "HAVAALANI MAH",
+      "lat": "41.0480",
+      "lng": "28.8680"
+    },
+    {
+      "district": "ESENLER",
+      "neighborhood": "KEMER MAH",
+      "lat": "41.0400",
+      "lng": "28.8800"
+    },
+    {
+      "district": "ESENLER",
+      "neighborhood": "ÇİFTE HAVUZLAR MAH",
+      "lat": "41.0450",
+      "lng": "28.8700"
+    },
+    {
+      "district": "ESENLER",
+      "neighborhood": "DAVUTPAŞA MAH",
+      "lat": "41.0350",
+      "lng": "28.9000"
+    },
+    {
+      "district": "ESENLER",
+      "neighborhood": "FEVZİ ÇAKMAK MAH",
+      "lat": "41.0500",
+      "lng": "28.8900"
+    },
+    {
+      "district": "ESENLER",
+      "neighborhood": "MİMAR SİNAN MAH",
+      "lat": "41.0600",
+      "lng": "28.8800"
+    },
+    {
+      "district": "ESENLER",
+      "neighborhood": "NAMIK KEMAL MAH",
+      "lat": "41.0550",
+      "lng": "28.8700"
+    },
+    {
+      "district": "ESENLER",
+      "neighborhood": "NİNE HATUN MAH",
+      "lat": "41.0450",
+      "lng": "28.8600"
+    },
+    {
+      "district": "ESENLER",
+      "neighborhood": "YAVUZ SELİM MAH",
+      "lat": "41.0400",
+      "lng": "28.8500"
+    },
+    {
+      "district": "ESENLER",
+      "neighborhood": "FATİH MAH",
+      "lat": "41.0350",
+      "lng": "28.8400"
+    },
+    {
+      "district": "ESENLER",
+      "neighborhood": "KAZIM KARABEKİR MAH",
+      "lat": "41.0300",
+      "lng": "28.8300"
+    },
+    {
+      "district": "ESENLER",
+      "neighborhood": "MENDERES MAH",
+      "lat": "41.0250",
+      "lng": "28.8200"
+    },
+    {
+      "district": "ESENLER",
+      "neighborhood": "TUNA MAH",
+      "lat": "41.0200",
+      "lng": "28.8100"
+    },
+    {
+      "district": "ESENLER",
+      "neighborhood": "ORUÇREİS MAH",
+      "lat": "41.0150",
+      "lng": "28.8000"
+    },
+    {
+      "district": "ESENLER",
+      "neighborhood": "TURGUT REİS MAH",
+      "lat": "41.0100",
+      "lng": "28.7900"
+    },
+    
+
+      {
+        "district": "ESENYURT",
+        "neighborhood": "BAĞLARÇEŞME MAH",
+        "lat": "41.0331",
+        "lng": "28.6756"
+      },
+      {
+        "district": "ESENYURT",
+        "neighborhood": "ÇINAR MAH",
+        "lat": "41.0401",
+        "lng": "28.6653"
+      },
+      {
+        "district": "ESENYURT",
+        "neighborhood": "ÖRNEK MAH",
+        "lat": "41.0315",
+        "lng": "28.6820"
+      },
+      {
+        "district": "ESENYURT",
+        "neighborhood": "PINAR MAH",
+        "lat": "41.0285",
+        "lng": "28.6669"
+      },
+      {
+        "district": "ESENYURT",
+        "neighborhood": "SELAHADDİN EYYUBİ MAH",
+        "lat": "41.0310",
+        "lng": "28.6895"
+      },
+      {
+        "district": "ESENYURT",
+        "neighborhood": "AKŞEMSEDDİN MAH",
+        "lat": "41.0345",
+        "lng": "28.6980"
+      },
+      {
+        "district": "ESENYURT",
+        "neighborhood": "ARDIÇLI MAH",
+        "lat": "41.0430",
+        "lng": "28.6505"
+      },
+      {
+        "district": "ESENYURT",
+        "neighborhood": "AŞIK VEYSEL MAH",
+        "lat": "41.0280",
+        "lng": "28.7050"
+      },
+      {
+        "district": "ESENYURT",
+        "neighborhood": "BALIKYOLU MAH",
+        "lat": "41.0350",
+        "lng": "28.6785"
+      },
+      {
+        "district": "ESENYURT",
+        "neighborhood": "ESENKENT MAH",
+        "lat": "41.0467",
+        "lng": "28.6717"
+      },
+      {
+        "district": "ESENYURT",
+        "neighborhood": "İNCİRTEPE MAH",
+        "lat": "41.0389",
+        "lng": "28.6826"
+      },
+      {
+        "district": "ESENYURT",
+        "neighborhood": "İNÖNÜ MAH",
+        "lat": "41.0325",
+        "lng": "28.6930"
+      },
+      {
+        "district": "ESENYURT",
+        "neighborhood": "SULTANİYE MAH",
+        "lat": "41.0365",
+        "lng": "28.6675"
+      },
+      {
+        "district": "ESENYURT",
+        "neighborhood": "SÜLEYMANİYE MAH",
+        "lat": "41.0407",
+        "lng": "28.6553"
+      },
+      {
+        "district": "ESENYURT",
+        "neighborhood": "YENİKENT MAH",
+        "lat": "41.0300",
+        "lng": "28.6735"
+      },
+      {
+        "district": "ESENYURT",
+        "neighborhood": "YUNUS EMRE MAH",
+        "lat": "41.0270",
+        "lng": "28.6810"
+      },
+      {
+        "district": "ESENYURT",
+        "neighborhood": "AKÇABURGAZ MAH",
+        "lat": "41.0510",
+        "lng": "28.6710"
+      },
+      {
+        "district": "ESENYURT",
+        "neighborhood": "ATATÜRK MAH",
+        "lat": "41.0240",
+        "lng": "28.6900"
+      },
+      {
+        "district": "ESENYURT",
+        "neighborhood": "GÖKEVLER MAH",
+        "lat": "41.0435",
+        "lng": "28.6550"
+      },
+      {
+        "district": "ESENYURT",
+        "neighborhood": "CUMHURİYET MAH",
+        "lat": "41.0285",
+        "lng": "28.6985"
+      },
+      {
+        "district": "ESENYURT",
+        "neighborhood": "GÜZELYURT MAH",
+        "lat": "41.0390",
+        "lng": "28.6480"
+      },
+      {
+        "district": "ESENYURT",
+        "neighborhood": "NAMIK KEMAL MAH",
+        "lat": "41.0320",
+        "lng": "28.6700"
+      },
+      {
+        "district": "ESENYURT",
+        "neighborhood": "ZAFER MAH",
+        "lat": "41.0470",
+        "lng": "28.6600"
+      },
+  
+    {
+      "district": "EYÜP",
+      "neighborhood": "ALİBEYKÖY MAH",
+      "lat": "41.0725",
+      "lng": "28.9333"
+    },
+    {
+      "district": "EYÜP",
+      "neighborhood": "EMNİYETTEPE MAH",
+      "lat": "41.0650",
+      "lng": "28.9500"
+    },
+    {
+      "district": "EYÜP",
+      "neighborhood": "GÜZELTEPE MAH",
+      "lat": "41.0700",
+      "lng": "28.9600"
+    },
+    {
+      "district": "EYÜP",
+      "neighborhood": "AKŞEMSETTİN MAH",
+      "lat": "41.0450",
+      "lng": "28.9200"
+    },
+    {
+      "district": "EYÜP",
+      "neighborhood": "ÇIRÇIR MAH",
+      "lat": "41.0600",
+      "lng": "28.9400"
+    },
+    {
+      "district": "EYÜP",
+      "neighborhood": "DEFTERDAR MAH",
+      "lat": "41.0400",
+      "lng": "28.9300"
+    },
+    {
+      "district": "EYÜP",
+      "neighborhood": "İSLAMBEY MAH",
+      "lat": "41.0500",
+      "lng": "28.9400"
+    },
+    {
+      "district": "EYÜP",
+      "neighborhood": "MERKEZ MAH",
+      "lat": "41.0450",
+      "lng": "28.9350"
+    },
+    {
+      "district": "EYÜP",
+      "neighborhood": "NİŞANCI MAH",
+      "lat": "41.0480",
+      "lng": "28.9370"
+    },
+    {
+      "district": "EYÜP",
+      "neighborhood": "SAKARYA MAH",
+      "lat": "41.0550",
+      "lng": "28.9450"
+    },
+    {
+      "district": "EYÜP",
+      "neighborhood": "SİLAHTARAĞA MAH",
+      "lat": "41.0400",
+      "lng": "28.9500"
+    },
+    {
+      "district": "EYÜP",
+      "neighborhood": "GÖKTÜRK MERKEZ MAH",
+      "lat": "41.1850",
+      "lng": "28.9000"
+    },
+    {
+      "district": "EYÜP",
+      "neighborhood": "AĞAÇLI MAH",
+      "lat": "41.2500",
+      "lng": "28.8500"
+    },
+    {
+      "district": "EYÜP",
+      "neighborhood": "AKPINAR MAH",
+      "lat": "41.2600",
+      "lng": "28.8700"
+    },
+    {
+      "district": "EYÜP",
+      "neighborhood": "ÇİFTALAN MAH",
+      "lat": "41.2400",
+      "lng": "28.8800"
+    },
+    {
+      "district": "EYÜP",
+      "neighborhood": "IŞIKLAR MAH",
+      "lat": "41.2300",
+      "lng": "28.8600"
+    },
+    {
+      "district": "EYÜP",
+      "neighborhood": "İHSANİYE MAH",
+      "lat": "41.2200",
+      "lng": "28.8400"
+    },
+    {
+      "district": "EYÜP",
+      "neighborhood": "ODAYERİ MAH",
+      "lat": "41.2100",
+      "lng": "28.8300"
+    },
+    {
+      "district": "EYÜP",
+      "neighborhood": "PİRİNÇÇİ MAH",
+      "lat": "41.2000",
+      "lng": "28.8200"
+    },
+    {
+      "district": "EYÜP",
+      "neighborhood": "MİMAR SİNAN MAH",
+      "lat": "41.0600",
+      "lng": "28.9300"
+    },
+    {
+      "district": "EYÜP",
+      "neighborhood": "MİTHATPAŞA MAH",
+      "lat": "41.0550",
+      "lng": "28.9200"
+    },
+    {
+      "district": "EYÜP",
+      "neighborhood": "DÜĞMECİLER MAH",
+      "lat": "41.0500",
+      "lng": "28.9100"
+    },
+    {
+      "district": "EYÜP",
+      "neighborhood": "RAMİ CUMA MAH",
+      "lat": "41.0450",
+      "lng": "28.9000"
+    },
+    {
+      "district": "EYÜP",
+      "neighborhood": "RAMİ YENİ MAH",
+      "lat": "41.0400",
+      "lng": "28.8900"
+    },
+    {
+      "district": "EYÜP",
+      "neighborhood": "TOPÇULAR MAH",
+      "lat": "41.0350",
+      "lng": "28.8800"
+    },
+    {
+      "district": "EYÜP",
+      "neighborhood": "ESENTEPE MAH",
+      "lat": "41.0300",
+      "lng": "28.8700"
+    },
+    {
+      "district": "EYÜP",
+      "neighborhood": "KARADOLAP MAH",
+      "lat": "41.0250",
+      "lng": "28.8600"
+    },
+    {
+      "district": "EYÜP",
+      "neighborhood": "YEŞİLPINAR MAH",
+      "lat": "41.0200",
+      "lng": "28.8500"
+    },
+    
+
+      {
+        "district": "FATİH",
+        "neighborhood": "AKSARAY MAH",
+        "lat": "41.0106",
+        "lng": "28.9489"
+      },
+      {
+        "district": "FATİH",
+        "neighborhood": "BALAT MAH",
+        "lat": "41.0335",
+        "lng": "28.9486"
+      },
+      {
+        "district": "FATİH",
+        "neighborhood": "EMİN SİNAN MAH",
+        "lat": "41.0079",
+        "lng": "28.9705"
+      },
+      {
+        "district": "FATİH",
+        "neighborhood": "SULTAN AHMET MAH",
+        "lat": "41.0054",
+        "lng": "28.9760"
+      },
+      {
+        "district": "FATİH",
+        "neighborhood": "CANKURTARAN MAH",
+        "lat": "41.0030",
+        "lng": "28.9816"
+      },
+      {
+        "district": "FATİH",
+        "neighborhood": "BEYAZIT MAH",
+        "lat": "41.0108",
+        "lng": "28.9653"
+      },
+      {
+        "district": "FATİH",
+        "neighborhood": "ZEYREK MAH",
+        "lat": "41.0185",
+        "lng": "28.9601"
+      },
+      {
+        "district": "FATİH",
+        "neighborhood": "CİBALİ MAH",
+        "lat": "41.0245",
+        "lng": "28.9543"
+      },
+      {
+        "district": "FATİH",
+        "neighborhood": "AYVANSARAY MAH",
+        "lat": "41.0340",
+        "lng": "28.9395"
+      },
+      {
+        "district": "FATİH",
+        "neighborhood": "SÜLEYMANİYE MAH",
+        "lat": "41.0158",
+        "lng": "28.9636"
+      },
+      {
+        "district": "FATİH",
+        "neighborhood": "YEDİKULE MAH",
+        "lat": "40.9986",
+        "lng": "28.9222"
+      },
+      {
+        "district": "FATİH",
+        "neighborhood": "HOCA GIYASETTİN MAH",
+        "lat": "41.0174",
+        "lng": "28.9685"
+      },
+      {
+        "district": "FATİH",
+        "neighborhood": "KOCA MUSTAFAPAŞA MAH",
+        "lat": "41.0044",
+        "lng": "28.9266"
+      },
+      {
+        "district": "FATİH",
+        "neighborhood": "TOPKAPI MAH",
+        "lat": "41.0215",
+        "lng": "28.9295"
+      },
+      {
+        "district": "FATİH",
+        "neighborhood": "HIRKA-İ ŞERİF MAH",
+        "lat": "41.0193",
+        "lng": "28.9398"
+      },
+  
+    {
+      "district": "GAZİOSMANPAŞA",
+      "neighborhood": "BAĞLARBAŞI MAH",
+      "lat": "41.0611",
+      "lng": "28.9122"
+    },
+    {
+      "district": "GAZİOSMANPAŞA",
+      "neighborhood": "MERKEZ MAH",
+      "lat": "41.0765",
+      "lng": "28.9128"
+    },
+    {
+      "district": "GAZİOSMANPAŞA",
+      "neighborhood": "SARIGÖL MAH",
+      "lat": "41.0700",
+      "lng": "28.9200"
+    },
+    {
+      "district": "GAZİOSMANPAŞA",
+      "neighborhood": "BARBAROS HAYRETTİN PAŞA MAH",
+      "lat": "41.0650",
+      "lng": "28.9000"
+    },
+    {
+      "district": "GAZİOSMANPAŞA",
+      "neighborhood": "HÜRRİYET MAH",
+      "lat": "41.0680",
+      "lng": "28.9100"
+    },
+    {
+      "district": "GAZİOSMANPAŞA",
+      "neighborhood": "KARADENİZ MAH",
+      "lat": "41.0700",
+      "lng": "28.9200"
+    },
+    {
+      "district": "GAZİOSMANPAŞA",
+      "neighborhood": "ŞEMSİPAŞA MAH",
+      "lat": "41.0750",
+      "lng": "28.9150"
+    },
+    {
+      "district": "GAZİOSMANPAŞA",
+      "neighborhood": "YENİ MAHALLE MAH",
+      "lat": "41.0800",
+      "lng": "28.9100"
+    },
+    {
+      "district": "GAZİOSMANPAŞA",
+      "neighborhood": "FEVZİ ÇAKMAK MAH",
+      "lat": "41.0850",
+      "lng": "28.9050"
+    },
+    {
+      "district": "GAZİOSMANPAŞA",
+      "neighborhood": "KARAYOLLARI MAH",
+      "lat": "41.0900",
+      "lng": "28.9000"
+    },
+    {
+      "district": "GAZİOSMANPAŞA",
+      "neighborhood": "KAZIM KARABEKİR MAH",
+      "lat": "41.0950",
+      "lng": "28.8950"
+    },
+    {
+      "district": "GAZİOSMANPAŞA",
+      "neighborhood": "MEVLANA MAH",
+      "lat": "41.1000",
+      "lng": "28.8900"
+    },
+    {
+      "district": "GAZİOSMANPAŞA",
+      "neighborhood": "KARLITEPE MAH",
+      "lat": "41.1050",
+      "lng": "28.8850"
+    },
+    {
+      "district": "GAZİOSMANPAŞA",
+      "neighborhood": "PAZARİÇİ MAH",
+      "lat": "41.1100",
+      "lng": "28.8800"
+    },
+    {
+      "district": "GAZİOSMANPAŞA",
+      "neighborhood": "YENİDOĞAN MAH",
+      "lat": "41.1150",
+      "lng": "28.8750"
+    },
+    {
+      "district": "GAZİOSMANPAŞA",
+      "neighborhood": "YILDIZTABYA MAH",
+      "lat": "41.1200",
+      "lng": "28.8700"
+    },
+    
+      {
+        "district": "GÜNGÖREN",
+        "neighborhood": "AKINCILAR MAH",
+        "lat": "41.0210",
+        "lng": "28.8700"
+      },
+      {
+        "district": "GÜNGÖREN",
+        "neighborhood": "GÜVEN MAH",
+        "lat": "41.0150",
+        "lng": "28.8650"
+      },
+      {
+        "district": "GÜNGÖREN",
+        "neighborhood": "HAZNEDAR MAH",
+        "lat": "41.0100",
+        "lng": "28.8800"
+      },
+      {
+        "district": "GÜNGÖREN",
+        "neighborhood": "MAREŞAL ÇAKMAK MAH",
+        "lat": "41.0250",
+        "lng": "28.8750"
+      },
+      {
+        "district": "GÜNGÖREN",
+        "neighborhood": "GÜNEŞTEPE MAH",
+        "lat": "41.0300",
+        "lng": "28.8700"
+      },
+      {
+        "district": "GÜNGÖREN",
+        "neighborhood": "MERKEZ MAH",
+        "lat": "41.0224",
+        "lng": "28.8723"
+      },
+      {
+        "district": "GÜNGÖREN",
+        "neighborhood": "GENÇOSMAN MAH",
+        "lat": "41.0350",
+        "lng": "28.8800"
+      },
+      {
+        "district": "GÜNGÖREN",
+        "neighborhood": "SANAYİ MAH",
+        "lat": "41.0400",
+        "lng": "28.8700"
+      },
+      {
+        "district": "GÜNGÖREN",
+        "neighborhood": "ABDURRAHMAN NAFİZ GÜRMAN MAH",
+        "lat": "41.0150",
+        "lng": "28.8600"
+      },
+      {
+        "district": "GÜNGÖREN",
+        "neighborhood": "MEHMET NESİH ÖZMEN MAH",
+        "lat": "41.0100",
+        "lng": "28.8700"
+      },
+      {
+        "district": "GÜNGÖREN",
+        "neighborhood": "TOZKOPARAN MAH",
+        "lat": "41.0050",
+        "lng": "28.8650"
+      },
+
+    {
+      "district": "KAĞITHANE",
+      "neighborhood": "ÇAĞLAYAN MAH",
+      "lat": "41.0650",
+      "lng": "28.9500"
+    },
+    {
+      "district": "KAĞITHANE",
+      "neighborhood": "HÜRRİYET MAH",
+      "lat": "41.0700",
+      "lng": "28.9600"
+    },
+    {
+      "district": "KAĞITHANE",
+      "neighborhood": "ÇELİKTEPE MAH",
+      "lat": "41.0800",
+      "lng": "28.9700"
+    },
+    {
+      "district": "KAĞITHANE",
+      "neighborhood": "ORTABAYIR MAH",
+      "lat": "41.0750",
+      "lng": "28.9650"
+    },
+    {
+      "district": "KAĞITHANE",
+      "neighborhood": "GÜLTEPE MAH",
+      "lat": "41.0780",
+      "lng": "28.9680"
+    },
+    {
+      "district": "KAĞITHANE",
+      "neighborhood": "HARMANTEPE MAH",
+      "lat": "41.0680",
+      "lng": "28.9550"
+    },
+    {
+      "district": "KAĞITHANE",
+      "neighborhood": "TELSİZLER MAH",
+      "lat": "41.0720",
+      "lng": "28.9600"
+    },
+    {
+      "district": "KAĞITHANE",
+      "neighborhood": "YAHYA KEMAL MAH",
+      "lat": "41.0850",
+      "lng": "28.9750"
+    },
+    {
+      "district": "KAĞITHANE",
+      "neighborhood": "GÜRSEL MAH",
+      "lat": "41.0600",
+      "lng": "28.9450"
+    },
+    {
+      "district": "KAĞITHANE",
+      "neighborhood": "MEHMET AKİF ERSOY MAH",
+      "lat": "41.0700",
+      "lng": "28.9500"
+    },
+    {
+      "district": "KAĞITHANE",
+      "neighborhood": "TALATPAŞA MAH",
+      "lat": "41.0650",
+      "lng": "28.9600"
+    },
+    {
+      "district": "KAĞITHANE",
+      "neighborhood": "HAMİDİYE MAH",
+      "lat": "41.0750",
+      "lng": "28.9700"
+    },
+    {
+      "district": "KAĞITHANE",
+      "neighborhood": "MERKEZ MAH",
+      "lat": "41.0680",
+      "lng": "28.9600"
+    },
+    {
+      "district": "KAĞITHANE",
+      "neighborhood": "NURTEPE MAH",
+      "lat": "41.0800",
+      "lng": "28.9800"
+    },
+    {
+      "district": "KAĞITHANE",
+      "neighborhood": "SEYRANTEPE MAH",
+      "lat": "41.0850",
+      "lng": "28.9900"
+    },
+    {
+      "district": "KAĞITHANE",
+      "neighborhood": "YEŞİLCE MAH",
+      "lat": "41.0700",
+      "lng": "28.9700"
+    },
+    {
+      "district": "KAĞITHANE",
+      "neighborhood": "EMNİYET EVLERİ MAH",
+      "lat": "41.0750",
+      "lng": "28.9650"
+    },
+    {
+      "district": "KAĞITHANE",
+      "neighborhood": "SULTAN SELİM MAH",
+      "lat": "41.0800",
+      "lng": "28.9700"
+    },
+    {
+      "district": "KAĞITHANE",
+      "neighborhood": "ŞİRİNTEPE MAH",
+      "lat": "41.0850",
+      "lng": "28.9750"
+    },
+
+    {
+        "district": "KARTAL",
+        "neighborhood": "ATALAR MAH",
+        "lat": "40.8990",
+        "lng": "29.1830"
+    },
+    {
+        "district": "KARTAL",
+        "neighborhood": "PETROL İŞ MAH",
+        "lat": "40.9050",
+        "lng": "29.1940"
+    },
+    {
+        "district": "KARTAL",
+        "neighborhood": "ESENTEPE MAH",
+        "lat": "40.9060",
+        "lng": "29.1950"
+    },
+    {
+        "district": "KARTAL",
+        "neighborhood": "KARLIKTEPE MAH",
+        "lat": "40.9070",
+        "lng": "29.1960"
+    },
+    {
+        "district": "KARTAL",
+        "neighborhood": "KORDONBOYU MAH",
+        "lat": "40.9080",
+        "lng": "29.1970"
+    },
+    {
+        "district": "KARTAL",
+        "neighborhood": "YUKARI MAH",
+        "lat": "40.9090",
+        "lng": "29.1980"
+    },
+    {
+        "district": "KARTAL",
+        "neighborhood": "CEVİZLİ MAH",
+        "lat": "40.9100",
+        "lng": "29.1990"
+    },
+    {
+        "district": "KARTAL",
+        "neighborhood": "ORHANTEPE MAH",
+        "lat": "40.9110",
+        "lng": "29.2000"
+    },
+    {
+        "district": "KARTAL",
+        "neighborhood": "GÜMÜŞPINAR MAH",
+        "lat": "40.9120",
+        "lng": "29.2010"
+    },
+    {
+        "district": "KARTAL",
+        "neighborhood": "ORTA MAH",
+        "lat": "40.9130",
+        "lng": "29.2020"
+    },
+    {
+        "district": "KARTAL",
+        "neighborhood": "SOĞANLIK YENİ MAH",
+        "lat": "40.9140",
+        "lng": "29.2030"
+    },
+    {
+        "district": "KARTAL",
+        "neighborhood": "ÇAVUŞOĞLU MAH",
+        "lat": "40.9150",
+        "lng": "29.2040"
+    },
+    {
+        "district": "KARTAL",
+        "neighborhood": "TOPSELVİ MAH",
+        "lat": "40.9160",
+        "lng": "29.2050"
+    },
+    {
+        "district": "KARTAL",
+        "neighborhood": "YALI MAH",
+        "lat": "40.9170",
+        "lng": "29.2060"
+    },
+    {
+        "district": "KARTAL",
+        "neighborhood": "YUNUS MAH",
+        "lat": "40.9180",
+        "lng": "29.2070"
+    },
+    {
+        "district": "KARTAL",
+        "neighborhood": "UĞUR MUMCU MAH",
+        "lat": "40.9190",
+        "lng": "29.2080"
+    },
+    {
+        "district": "KARTAL",
+        "neighborhood": "YAKACIK YENİ MAH",
+        "lat": "40.9200",
+        "lng": "29.2090"
+    },
+    {
+        "district": "KARTAL",
+        "neighborhood": "CUMHURİYET MAH",
+        "lat": "40.9210",
+        "lng": "29.2100"
+    },
+    {
+        "district": "KARTAL",
+        "neighborhood": "HÜRRİYET MAH",
+        "lat": "40.9220",
+        "lng": "29.2110"
+    },
+    {
+        "district": "KARTAL",
+        "neighborhood": "YAKACIK ÇARŞI MAH",
+        "lat": "40.9230",
+        "lng": "29.2120"
+    },
+      {
+        "district": "KÜÇÜKÇEKMECE",
+        "neighborhood": "ATAKENT MAH",
+        "lat": "41.0650",
+        "lng": "28.7930"
+      },
+      {
+        "district": "KÜÇÜKÇEKMECE",
+        "neighborhood": "ATATÜRK MAH",
+        "lat": "41.0520",
+        "lng": "28.7915"
+      },
+      {
+        "district": "KÜÇÜKÇEKMECE",
+        "neighborhood": "KÜÇÜKÇEKMECE İKİTELLİOSB MAH",
+        "lat": "41.0730",
+        "lng": "28.8060"
+      },
+      {
+        "district": "KÜÇÜKÇEKMECE",
+        "neighborhood": "MEHMET AKİF MAH",
+        "lat": "41.0600",
+        "lng": "28.8000"
+      },
+      {
+        "district": "KÜÇÜKÇEKMECE",
+        "neighborhood": "HALKALI MERKEZ MAH",
+        "lat": "41.0570",
+        "lng": "28.7875"
+      },
+      {
+        "district": "KÜÇÜKÇEKMECE",
+        "neighborhood": "İSTASYON MAH",
+        "lat": "41.0410",
+        "lng": "28.7810"
+      },
+      {
+        "district": "KÜÇÜKÇEKMECE",
+        "neighborhood": "YARIMBURGAZ MAH",
+        "lat": "41.0800",
+        "lng": "28.7830"
+      },
+      {
+        "district": "KÜÇÜKÇEKMECE",
+        "neighborhood": "CENNET MAH",
+        "lat": "41.0065",
+        "lng": "28.8010"
+      },
+      {
+        "district": "KÜÇÜKÇEKMECE",
+        "neighborhood": "CUMHURİYET MAH",
+        "lat": "41.0040",
+        "lng": "28.7915"
+      },
+      {
+        "district": "KÜÇÜKÇEKMECE",
+        "neighborhood": "FATİH MAH",
+        "lat": "41.0170",
+        "lng": "28.7850"
+      },
+      {
+        "district": "KÜÇÜKÇEKMECE",
+        "neighborhood": "KANARYA MAH",
+        "lat": "41.0145",
+        "lng": "28.7740"
+      },
+      {
+        "district": "KÜÇÜKÇEKMECE",
+        "neighborhood": "YENİ MAHALLE MAH",
+        "lat": "40.9926",
+        "lng": "28.7736"
+      },
+      {
+        "district": "KÜÇÜKÇEKMECE",
+        "neighborhood": "BEŞYOL MAH",
+        "lat": "40.9985",
+        "lng": "28.7985"
+      },
+      {
+        "district": "KÜÇÜKÇEKMECE",
+        "neighborhood": "FEVZİ ÇAKMAK MAH",
+        "lat": "41.0230",
+        "lng": "28.7965"
+      },
+      {
+        "district": "KÜÇÜKÇEKMECE",
+        "neighborhood": "GÜLTEPE MAH",
+        "lat": "41.0300",
+        "lng": "28.7995"
+      },
+      {
+        "district": "KÜÇÜKÇEKMECE",
+        "neighborhood": "İNÖNÜ MAH",
+        "lat": "41.0340",
+        "lng": "28.7860"
+      },
+      {
+        "district": "KÜÇÜKÇEKMECE",
+        "neighborhood": "KARTALTEPE MAH",
+        "lat": "41.0080",
+        "lng": "28.7865"
+      },
+      {
+        "district": "KÜÇÜKÇEKMECE",
+        "neighborhood": "KEMALPAŞA MAH",
+        "lat": "41.0120",
+        "lng": "28.7930"
+      },
+      {
+        "district": "KÜÇÜKÇEKMECE",
+        "neighborhood": "SÖĞÜTLÜ ÇEŞME MAH",
+        "lat": "41.0185",
+        "lng": "28.7910"
+      },
+      {
+        "district": "KÜÇÜKÇEKMECE",
+        "neighborhood": "SULTAN MURAT MAH",
+        "lat": "41.0210",
+        "lng": "28.8010"
+      },
+      {
+        "district": "KÜÇÜKÇEKMECE",
+        "neighborhood": "TEVFİKBEY MAH",
+        "lat": "41.0245",
+        "lng": "28.8075"
+      },
+      {
+        "district": "KÜÇÜKÇEKMECE",
+        "neighborhood": "YEŞİLOVA MAH",
+        "lat": "41.0020",
+        "lng": "28.7830"
+  },
+    {
+      "district": "MALTEPE",
+      "neighborhood": "AYDINEVLER MAH",
+      "lat": "40.9429",
+      "lng": "29.1412"
+    },
+    {
+      "district": "MALTEPE",
+      "neighborhood": "BAŞIBÜYÜK MAH",
+      "lat": "40.9475",
+      "lng": "29.1613"
+    },
+    {
+      "district": "MALTEPE",
+      "neighborhood": "FINDIKLI MAH",
+      "lat": "40.9413",
+      "lng": "29.1732"
+    },
+    {
+      "district": "MALTEPE",
+      "neighborhood": "BÜYÜKBAKKALKÖY MAH",
+      "lat": "40.9535",
+      "lng": "29.1845"
+    },
+    {
+      "district": "MALTEPE",
+      "neighborhood": "CEVİZLİ MAH",
+      "lat": "40.9277",
+      "lng": "29.1645"
+    },
+    {
+      "district": "MALTEPE",
+      "neighborhood": "ALTAYÇEŞME MAH",
+      "lat": "40.9405",
+      "lng": "29.1536"
+    },
+    {
+      "district": "MALTEPE",
+      "neighborhood": "FEYZULLAH MAH",
+      "lat": "40.9290",
+      "lng": "29.1420"
+    },
+    {
+      "district": "MALTEPE",
+      "neighborhood": "ESENKENT MAH",
+      "lat": "40.9370",
+      "lng": "29.1318"
+    },
+    {
+      "district": "MALTEPE",
+      "neighborhood": "GÜLENSU MAH",
+      "lat": "40.9365",
+      "lng": "29.1749"
+    },
+    {
+      "district": "MALTEPE",
+      "neighborhood": "GÜLSUYU MAH",
+      "lat": "40.9348",
+      "lng": "29.1832"
+    },
+    {
+      "district": "MALTEPE",
+      "neighborhood": "ÇINAR MAH",
+      "lat": "40.9297",
+      "lng": "29.1335"
+    },
+    {
+      "district": "MALTEPE",
+      "neighborhood": "İDEALTEPE MAH",
+      "lat": "40.9420",
+      "lng": "29.1165"
+    },
+    {
+      "district": "MALTEPE",
+      "neighborhood": "ALTINTEPE MAH",
+      "lat": "40.9442",
+      "lng": "29.1267"
+    },
+    {
+      "district": "MALTEPE",
+      "neighborhood": "KÜÇÜKYALI MERKEZ MAH",
+      "lat": "40.9512",
+      "lng": "29.1224"
+    },
+    {
+      "district": "MALTEPE",
+      "neighborhood": "BAĞLARBAŞI MAH",
+      "lat": "40.9379",
+      "lng": "29.1467"
+    },
+    {
+      "district": "MALTEPE",
+      "neighborhood": "YALI MAH",
+      "lat": "40.9360",
+      "lng": "29.1345"
+    },
+    {
+      "district": "MALTEPE",
+      "neighborhood": "GİRNE MAH",
+      "lat": "40.9487",
+      "lng": "29.1395"
+    },
+    {
+      "district": "MALTEPE",
+      "neighborhood": "ZÜMRÜTEVLER MAH",
+      "lat": "40.9495",
+      "lng": "29.1518"
+    },
+    {
+        "district": "PENDİK",
+        "neighborhood": "BAHÇELİEVLER MAH",
+        "lat": "40.8750",
+        "lng": "29.2550"
+      },
+      {
+        "district": "PENDİK",
+        "neighborhood": "SAPAN BAĞLARI MAH",
+        "lat": "40.8735",
+        "lng": "29.2275"
+      },
+      {
+        "district": "PENDİK",
+        "neighborhood": "YENİ MAH",
+        "lat": "40.8785",
+        "lng": "29.2355"
+      },
+      {
+        "district": "PENDİK",
+        "neighborhood": "YEŞİLBAĞLAR MAH",
+        "lat": "40.8845",
+        "lng": "29.2200"
+      },
+      {
+        "district": "PENDİK",
+        "neighborhood": "ÇAMÇEŞME MAH",
+        "lat": "40.8805",
+        "lng": "29.2050"
+      },
+      {
+        "district": "PENDİK",
+        "neighborhood": "ESENLER MAH",
+        "lat": "40.8790",
+        "lng": "29.1950"
+      },
+      {
+        "district": "PENDİK",
+        "neighborhood": "FEVZİ ÇAKMAK MAH",
+        "lat": "40.8815",
+        "lng": "29.1835"
+      },
+      {
+        "district": "PENDİK",
+        "neighborhood": "KAVAKPINAR MAH",
+        "lat": "40.8730",
+        "lng": "29.1955"
+      },
+      {
+        "district": "PENDİK",
+        "neighborhood": "BATI MAH",
+        "lat": "40.8720",
+        "lng": "29.2290"
+      },
+      {
+        "district": "PENDİK",
+        "neighborhood": "DOĞU MAH",
+        "lat": "40.8735",
+        "lng": "29.2405"
+      },
+      {
+        "district": "PENDİK",
+        "neighborhood": "KAYNARCA MAH",
+        "lat": "40.8680",
+        "lng": "29.2180"
+      },
+      {
+        "district": "PENDİK",
+        "neighborhood": "ÇINARDERE MAH",
+        "lat": "40.8670",
+        "lng": "29.2485"
+      },
+      {
+        "district": "PENDİK",
+        "neighborhood": "DUMLUPINAR MAH",
+        "lat": "40.8690",
+        "lng": "29.1850"
+      },
+      {
+        "district": "PENDİK",
+        "neighborhood": "ORTA MAH",
+        "lat": "40.8705",
+        "lng": "29.2380"
+      },
+      {
+        "district": "PENDİK",
+        "neighborhood": "VELİBABA MAH",
+        "lat": "40.8615",
+        "lng": "29.2020"
+      },
+      {
+        "district": "PENDİK",
+        "neighborhood": "AHMET YESEVİ MAH",
+        "lat": "40.8550",
+        "lng": "29.2085"
+      },
+      {
+        "district": "PENDİK",
+        "neighborhood": "ESENYALI MAH",
+        "lat": "40.8505",
+        "lng": "29.2155"
+      },
+      {
+        "district": "PENDİK",
+        "neighborhood": "FATİH MAH",
+        "lat": "40.8575",
+        "lng": "29.2330"
+      },
+      {
+        "district": "PENDİK",
+        "neighborhood": "GÜZELYALI MAH",
+        "lat": "40.8450",
+        "lng": "29.3070"
+      },
+      {
+        "district": "PENDİK",
+        "neighborhood": "ORHANGAZİ MAH",
+        "lat": "40.8530",
+        "lng": "29.2255"
+      },
+      {
+        "district": "PENDİK",
+        "neighborhood": "BALLICA MAH",
+        "lat": "40.8900",
+        "lng": "29.3365"
+      },
+      {
+        "district": "PENDİK",
+        "neighborhood": "EMİRLİ MAH",
+        "lat": "40.9140",
+        "lng": "29.4165"
+      },
+      {
+        "district": "PENDİK",
+        "neighborhood": "GÖÇBEYLİ MAH",
+        "lat": "40.9225",
+        "lng": "29.4470"
+      },
+      {
+        "district": "PENDİK",
+        "neighborhood": "KURNA MAH",
+        "lat": "40.9490",
+        "lng": "29.3625"
+      },
+      {
+        "district": "PENDİK",
+        "neighborhood": "KURTDOĞMUŞ MAH",
+        "lat": "40.9570",
+        "lng": "29.4290"
+      },
+      {
+        "district": "PENDİK",
+        "neighborhood": "GÜLLÜ BAĞLAR MAH",
+        "lat": "40.8600",
+        "lng": "29.1870"
+      },
+      {
+        "district": "PENDİK",
+        "neighborhood": "RAMAZANOĞLU MAH",
+        "lat": "40.8555",
+        "lng": "29.2450"
+      },
+      {
+        "district": "PENDİK",
+        "neighborhood": "SANAYİ MAH",
+        "lat": "40.8745",
+        "lng": "29.2600"
+      },
+      {
+        "district": "PENDİK",
+        "neighborhood": "ŞEYHLİ MAH",
+        "lat": "40.8765",
+        "lng": "29.2720"
+      },
+      {
+        "district": "PENDİK",
+        "neighborhood": "ERTUĞRUL GAZİ MAH",
+        "lat": "40.8700",
+        "lng": "29.2855"
+      },
+      {
+        "district": "PENDİK",
+        "neighborhood": "SÜLÜNTEPE MAH",
+        "lat": "40.8690",
+        "lng": "29.3000"
+      },
+      {
+        "district": "PENDİK",
+        "neighborhood": "YAYALAR MAH",
+        "lat": "40.8720",
+        "lng": "29.3100"
+      },
+      {
+        "district": "PENDİK",
+        "neighborhood": "ÇAMLIK MAH",
+        "lat": "40.8735",
+        "lng": "29.3255"
+      },
+      {
+        "district": "PENDİK",
+        "neighborhood": "HARMANDERE MAH",
+        "lat": "40.8770",
+        "lng": "29.3170"
+      },
+      {
+        "district": "PENDİK",
+        "neighborhood": "KURTKÖY MAH",
+        "lat": "40.9275",
+        "lng": "29.3070"
+      },
+      {
+        "district": "PENDİK",
+        "neighborhood": "YENİŞEHİR MAH",
+        "lat": "40.9405",
+        "lng": "29.3055"
+      },
+      
+      
+        {
+          "district": "SANCAKTEPE",
+          "neighborhood": "AKPINAR MAH",
+          "lat": "40.9900",
+          "lng": "29.2440"
+        },
+        {
+          "district": "SANCAKTEPE",
+          "neighborhood": "EYÜP SULTAN MAH",
+          "lat": "40.9990",
+          "lng": "29.2470"
+        },
+        {
+          "district": "SANCAKTEPE",
+          "neighborhood": "FATİH MAH",
+          "lat": "40.9960",
+          "lng": "29.2340"
+        },
+        {
+          "district": "SANCAKTEPE",
+          "neighborhood": "VEYSEL KARANİ MAH",
+          "lat": "40.9860",
+          "lng": "29.2300"
+        },
+        {
+          "district": "SANCAKTEPE",
+          "neighborhood": "ABDURRAHMANGAZİ MAH",
+          "lat": "40.9850",
+          "lng": "29.2590"
+        },
+        {
+          "district": "SANCAKTEPE",
+          "neighborhood": "OSMANGAZİ MAH",
+          "lat": "40.9800",
+          "lng": "29.2700"
+        },
+        {
+          "district": "SANCAKTEPE",
+          "neighborhood": "ATATÜRK MAH",
+          "lat": "40.9750",
+          "lng": "29.2410"
+        },
+        {
+          "district": "SANCAKTEPE",
+          "neighborhood": "EMEK MAH",
+          "lat": "40.9680",
+          "lng": "29.2360"
+        },
+        {
+          "district": "SANCAKTEPE",
+          "neighborhood": "İNÖNÜ MAH",
+          "lat": "40.9640",
+          "lng": "29.2270"
+        },
+        {
+          "district": "SANCAKTEPE",
+          "neighborhood": "KEMAL TÜRKLER MAH",
+          "lat": "40.9600",
+          "lng": "29.2180"
+        },
+        {
+          "district": "SANCAKTEPE",
+          "neighborhood": "MECLİS MAH",
+          "lat": "40.9550",
+          "lng": "29.2480"
+        },
+        {
+          "district": "SANCAKTEPE",
+          "neighborhood": "SARIGAZİ MAH",
+          "lat": "40.9925",
+          "lng": "29.2115"
+        },
+        {
+          "district": "SANCAKTEPE",
+          "neighborhood": "HİLAL MAH",
+          "lat": "40.9870",
+          "lng": "29.2020"
+        },
+        {
+          "district": "SANCAKTEPE",
+          "neighborhood": "MERVE MAH",
+          "lat": "40.9805",
+          "lng": "29.2140"
+        },
+        {
+          "district": "SANCAKTEPE",
+          "neighborhood": "MEVLANA MAH",
+          "lat": "40.9730",
+          "lng": "29.2025"
+        },
+        {
+          "district": "SANCAKTEPE",
+          "neighborhood": "PAŞAKÖY MAH",
+          "lat": "41.0005",
+          "lng": "29.3100"
+        },
+        {
+          "district": "SANCAKTEPE",
+          "neighborhood": "SAFA MAH",
+          "lat": "40.9780",
+          "lng": "29.2525"
+        },
+        {
+          "district": "SANCAKTEPE",
+          "neighborhood": "YENİDOĞAN MAH",
+          "lat": "40.9755",
+          "lng": "29.2650"
+        },
+        {
+          "district": "SANCAKTEPE",
+          "neighborhood": "YUNUS EMRE MAH",
+          "lat": "40.9820",
+          "lng": "29.2305"
+        },
+      
+      
+        {
+          "district": "SARIYER",
+          "neighborhood": "BAHÇEKÖY MERKEZ MAH",
+          "lat": "41.1795",
+          "lng": "28.9948"
+        },
+        {
+          "district": "SARIYER",
+          "neighborhood": "BAHÇEKÖY YENİ MAH",
+          "lat": "41.1808",
+          "lng": "29.0021"
+        },
+        {
+          "district": "SARIYER",
+          "neighborhood": "KEMER MAH",
+          "lat": "41.1660",
+          "lng": "28.9735"
+        },
+        {
+          "district": "SARIYER",
+          "neighborhood": "BÜYÜKDERE MAH",
+          "lat": "41.1720",
+          "lng": "29.0535"
+        },
+        {
+          "district": "SARIYER",
+          "neighborhood": "ÇAYIRBAŞI MAH",
+          "lat": "41.1745",
+          "lng": "29.0435"
+        },
+        {
+          "district": "SARIYER",
+          "neighborhood": "KOCATAŞ MAH",
+          "lat": "41.1765",
+          "lng": "29.0465"
+        },
+        {
+          "district": "SARIYER",
+          "neighborhood": "PTT EVLERİ MAH",
+          "lat": "41.1785",
+          "lng": "29.0505"
+        },
+        {
+          "district": "SARIYER",
+          "neighborhood": "EMİRGAN MAH",
+          "lat": "41.1068",
+          "lng": "29.0553"
+        },
+        {
+          "district": "SARIYER",
+          "neighborhood": "REŞİTPAŞA MAH",
+          "lat": "41.1200",
+          "lng": "29.0348"
+        },
+        {
+          "district": "SARIYER",
+          "neighborhood": "İSTİNYE MAH",
+          "lat": "41.1108",
+          "lng": "29.0603"
+        },
+        {
+          "district": "SARIYER",
+          "neighborhood": "PINAR MAH",
+          "lat": "41.1180",
+          "lng": "29.0260"
+        },
+        {
+          "district": "SARIYER",
+          "neighborhood": "POLİGON MAH",
+          "lat": "41.1295",
+          "lng": "29.0160"
+        },
+        {
+          "district": "SARIYER",
+          "neighborhood": "AYAZAĞA MAH",
+          "lat": "41.1120",
+          "lng": "28.9950"
+        },
+        {
+          "district": "SARIYER",
+          "neighborhood": "HUZUR MAH",
+          "lat": "41.1035",
+          "lng": "29.0105"
+        },
+        {
+          "district": "SARIYER",
+          "neighborhood": "MASLAK MAH",
+          "lat": "41.1102",
+          "lng": "29.0146"
+        },
+        {
+          "district": "SARIYER",
+          "neighborhood": "BALTALİMANI MAH",
+          "lat": "41.0955",
+          "lng": "29.0538"
+        },
+        {
+          "district": "SARIYER",
+          "neighborhood": "FATİH SULTAN MEHMET MAH",
+          "lat": "41.1020",
+          "lng": "29.0460"
+        },
+        {
+          "district": "SARIYER",
+          "neighborhood": "RUMELİ HİSARI MAH",
+          "lat": "41.0868",
+          "lng": "29.0530"
+        },
+        {
+          "district": "SARIYER",
+          "neighborhood": "DEMİRCİKÖY MAH",
+          "lat": "41.2160",
+          "lng": "29.0730"
+        },
+        {
+          "district": "SARIYER",
+          "neighborhood": "GARİPÇE MAH",
+          "lat": "41.2170",
+          "lng": "29.1115"
+        },
+        {
+          "district": "SARIYER",
+          "neighborhood": "GÜMÜŞDERE MAH",
+          "lat": "41.2065",
+          "lng": "29.0315"
+        },
+        {
+          "district": "SARIYER",
+          "neighborhood": "KAZIM KARABEKİR PAŞA MAH",
+          "lat": "41.1930",
+          "lng": "29.0245"
+        },
+        {
+          "district": "SARIYER",
+          "neighborhood": "KISIRKAYA MAH",
+          "lat": "41.2235",
+          "lng": "29.0510"
+        },
+        {
+          "district": "SARIYER",
+          "neighborhood": "KUMKÖY MAH",
+          "lat": "41.2245",
+          "lng": "29.0345"
+        },
+        {
+          "district": "SARIYER",
+          "neighborhood": "MADEN MAH",
+          "lat": "41.1770",
+          "lng": "29.0510"
+        },
+        {
+          "district": "SARIYER",
+          "neighborhood": "MERKEZ MAH",
+          "lat": "41.1705",
+          "lng": "29.0555"
+        },
+        {
+          "district": "SARIYER",
+          "neighborhood": "RUMELİ KAVAĞI MAH",
+          "lat": "41.1970",
+          "lng": "29.0635"
+        },
+        {
+          "district": "SARIYER",
+          "neighborhood": "RUMELİFENERİ MAH",
+          "lat": "41.2155",
+          "lng": "29.0910"
+        },
+        {
+          "district": "SARIYER",
+          "neighborhood": "USKUMRUKÖY MAH",
+          "lat": "41.2035",
+          "lng": "29.0575"
+        },
+        {
+          "district": "SARIYER",
+          "neighborhood": "YENİ MAH",
+          "lat": "41.1720",
+          "lng": "29.0610"
+        },
+        {
+          "district": "SARIYER",
+          "neighborhood": "ZEKERİYAKÖY MAH",
+          "lat": "41.1915",
+          "lng": "29.0410"
+        },
+        {
+          "district": "SARIYER",
+          "neighborhood": "CUMHURİYET MAH",
+          "lat": "41.1775",
+          "lng": "29.0305"
+        },
+        {
+          "district": "SARIYER",
+          "neighborhood": "ÇAMLITEPE MAH",
+          "lat": "41.1805",
+          "lng": "29.0360"
+        },
+        {
+          "district": "SARIYER",
+          "neighborhood": "DARÜŞŞAFAKA MAH",
+          "lat": "41.1090",
+          "lng": "29.0180"
+        },
+        {
+          "district": "SARIYER",
+          "neighborhood": "FERAHEVLER MAH",
+          "lat": "41.1500",
+          "lng": "29.0485"
+        },
+        {
+          "district": "SARIYER",
+          "neighborhood": "KİREÇBURNU MAH",
+          "lat": "41.1165",
+          "lng": "29.0510"
+        },
+        {
+          "district": "SARIYER",
+          "neighborhood": "TARABYA MAH",
+          "lat": "41.1290",
+          "lng": "29.0475"
+        },
+        {
+          "district": "SARIYER",
+          "neighborhood": "YENİKÖY MAH",
+          "lat": "41.1325",
+          "lng": "29.0550"
+        },
+    
+      { "district": "SİLİVRİ", "neighborhood": "BEYCİLER MAH", "lat": "41.0994", "lng": "28.2272" },
+      { "district": "SİLİVRİ", "neighborhood": "BÜYÜK ÇAVUŞLU MAH", "lat": "41.1547", "lng": "28.3054" },
+      { "district": "SİLİVRİ", "neighborhood": "BÜYÜK SİNEKLİ MAH", "lat": "41.0896", "lng": "28.3397" },
+      { "district": "SİLİVRİ", "neighborhood": "ÇAYIRDERE MAH", "lat": "41.2303", "lng": "28.3310" },
+      { "district": "SİLİVRİ", "neighborhood": "DANAMANDIRA MAH", "lat": "41.1721", "lng": "28.1447" },
+      { "district": "SİLİVRİ", "neighborhood": "KÜÇÜK SİNEKLİ MAH", "lat": "41.0760", "lng": "28.3455" },
+      { "district": "SİLİVRİ", "neighborhood": "SAYALAR MAH", "lat": "41.1607", "lng": "28.3698" },
+      { "district": "SİLİVRİ", "neighborhood": "BALABAN MAH", "lat": "41.2205", "lng": "28.2534" },
+      { "district": "SİLİVRİ", "neighborhood": "SANCAKTEPE MAH", "lat": "41.0635", "lng": "28.2473" },
+      { "district": "SİLİVRİ", "neighborhood": "FEVZİPAŞA MAH", "lat": "41.0772", "lng": "28.2465" },
+      { "district": "SİLİVRİ", "neighborhood": "İSMETPAŞA MAH", "lat": "41.0778", "lng": "28.2492" },
+      { "district": "SİLİVRİ", "neighborhood": "BEKİRLİ MAH", "lat": "41.0543", "lng": "28.1812" },
+      { "district": "SİLİVRİ", "neighborhood": "BÜYÜK KILIÇLI MAH", "lat": "41.0619", "lng": "28.2941" },
+      { "district": "SİLİVRİ", "neighborhood": "ÇELTİK MAH", "lat": "41.0970", "lng": "28.3173" },
+      { "district": "SİLİVRİ", "neighborhood": "FENER MAH", "lat": "41.0809", "lng": "28.2284" },
+      { "district": "SİLİVRİ", "neighborhood": "KURFALLI MAH", "lat": "41.1267", "lng": "28.2763" },
+      { "district": "SİLİVRİ", "neighborhood": "KÜÇÜK KILIÇLI MAH", "lat": "41.0545", "lng": "28.3053" },
+      { "district": "SİLİVRİ", "neighborhood": "SEYMEN MAH", "lat": "41.1202", "lng": "28.1941" },
+      { "district": "SİLİVRİ", "neighborhood": "YOLÇATI MAH", "lat": "41.1684", "lng": "28.3237" },
+      { "district": "SİLİVRİ", "neighborhood": "GÜMÜŞYAKA MAH", "lat": "41.0383", "lng": "28.1661" },
+      { "district": "SİLİVRİ", "neighborhood": "HÜRRİYET MAH", "lat": "41.0788", "lng": "28.2497" },
+      { "district": "SİLİVRİ", "neighborhood": "KAVAKLI MAH", "lat": "41.0840", "lng": "28.1765" },
+      { "district": "SİLİVRİ", "neighborhood": "AKÖREN MAH", "lat": "41.1244", "lng": "28.0904" },
+      { "district": "SİLİVRİ", "neighborhood": "GAZİTEPE MAH", "lat": "41.1405", "lng": "28.1740" },
+      { "district": "SİLİVRİ", "neighborhood": "KADIKÖY MAH", "lat": "41.1237", "lng": "28.1259" },
+      { "district": "SİLİVRİ", "neighborhood": "ORTAKÖY MAH", "lat": "41.0810", "lng": "28.1440" },
+      { "district": "SİLİVRİ", "neighborhood": "SELİMPAŞA MAH", "lat": "41.0719", "lng": "28.2488" },
+      { "district": "SİLİVRİ", "neighborhood": "ALİBEY MAH", "lat": "41.0784", "lng": "28.2431" },
+      { "district": "SİLİVRİ", "neighborhood": "ALİPAŞA MAH", "lat": "41.0961", "lng": "28.2728" },
+      { "district": "SİLİVRİ", "neighborhood": "CUMHURİYET MAH", "lat": "41.0748", "lng": "28.2405" },
+      { "district": "SİLİVRİ", "neighborhood": "FATİH MAH", "lat": "41.0740", "lng": "28.2442" },
+      { "district": "SİLİVRİ", "neighborhood": "MİMAR SİNAN MAH", "lat": "41.0725", "lng": "28.2355" },
+      { "district": "SİLİVRİ", "neighborhood": "PİRİ MEHMET PAŞA MAH", "lat": "41.0765", "lng": "28.2389" },
+      { "district": "SİLİVRİ", "neighborhood": "SEMİZKUMLAR MAH", "lat": "41.0658", "lng": "28.2373" },
+      { "district": "SİLİVRİ", "neighborhood": "YENİ MAH", "lat": "41.0813", "lng": "28.2351" },
+          
+        
+        
+      { "district": "SULTANBEYLİ", "neighborhood": "ABDURRAHMANGAZİ MAH", "lat": "40.9655", "lng": "29.2680" },
+      { "district": "SULTANBEYLİ", "neighborhood": "FATİH MAH", "lat": "40.9578", "lng": "29.2675" },
+      { "district": "SULTANBEYLİ", "neighborhood": "HASANPAŞA MAH", "lat": "40.9485", "lng": "29.2750" },
+      { "district": "SULTANBEYLİ", "neighborhood": "MEHMET AKİF MAH", "lat": "40.9550", "lng": "29.2855" },
+      { "district": "SULTANBEYLİ", "neighborhood": "ADİL MAH", "lat": "40.9520", "lng": "29.2565" },
+      { "district": "SULTANBEYLİ", "neighborhood": "BATTALGAZİ MAH", "lat": "40.9615", "lng": "29.2785" },
+      { "district": "SULTANBEYLİ", "neighborhood": "MİMAR SİNAN MAH", "lat": "40.9505", "lng": "29.2650" },
+      { "district": "SULTANBEYLİ", "neighborhood": "AKŞEMSETTİN MAH", "lat": "40.9630", "lng": "29.2865" },
+      { "district": "SULTANBEYLİ", "neighborhood": "HAMİDİYE MAH", "lat": "40.9645", "lng": "29.2525" },
+      { "district": "SULTANBEYLİ", "neighborhood": "NECİP FAZIL MAH", "lat": "40.9585", "lng": "29.2480" },
+      { "district": "SULTANBEYLİ", "neighborhood": "ORHANGAZİ MAH", "lat": "40.9510", "lng": "29.2835" },
+      { "district": "SULTANBEYLİ", "neighborhood": "YAVUZ SELİM MAH", "lat": "40.9555", "lng": "29.2730" },
+      { "district": "SULTANBEYLİ", "neighborhood": "AHMET YESEVİ MAH", "lat": "40.9490", "lng": "29.2925" },
+      { "district": "SULTANBEYLİ", "neighborhood": "MECİDİYE MAH", "lat": "40.9638", "lng": "29.2585" },
+      { "district": "SULTANBEYLİ", "neighborhood": "TURGUT REİS MAH", "lat": "40.9465", "lng": "29.2870" },
+      
+
+    { "district": "SULTANGAZİ", "neighborhood": "50. YIL MAH", "lat": "41.1035", "lng": "28.8875" },
+    { "district": "SULTANGAZİ", "neighborhood": "CUMHURİYET MAH", "lat": "41.1100", "lng": "28.8940" },
+    { "district": "SULTANGAZİ", "neighborhood": "ESENTEPE MAH", "lat": "41.1185", "lng": "28.8855" },
+    { "district": "SULTANGAZİ", "neighborhood": "SULTANÇİFTLİĞİ MAH", "lat": "41.1170", "lng": "28.9050" },
+    { "district": "SULTANGAZİ", "neighborhood": "UĞUR MUMCU MAH", "lat": "41.1230", "lng": "28.8945" },
+    { "district": "SULTANGAZİ", "neighborhood": "CEBECİ MAH", "lat": "41.1085", "lng": "28.8725" },
+    { "district": "SULTANGAZİ", "neighborhood": "ESKİ HABİPLER MAH", "lat": "41.1370", "lng": "28.9025" },
+    { "district": "SULTANGAZİ", "neighborhood": "HABİBLER MAH", "lat": "41.1425", "lng": "28.9130" },
+    { "district": "SULTANGAZİ", "neighborhood": "İSMETPAŞA MAH", "lat": "41.1150", "lng": "28.8795" },
+    { "district": "SULTANGAZİ", "neighborhood": "MALKOÇOĞLU MAH", "lat": "41.1315", "lng": "28.8885" },
+    { "district": "SULTANGAZİ", "neighborhood": "YAYLA MAH", "lat": "41.1255", "lng": "28.8750" },
+    { "district": "SULTANGAZİ", "neighborhood": "75. YIL MAH", "lat": "41.1265", "lng": "28.9105" },
+    { "district": "SULTANGAZİ", "neighborhood": "GAZİ MAH", "lat": "41.0915", "lng": "28.8995" },
+    { "district": "SULTANGAZİ", "neighborhood": "YUNUS EMRE MAH", "lat": "41.1215", "lng": "28.9010" },
+    { "district": "SULTANGAZİ", "neighborhood": "ZÜBEYDE HANIM MAH", "lat": "41.1125", "lng": "28.8870" },
+
+    
+  { "district": "ŞİLE", "neighborhood": "AĞVA MERKEZ MAH", "lat": "41.1391", "lng": "29.8501" },
+  { "district": "ŞİLE", "neighborhood": "BUCAKLI MAH", "lat": "41.1418", "lng": "29.8549" },
+  { "district": "ŞİLE", "neighborhood": "ÇATAKLI MAH", "lat": "41.1390", "lng": "29.8187" },
+  { "district": "ŞİLE", "neighborhood": "ÇELEBİ MAH", "lat": "41.1741", "lng": "29.6150" },
+  { "district": "ŞİLE", "neighborhood": "GEREDELİ MAH", "lat": "41.1435", "lng": "29.7245" },
+  { "district": "ŞİLE", "neighborhood": "GÖÇE MAH", "lat": "41.1475", "lng": "29.7475" },
+  { "district": "ŞİLE", "neighborhood": "GÖKMAŞLI MAH", "lat": "41.1210", "lng": "29.6865" },
+  { "district": "ŞİLE", "neighborhood": "GÖKSU MAH", "lat": "41.1468", "lng": "29.8395" },
+  { "district": "ŞİLE", "neighborhood": "HACILLI MAH", "lat": "41.1150", "lng": "29.7965" },
+  { "district": "ŞİLE", "neighborhood": "İSAKÖY MAH", "lat": "41.1755", "lng": "29.7875" },
+  { "district": "ŞİLE", "neighborhood": "KADIKÖY MAH", "lat": "41.1332", "lng": "29.6208" },
+  { "district": "ŞİLE", "neighborhood": "KALEM MAH", "lat": "41.1775", "lng": "29.6255" },
+  { "district": "ŞİLE", "neighborhood": "KURFALLI MAH", "lat": "41.1442", "lng": "29.8338" },
+  { "district": "ŞİLE", "neighborhood": "SOĞULLU MAH", "lat": "41.1905", "lng": "29.8430" },
+  { "district": "ŞİLE", "neighborhood": "ŞUAYİPLİ MAH", "lat": "41.1625", "lng": "29.8330" },
+  { "district": "ŞİLE", "neighborhood": "AĞAÇDERE MAH", "lat": "41.1485", "lng": "29.6920" },
+  { "district": "ŞİLE", "neighborhood": "AHMETLİ MAH", "lat": "41.1610", "lng": "29.7475" },
+  { "district": "ŞİLE", "neighborhood": "AKÇAKESE MAH", "lat": "41.1930", "lng": "29.5680" },
+  { "district": "ŞİLE", "neighborhood": "ALACALI MAH", "lat": "41.1635", "lng": "29.5955" },
+  { "district": "ŞİLE", "neighborhood": "AVCIKORU MAH", "lat": "41.1175", "lng": "29.5705" },
+  { "district": "ŞİLE", "neighborhood": "BIÇKIDERE MAH", "lat": "41.1765", "lng": "29.6950" },
+  { "district": "ŞİLE", "neighborhood": "BOZGOCA MAH", "lat": "41.1555", "lng": "29.6830" },
+  { "district": "ŞİLE", "neighborhood": "ÇAYIRBAŞI MAH", "lat": "41.1675", "lng": "29.7525" },
+  { "district": "ŞİLE", "neighborhood": "ÇENGİLLİ MAH", "lat": "41.1965", "lng": "29.7265" },
+  { "district": "ŞİLE", "neighborhood": "DARLIK MAH", "lat": "41.0800", "lng": "29.6290" },
+  { "district": "ŞİLE", "neighborhood": "DEĞİRMENÇAYIRI MAH", "lat": "41.0920", "lng": "29.7345" },
+  { "district": "ŞİLE", "neighborhood": "DOĞANCILI MAH", "lat": "41.1225", "lng": "29.5435" },
+  { "district": "ŞİLE", "neighborhood": "ERENLER MAH", "lat": "41.1155", "lng": "29.7285" },
+  { "district": "ŞİLE", "neighborhood": "BALİBEY MAH", "lat": "41.1767", "lng": "29.6098" },
+  { "district": "ŞİLE", "neighborhood": "ÇAVUŞ MAH", "lat": "41.1730", "lng": "29.6035" },
+  { "district": "ŞİLE", "neighborhood": "HACI KASIM MAH", "lat": "41.1725", "lng": "29.6085" },
+  { "district": "ŞİLE", "neighborhood": "KUMBABA MAH", "lat": "41.1680", "lng": "29.6125" },
+  
+  
+    { "district": "ŞİŞLİ", "neighborhood": "BOZKURT MAH", "lat": "41.0530", "lng": "28.9770" },
+    { "district": "ŞİŞLİ", "neighborhood": "ESKİŞEHİR MAH", "lat": "41.0675", "lng": "28.9870" },
+    { "district": "ŞİŞLİ", "neighborhood": "CUMHURİYET MAH", "lat": "41.0600", "lng": "28.9885" },
+    { "district": "ŞİŞLİ", "neighborhood": "DUATEPE MAH", "lat": "41.0545", "lng": "28.9835" },
+    { "district": "ŞİŞLİ", "neighborhood": "PAŞA MAH", "lat": "41.0580", "lng": "28.9800" },
+    { "district": "ŞİŞLİ", "neighborhood": "ESENTEPE MAH", "lat": "41.0740", "lng": "29.0100" },
+    { "district": "ŞİŞLİ", "neighborhood": "FULYA MAH", "lat": "41.0605", "lng": "29.0045" },
+    { "district": "ŞİŞLİ", "neighborhood": "GÜLBAHAR MAH", "lat": "41.0660", "lng": "29.0015" },
+    { "district": "ŞİŞLİ", "neighborhood": "FERİKÖY MAH", "lat": "41.0565", "lng": "28.9695" },
+    { "district": "ŞİŞLİ", "neighborhood": "YAYLA MAH", "lat": "41.0540", "lng": "28.9620" },
+    { "district": "ŞİŞLİ", "neighborhood": "HALASKARGAZİ MAH", "lat": "41.0490", "lng": "28.9830" },
+    { "district": "ŞİŞLİ", "neighborhood": "HARBİYE MAH", "lat": "41.0465", "lng": "28.9880" },
+    { "district": "ŞİŞLİ", "neighborhood": "İZZET PAŞA MAH", "lat": "41.0670", "lng": "28.9945" },
+    { "district": "ŞİŞLİ", "neighborhood": "KUŞTEPE MAH", "lat": "41.0665", "lng": "29.0040" },
+    { "district": "ŞİŞLİ", "neighborhood": "MECİDİYEKÖY MAH", "lat": "41.0650", "lng": "28.9960" },
+    { "district": "ŞİŞLİ", "neighborhood": "19 MAYIS MAH", "lat": "41.0610", "lng": "28.9990" },
+    { "district": "ŞİŞLİ", "neighborhood": "MEŞRUTİYET MAH", "lat": "41.0515", "lng": "28.9735" },
+    { "district": "ŞİŞLİ", "neighborhood": "HALİDE EDİP ADIVAR MAH", "lat": "41.0495", "lng": "28.9610" },
+    { "district": "ŞİŞLİ", "neighborhood": "HALİL RIFAT PAŞA MAH", "lat": "41.0620", "lng": "28.9625" },
+    { "district": "ŞİŞLİ", "neighborhood": "KAPTANPAŞA MAH", "lat": "41.0535", "lng": "28.9650" },
+    { "district": "ŞİŞLİ", "neighborhood": "MAHMUT ŞEVKET PAŞA MAH", "lat": "41.0550", "lng": "28.9555" },
+    { "district": "ŞİŞLİ", "neighborhood": "MERKEZ MAH", "lat": "41.0585", "lng": "28.9785" },
+    { "district": "ŞİŞLİ", "neighborhood": "ERGENEKON MAH", "lat": "41.0510", "lng": "28.9775" },
+    { "district": "ŞİŞLİ", "neighborhood": "İNÖNÜ MAH", "lat": "41.0435", "lng": "28.9905" },
+    { "district": "ŞİŞLİ", "neighborhood": "TEŞVİKİYE MAH", "lat": "41.0470", "lng": "28.9940" },
+  
+  
+    { "district": "TUZLA", "neighborhood": "AKFIRAT MAH", "lat": "40.9390", "lng": "29.3915" },
+    { "district": "TUZLA", "neighborhood": "TEPEOREN İTOSB MAH", "lat": "40.9495", "lng": "29.4050" },
+    { "district": "TUZLA", "neighborhood": "TEPEÖREN MAH", "lat": "40.9475", "lng": "29.4005" },
+    { "district": "TUZLA", "neighborhood": "AYDINLI - BİRLİK OSB MAH", "lat": "40.9185", "lng": "29.3820" },
+    { "district": "TUZLA", "neighborhood": "AYDINLI - İSTANBUL AYOSB MAH", "lat": "40.9220", "lng": "29.3725" },
+    { "district": "TUZLA", "neighborhood": "AYDINLI MAH", "lat": "40.9130", "lng": "29.3695" },
+    { "district": "TUZLA", "neighborhood": "AYDINLI SB MAH", "lat": "40.9205", "lng": "29.3650" },
+    { "district": "TUZLA", "neighborhood": "AYDINLI-KOSB MAH", "lat": "40.9305", "lng": "29.3740" },
+    { "district": "TUZLA", "neighborhood": "CAMİ MAH", "lat": "40.8285", "lng": "29.3045" },
+    { "district": "TUZLA", "neighborhood": "İSTASYON MAH", "lat": "40.8315", "lng": "29.3140" },
+    { "district": "TUZLA", "neighborhood": "POSTANE MAH", "lat": "40.8275", "lng": "29.3230" },
+    { "district": "TUZLA", "neighborhood": "AYDINTEPE MAH", "lat": "40.8270", "lng": "29.3410" },
+    { "district": "TUZLA", "neighborhood": "İÇMELER MAH", "lat": "40.8310", "lng": "29.3325" },
+    { "district": "TUZLA", "neighborhood": "MİMAR SİNAN MAH", "lat": "40.8175", "lng": "29.3200" },
+    { "district": "TUZLA", "neighborhood": "ŞİFA MAH", "lat": "40.8345", "lng": "29.3585" },
+    { "district": "TUZLA", "neighborhood": "ANADOLU MAH", "lat": "40.8365", "lng": "29.3115" },
+    { "district": "TUZLA", "neighborhood": "DERİ OSB MAH", "lat": "40.8475", "lng": "29.3825" },
+    { "district": "TUZLA", "neighborhood": "FATİH MAH", "lat": "40.8155", "lng": "29.3085" },
+    { "district": "TUZLA", "neighborhood": "MESCİT MAH", "lat": "40.8215", "lng": "29.3035" },
+    { "district": "TUZLA", "neighborhood": "ORHANLI MAH", "lat": "40.8915", "lng": "29.3885" },
+    { "district": "TUZLA", "neighborhood": "ORTA MAH", "lat": "40.8295", "lng": "29.3210" },
+    { "district": "TUZLA", "neighborhood": "EVLİYA ÇELEBİ MAH", "lat": "40.8330", "lng": "29.3245" },
+    { "district": "TUZLA", "neighborhood": "YAYLA MAH", "lat": "40.8255", "lng": "29.3145" },
+    
+    
+      { "district": "ÜMRANİYE", "neighborhood": "ADEM YAVUZ MAH", "lat": "41.0250", "lng": "29.1550" },
+      { "district": "ÜMRANİYE", "neighborhood": "AŞAĞI DUDULLU MAH", "lat": "41.0265", "lng": "29.1875" },
+      { "district": "ÜMRANİYE", "neighborhood": "HUZUR MAH", "lat": "41.0155", "lng": "29.1645" },
+      { "district": "ÜMRANİYE", "neighborhood": "NECİP FAZIL MAH", "lat": "41.0160", "lng": "29.1835" },
+      { "district": "ÜMRANİYE", "neighborhood": "PARSELLER MAH", "lat": "41.0105", "lng": "29.1510" },
+      { "district": "ÜMRANİYE", "neighborhood": "ARMAĞANEVLER MAH", "lat": "41.0195", "lng": "29.1385" },
+      { "district": "ÜMRANİYE", "neighborhood": "ATAKENT MAH", "lat": "41.0310", "lng": "29.1430" },
+      { "district": "ÜMRANİYE", "neighborhood": "SİTE MAH", "lat": "41.0350", "lng": "29.1535" },
+      { "district": "ÜMRANİYE", "neighborhood": "ATATÜRK MAH", "lat": "41.0190", "lng": "29.1615" },
+      { "district": "ÜMRANİYE", "neighborhood": "ELMALIKENT MAH", "lat": "41.0110", "lng": "29.1450" },
+      { "district": "ÜMRANİYE", "neighborhood": "TANTAVİ MAH", "lat": "41.0235", "lng": "29.1490" },
+      { "district": "ÜMRANİYE", "neighborhood": "ÇAKMAK MAH", "lat": "41.0200", "lng": "29.1300" },
+      { "district": "ÜMRANİYE", "neighborhood": "ÇAMLIK MAH", "lat": "41.0375", "lng": "29.1325" },
+      { "district": "ÜMRANİYE", "neighborhood": "MEHMET AKİF MAH", "lat": "41.0275", "lng": "29.1275" },
+      { "district": "ÜMRANİYE", "neighborhood": "TATLISU MAH", "lat": "41.0380", "lng": "29.1220" },
+      { "district": "ÜMRANİYE", "neighborhood": "ESENKENT MAH", "lat": "41.0065", "lng": "29.1565" },
+      { "district": "ÜMRANİYE", "neighborhood": "ESENŞEHİR MAH", "lat": "41.0340", "lng": "29.1975" },
+      { "district": "ÜMRANİYE", "neighborhood": "MADENLER MAH", "lat": "41.0095", "lng": "29.1385" },
+      { "district": "ÜMRANİYE", "neighborhood": "CEMİL MERİÇ MAH", "lat": "41.0255", "lng": "29.1335" },
+      { "district": "ÜMRANİYE", "neighborhood": "FATİH SULTAN MEHMET MAH", "lat": "41.0315", "lng": "29.1655" },
+      { "district": "ÜMRANİYE", "neighborhood": "IHLAMURKUYU MAH", "lat": "41.0155", "lng": "29.1695" },
+      { "district": "ÜMRANİYE", "neighborhood": "TEPEÜSTÜ MAH", "lat": "41.0185", "lng": "29.1755" },
+      { "district": "ÜMRANİYE", "neighborhood": "İNKILAP MAH", "lat": "41.0395", "lng": "29.1525" },
+      { "district": "ÜMRANİYE", "neighborhood": "SARAY MAH", "lat": "41.0325", "lng": "29.1355" },
+      { "district": "ÜMRANİYE", "neighborhood": "YAMANEVLER MAH", "lat": "41.0135", "lng": "29.1275" },
+      { "district": "ÜMRANİYE", "neighborhood": "DUMLUPINAR MAH", "lat": "41.0025", "lng": "29.1465" },
+      { "district": "ÜMRANİYE", "neighborhood": "HEKİMBAŞI MAH", "lat": "41.0465", "lng": "29.1725" },
+      { "district": "ÜMRANİYE", "neighborhood": "KAZIM KARABEKİR MAH", "lat": "41.0120", "lng": "29.1335" },
+      { "district": "ÜMRANİYE", "neighborhood": "TOPAĞACI MAH", "lat": "41.0175", "lng": "29.1220" },
+      { "district": "ÜMRANİYE", "neighborhood": "ESENEVLER MAH", "lat": "41.0085", "lng": "29.1505" },
+      { "district": "ÜMRANİYE", "neighborhood": "İSTİKLAL MAH", "lat": "41.0365", "lng": "29.1730" },
+      { "district": "ÜMRANİYE", "neighborhood": "NAMIK KEMAL MAH", "lat": "41.0295", "lng": "29.1550" },
+      { "district": "ÜMRANİYE", "neighborhood": "ALTINŞEHİR MAH", "lat": "41.0425", "lng": "29.1805" },
+      { "district": "ÜMRANİYE", "neighborhood": "DUDULLU OSB MAH", "lat": "41.0370", "lng": "29.1950" },
+      { "district": "ÜMRANİYE", "neighborhood": "ŞERİFALİ MAH", "lat": "41.0290", "lng": "29.1210" },
+      { "district": "ÜMRANİYE", "neighborhood": "YUKARI DUDULLU MAH", "lat": "41.0360", "lng": "29.1825" },
+      
+  
+    { "district": "ÜSKÜDAR", "neighborhood": "ACIBADEM MAH", "lat": "41.0135", "lng": "29.0455" },
+    { "district": "ÜSKÜDAR", "neighborhood": "ALTUNİZADE MAH", "lat": "41.0215", "lng": "29.0455" },
+    { "district": "ÜSKÜDAR", "neighborhood": "BARBAROS MAH", "lat": "41.0150", "lng": "29.0505" },
+    { "district": "ÜSKÜDAR", "neighborhood": "BAHÇELİEVLER MAH", "lat": "41.0085", "lng": "29.0625" },
+    { "district": "ÜSKÜDAR", "neighborhood": "BEYLERBEYİ MAH", "lat": "41.0425", "lng": "29.0460" },
+    { "district": "ÜSKÜDAR", "neighborhood": "BURHANİYE MAH", "lat": "41.0245", "lng": "29.0585" },
+    { "district": "ÜSKÜDAR", "neighborhood": "KÜPLÜCE MAH", "lat": "41.0330", "lng": "29.0625" },
+    { "district": "ÜSKÜDAR", "neighborhood": "BULGURLU MAH", "lat": "41.0165", "lng": "29.0815" },
+    { "district": "ÜSKÜDAR", "neighborhood": "KÜÇÜK ÇAMLICA MAH", "lat": "41.0240", "lng": "29.0865" },
+    { "district": "ÜSKÜDAR", "neighborhood": "CUMHURİYET MAH", "lat": "41.0325", "lng": "29.0720" },
+    { "district": "ÜSKÜDAR", "neighborhood": "ÇENGELKÖY MAH", "lat": "41.0615", "lng": "29.0565" },
+    { "district": "ÜSKÜDAR", "neighborhood": "GÜZELTEPE MAH", "lat": "41.0255", "lng": "29.0710" },
+    { "district": "ÜSKÜDAR", "neighborhood": "FERAH MAH", "lat": "41.0275", "lng": "29.0810" },
+    { "district": "ÜSKÜDAR", "neighborhood": "KISIKLI MAH", "lat": "41.0315", "lng": "29.0855" },
+    { "district": "ÜSKÜDAR", "neighborhood": "KANDİLLİ MAH", "lat": "41.0695", "lng": "29.0655" },
+    { "district": "ÜSKÜDAR", "neighborhood": "KULELİ MAH", "lat": "41.0595", "lng": "29.0525" },
+    { "district": "ÜSKÜDAR", "neighborhood": "KÜÇÜKSU MAH", "lat": "41.0570", "lng": "29.0635" },
+    { "district": "ÜSKÜDAR", "neighborhood": "KİRAZLITEPE MAH", "lat": "41.0300", "lng": "29.0775" },
+    { "district": "ÜSKÜDAR", "neighborhood": "MEHMET AKİF ERSOY MAH", "lat": "41.0210", "lng": "29.0905" },
+    { "district": "ÜSKÜDAR", "neighborhood": "İCADİYE MAH", "lat": "41.0270", "lng": "29.0325" },
+    { "district": "ÜSKÜDAR", "neighborhood": "KUZGUNCUK MAH", "lat": "41.0395", "lng": "29.0275" },
+    { "district": "ÜSKÜDAR", "neighborhood": "SULTANTEPE MAH", "lat": "41.0275", "lng": "29.0205" },
+    { "district": "ÜSKÜDAR", "neighborhood": "AHMEDİYE MAH", "lat": "41.0275", "lng": "29.0405" },
+    { "district": "ÜSKÜDAR", "neighborhood": "AZİZ MAHMUT HÜDAYİ MAH", "lat": "41.0290", "lng": "29.0345" },
+    { "district": "ÜSKÜDAR", "neighborhood": "MİMAR SİNAN MAH", "lat": "41.0250", "lng": "29.0290" },
+    { "district": "ÜSKÜDAR", "neighborhood": "MURATREİS MAH", "lat": "41.0235", "lng": "29.0255" },
+    { "district": "ÜSKÜDAR", "neighborhood": "SELAMİ ALİ MAH", "lat": "41.0175", "lng": "29.0480" },
+    { "district": "ÜSKÜDAR", "neighborhood": "VALİDE-İ ATİK MAH", "lat": "41.0230", "lng": "29.0445" },
+    { "district": "ÜSKÜDAR", "neighborhood": "SALACAK MAH", "lat": "41.0245", "lng": "29.0165" },
+    { "district": "ÜSKÜDAR", "neighborhood": "SELİMİYE MAH", "lat": "41.0145", "lng": "29.0225" },
+    { "district": "ÜSKÜDAR", "neighborhood": "ZEYNEP KAMİL MAH", "lat": "41.0185", "lng": "29.0325" },
+    { "district": "ÜSKÜDAR", "neighborhood": "ÜNALAN MAH", "lat": "40.9995", "lng": "29.0565" },
+    { "district": "ÜSKÜDAR", "neighborhood": "YAVUZTÜRK MAH", "lat": "41.0390", "lng": "29.0770" },
+    
+
+  { "district": "ZEYTİNBURNU", "neighborhood": "ÇIRPICI MAH", "lat": "40.9975", "lng": "28.9075" },
+  { "district": "ZEYTİNBURNU", "neighborhood": "NURİPAŞA MAH", "lat": "41.0015", "lng": "28.9105" },
+  { "district": "ZEYTİNBURNU", "neighborhood": "SÜMER MAH", "lat": "41.0050", "lng": "28.9140" },
+  { "district": "ZEYTİNBURNU", "neighborhood": "VELİEFENDİ MAH", "lat": "40.9980", "lng": "28.9155" },
+  { "district": "ZEYTİNBURNU", "neighborhood": "YEŞİLTEPE MAH", "lat": "41.0025", "lng": "28.9205" },
+  { "district": "ZEYTİNBURNU", "neighborhood": "MERKEZEFENDİ MAH", "lat": "41.0125", "lng": "28.9110" },
+  { "district": "ZEYTİNBURNU", "neighborhood": "SEYİTNİZAM MAH", "lat": "40.9945", "lng": "28.9030" },
+  { "district": "ZEYTİNBURNU", "neighborhood": "BEŞTELSİZ MAH", "lat": "41.0005", "lng": "28.8995" },
+  { "district": "ZEYTİNBURNU", "neighborhood": "GÖKALP MAH", "lat": "41.0080", "lng": "28.9035" },
+  { "district": "ZEYTİNBURNU", "neighborhood": "KAZLIÇEŞME MAH", "lat": "40.9940", "lng": "28.8925" },
+  { "district": "ZEYTİNBURNU", "neighborhood": "TELSİZ MAH", "lat": "41.0040", "lng": "28.9005" },
+  { "district": "ZEYTİNBURNU", "neighborhood": "YENİDOĞAN MAH", "lat": "41.0095", "lng": "28.9065" },
+  { "district": "ZEYTİNBURNU", "neighborhood": "MALTEPE MAH", "lat": "41.0065", "lng": "28.9165" },
+  
+]

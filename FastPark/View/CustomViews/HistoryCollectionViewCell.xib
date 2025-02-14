@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HistoryCollectionViewCell" customModule="FastPark" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="164" height="52"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="164" height="52"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Jyf-Qc-WbZ">
+                        <rect key="frame" x="8" y="8" width="148" height="36"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgP-4n-80w">
+                                <rect key="frame" x="0.0" y="0.0" width="148" height="19.666666666666668"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0u-V0-YPj">
+                                <rect key="frame" x="0.0" y="19.666666666666671" width="148" height="16.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" name="TextfieldBackground"/>
+            <constraints>
+                <constraint firstItem="Jyf-Qc-WbZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="0Y4-J6-Tgq"/>
+                <constraint firstAttribute="trailing" secondItem="Jyf-Qc-WbZ" secondAttribute="trailing" constant="8" id="Hgp-WZ-uyM"/>
+                <constraint firstAttribute="bottom" secondItem="Jyf-Qc-WbZ" secondAttribute="bottom" constant="8" id="XHy-ep-Wfu"/>
+                <constraint firstItem="Jyf-Qc-WbZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="dPz-zB-xOo"/>
+            </constraints>
+            <size key="customSize" width="164" height="72"/>
+            <connections>
+                <outlet property="districtNameLabel" destination="RgP-4n-80w" id="nLo-a7-V4d"/>
+                <outlet property="mahalleLabel" destination="v0u-V0-YPj" id="vrP-Rk-KMu"/>
+            </connections>
+            <point key="canvasLocation" x="254.96183206106869" y="-21.47887323943662"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="TextfieldBackground">
+            <color red="0.90588235859999999" green="0.90196079019999997" blue="0.90588235859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

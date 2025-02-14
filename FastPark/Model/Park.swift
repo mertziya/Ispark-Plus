@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Park : Decodable {
+struct Park : Codable {
     var parkID: Int?
     var parkName, lat, lng: String?
     var capacity, emptyCapacity: Int?

@@ -224,5 +224,6 @@ extension ParkDetailsVC : MapVMDelegate{
         DispatchQueue.main.async {
             self.contentView.configureDetails(details: detail)
         }
+        SearchHistoryService.saveAutopark(detail)
     }
 }

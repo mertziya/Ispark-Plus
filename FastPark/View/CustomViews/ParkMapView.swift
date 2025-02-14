@@ -148,5 +148,4 @@ class ParkMapView : MKMapView, MKMapViewDelegate , CLLocationManagerDelegate{
         }
 
     }
-
 }
