@@ -420,7 +420,7 @@
 				DEVELOPMENT_TEAM = DU4MNZ89TN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FastPark/Resources/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Park İstanbul";
+				INFOPLIST_KEY_CFBundleDisplayName = "İstanbul Park";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app needs access to your location both in foreground and background.";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This app requires continuous location access for better tracking.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs access to your location to show your position on the map.";
@@ -433,7 +433,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mertziya.FastPark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -456,7 +456,7 @@
 				DEVELOPMENT_TEAM = DU4MNZ89TN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FastPark/Resources/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Park İstanbul";
+				INFOPLIST_KEY_CFBundleDisplayName = "İstanbul Park";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app needs access to your location both in foreground and background.";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This app requires continuous location access for better tracking.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs access to your location to show your position on the map.";
@@ -469,7 +469,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mertziya.FastPark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
