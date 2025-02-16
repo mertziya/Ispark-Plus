@@ -21,7 +21,10 @@ class SearchHistoryService{
             searchHistory.removeLast()
         }
         
-        searchHistory.insert(district, at: 0)
+        var districtWithDate = district
+        districtWithDate.date = Date()
+        
+        searchHistory.insert(districtWithDate, at: 0)
         
         if let encodedData = try? JSONEncoder().encode(searchHistory) {
             UserDefaults.standard.set(encodedData, forKey: DistrictHistoryKey)
@@ -49,15 +52,16 @@ class SearchHistoryService{
     static func saveAutopark(_ park: ParkDetails) {
         var searchHistory = getAutoparkHistory()
 
-        // Remove the last element if we already have 20 items
         if searchHistory.count >= 30 {
             searchHistory.removeLast()
         }
 
-        // Insert new park at the beginning
-        searchHistory.insert(park, at: 0)
+        // Attach date when saving
+        var parkWithDate = park
+        parkWithDate.date = Date()
 
-        // Encode and save back to UserDefaults
+        searchHistory.insert(parkWithDate, at: 0)
+
         if let encodedData = try? JSONEncoder().encode(searchHistory) {
             UserDefaults.standard.set(encodedData, forKey: autoparksHistory)
         }

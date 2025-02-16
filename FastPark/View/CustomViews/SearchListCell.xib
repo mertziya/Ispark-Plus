@@ -19,24 +19,24 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="COR-6D-DRJ">
-                        <rect key="frame" x="0.0" y="0.0" width="542" height="147"/>
+                        <rect key="frame" x="12" y="0.0" width="518" height="147"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXK-L2-mEE">
-                                <rect key="frame" x="4" y="4" width="534" height="69.666666666666671"/>
+                                <rect key="frame" x="4" y="4" width="510" height="69.666666666666671"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="z6L-j8-iFP">
-                                <rect key="frame" x="4" y="73.666666666666686" width="534" height="69.333333333333314"/>
+                                <rect key="frame" x="4" y="73.666666666666686" width="510" height="69.333333333333314"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGT-JV-Axk">
-                                        <rect key="frame" x="0.0" y="0.0" width="267" height="69.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="255" height="69.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8k5-if-RT0">
-                                        <rect key="frame" x="267" y="0.0" width="267" height="69.333333333333329"/>
+                                        <rect key="frame" x="255" y="0.0" width="255" height="69.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -57,10 +57,10 @@
                 </subviews>
                 <color key="backgroundColor" name="BarBackground"/>
                 <constraints>
-                    <constraint firstItem="COR-6D-DRJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Fyq-qL-acM"/>
+                    <constraint firstItem="COR-6D-DRJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="Fyq-qL-acM"/>
                     <constraint firstAttribute="bottom" secondItem="COR-6D-DRJ" secondAttribute="bottom" constant="4" id="GWT-2s-gR1"/>
                     <constraint firstItem="COR-6D-DRJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="dnk-MR-aZg"/>
-                    <constraint firstAttribute="trailing" secondItem="COR-6D-DRJ" secondAttribute="trailing" id="p35-1D-YY0"/>
+                    <constraint firstAttribute="trailing" secondItem="COR-6D-DRJ" secondAttribute="trailing" constant="12" id="p35-1D-YY0"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

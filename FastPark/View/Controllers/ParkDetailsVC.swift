@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 class ParkDetailsVC: UIViewController {
     // MARK: - Properties:
@@ -22,20 +23,24 @@ class ParkDetailsVC: UIViewController {
     private let closeButton = UIButton()
     private let directionsButton = UIButton()
     private let addFavoritesButton = UIButton()
+    private let favoritesLabel = UILabel()
+    
+    private let distanceFromLocation = UILabel()
+    private let distanceFromPin = UILabel()
+
     
 
 
     // MARK: - Lifecycles:
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         mapVM.delegate = self
         mapVM.fetchParkDetails(with: parkID ?? 0)
+        
         setupScrollView()
         setupViewUI()
-        
         loadingView()
+    
     }
     
     private func loadingView(){
@@ -106,14 +111,19 @@ extension ParkDetailsVC{
         directionsLabel.textColor = .white
         directionsLabel.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
         
-        let favoritesLabel = UILabel()
-        favoritesLabel.text = NSLocalizedString("ADD", comment: "")
-        favoritesLabel.textColor = .white
-        favoritesLabel.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
-        
+        // Distance From the locations label configurations:
+        let distancesStackView = UIStackView()
+        distancesStackView.addArrangedSubview(distanceFromPin)
+        distancesStackView.addArrangedSubview(distanceFromLocation)
+        distancesStackView.axis = .vertical
+        distancesStackView.spacing = 4
+
+    
         view.addSubview(closeButton)
         view.addSubview(addFavoritesButton)
         view.addSubview(directionsButton)
+        view.addSubview(distancesStackView)
+        
         directionsButton.addSubview(directionsLabel)
         addFavoritesButton.addSubview(favoritesLabel)
         
@@ -128,26 +138,17 @@ extension ParkDetailsVC{
         directionsButton.tintColor = .white
         directionsButton.layer.cornerRadius = 8
         //Shadow:
-        directionsButton.layer.shadowOffset = CGSize(width: 2, height: 2)
-        directionsButton.layer.shadowRadius = 2
+        directionsButton.layer.shadowOffset = CGSize(width: -1, height: 1)
+        directionsButton.layer.shadowRadius = 4
         directionsButton.layer.shadowOpacity = 0.5
         directionsButton.layer.shadowColor = UIColor.black.cgColor
-        
-        addFavoritesButton.setImage(UIImage(systemName: "star" , withConfiguration: configuration), for: .normal)
-        addFavoritesButton.backgroundColor = #colorLiteral(red: 0.9157691598, green: 0.7833544016, blue: 0.263376832, alpha: 1)
-        addFavoritesButton.tintColor = .white
-        addFavoritesButton.layer.cornerRadius = 8
-        //Shadow:
-        addFavoritesButton.layer.shadowOffset = CGSize(width: 2, height: 2)
-        addFavoritesButton.layer.shadowRadius = 2
-        addFavoritesButton.layer.shadowOpacity = 0.5
-        addFavoritesButton.layer.shadowColor = UIColor.black.cgColor
-        
+                
         closeButton.translatesAutoresizingMaskIntoConstraints = false
         addFavoritesButton.translatesAutoresizingMaskIntoConstraints = false
         directionsButton.translatesAutoresizingMaskIntoConstraints = false
         directionsLabel.translatesAutoresizingMaskIntoConstraints = false
         favoritesLabel.translatesAutoresizingMaskIntoConstraints = false
+        distancesStackView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             closeButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 12),
             closeButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 20),
@@ -170,11 +171,111 @@ extension ParkDetailsVC{
             favoritesLabel.centerXAnchor.constraint(equalTo: addFavoritesButton.centerXAnchor),
             favoritesLabel.bottomAnchor.constraint(equalTo: addFavoritesButton.bottomAnchor, constant: 0),
             
+            distancesStackView.rightAnchor.constraint(equalTo: addFavoritesButton.leftAnchor, constant: -8),
+            distancesStackView.centerYAnchor.constraint(equalTo: directionsButton.centerYAnchor),
+            distancesStackView.leftAnchor.constraint(equalTo: closeButton.rightAnchor, constant: 8),
+            
         ])
         
         directionsButton.addTarget(self, action: #selector(handleDirectionsClicked), for: .touchUpInside)
         addFavoritesButton.addTarget(self, action: #selector(handleAddFavoritesClicked), for: .touchUpInside)
         
+    }
+    
+    // MARK: - configure the distance from labels:
+    
+// Dictionary format:
+//    let locationDict: [String: Double] = [
+//        "latitude": userLocation.latitude,
+//        "longitude": userLocation.longitude
+//    ]
+    
+    
+    private func setDistanceFromLocationLabelConfig(textMessage: String, label: UILabel, location: [String: Double]) {
+        let lat = location["latitude"] ?? 0.0
+        let lng = location["longitude"] ?? 0.0
+
+        let parkLat = Double(self.details?.lat ?? "0.0") ?? 0.0
+        let parkLng = Double(self.details?.lng ?? "0.0") ?? 0.0
+
+        let startCoordinates = CLLocationCoordinate2D(latitude: lat, longitude: lng)
+        let endCoordinate = CLLocationCoordinate2D(latitude: parkLat, longitude: parkLng)
+
+        let distance = distanceInKilometers(startCoordinate: startCoordinates, endCoordinate: endCoordinate)
+        let distanceString = padString(distance)
+
+        let distanceAttributes: [NSAttributedString.Key: Any] = [
+            .foregroundColor: UIColor.systemBlue,
+            .font: UIFont.systemFont(ofSize: 14, weight: .semibold)
+        ]
+
+        let messageAttributes: [NSAttributedString.Key: Any] = [
+            .foregroundColor: UIColor.label,
+            .font: UIFont.systemFont(ofSize: 14, weight: .regular)
+        ]
+
+        let attributedText = NSMutableAttributedString(
+            string: "\(distanceString) ",
+            attributes: distanceAttributes
+        )
+
+        let messagePart = NSAttributedString(string: textMessage, attributes: messageAttributes)
+        attributedText.append(messagePart)
+
+        label.attributedText = attributedText
+    }
+    
+    func padString(_ input: String) -> String {
+        print(input.count)
+        let requiredLength = 10
+        if input.count >= requiredLength {
+            return input
+        } else {
+            let paddingCount = requiredLength - input.count
+            let padding = String(repeating: " ", count: paddingCount)
+            return padding + input + padding
+        }
+    }
+    
+    private func distanceInKilometers(startCoordinate : CLLocationCoordinate2D , endCoordinate : CLLocationCoordinate2D) -> String{
+        let startLocation = CLLocation(latitude: startCoordinate.latitude, longitude: startCoordinate.longitude)
+        let endLocation = CLLocation(latitude: endCoordinate.latitude, longitude: endCoordinate.longitude)
+        
+        let distanceInMeters = startLocation.distance(from: endLocation)
+        let distanceInKilometers = distanceInMeters / 1000.0
+
+        return String(format: "%.2f km", distanceInKilometers)
+    }
+    
+    
+    private func addFavoritesUIConfig(){
+        let configuration = UIImage.SymbolConfiguration(pointSize: 24, weight: .regular)
+        
+        if let details = details{
+            if FavoritesService.isAlreadyInFavorites(details: details){
+                addFavoritesButton.backgroundColor = #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1)
+                addFavoritesButton.tintColor = .white
+                favoritesLabel.text = NSLocalizedString("REMOVE", comment: "")
+                favoritesLabel.textColor = .white
+                addFavoritesButton.setImage(UIImage(systemName: "minus" , withConfiguration: configuration), for: .normal)
+
+            }else{
+                addFavoritesButton.backgroundColor = #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1)
+                addFavoritesButton.tintColor = .white
+                favoritesLabel.text = NSLocalizedString("ADD", comment: "")
+                favoritesLabel.textColor = .white
+                addFavoritesButton.setImage(UIImage(systemName: "plus" , withConfiguration: configuration), for: .normal)
+            }
+        }
+
+        addFavoritesButton.layer.cornerRadius = 8
+        //Shadow:
+        addFavoritesButton.layer.shadowOffset = CGSize(width: -1, height: 1)
+        addFavoritesButton.layer.shadowRadius = 4
+        addFavoritesButton.layer.shadowOpacity = 0.5
+        addFavoritesButton.layer.shadowColor = UIColor.black.cgColor
+        
+        favoritesLabel.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
     }
 }
 
@@ -195,8 +296,30 @@ extension ParkDetailsVC{
         Alerts.openMapsAlert(at: self, lat: lat, lng: lng)
     }
     
+
     @objc private func handleAddFavoritesClicked(){
-        print("handle favorites clicked here!")
+        if let details = details{
+            if FavoritesService.isAlreadyInFavorites(details: details){
+                Alerts.confirmationAlert(on: self, title: NSLocalizedString("Remove from favoties", comment: " "), message: "") {
+                    FavoritesService.removeFromFavorites(details)
+                    HapticFeedbackManager.mediumImpact()
+
+                    self.addFavoritesUIConfig()
+                }
+            }else{
+                if FavoritesService.getFavorites().count >= 30{
+                    Alerts.showErrorAlert(on: self,
+                                          title: NSLocalizedString("Capacity Limit", comment: ""),
+                                          message: NSLocalizedString("You can only add 30 objects to favorites", comment: ""))
+                }else{
+                    Alerts.confirmationAlert(on: self, title: NSLocalizedString("Add to favorites", comment: " "), message: "") {
+                        FavoritesService.saveFavorite(details)
+                        self.addFavoritesUIConfig()
+                        HapticFeedbackManager.mediumImpact()
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -223,7 +346,24 @@ extension ParkDetailsVC : MapVMDelegate{
         self.details = detail
         DispatchQueue.main.async {
             self.contentView.configureDetails(details: detail)
+            
+            self.addFavoritesUIConfig() // handles the UI Configuration of add favorites Button.
+            
+            if let userLocationDict = UserDefaults.standard.dictionary(forKey: UserDefaults.Keys.userLocationCoordinate) as? [String : Double] {
+                self.setDistanceFromLocationLabelConfig(textMessage: NSLocalizedString("away from you", comment: "") ,
+                                                        label : self.distanceFromLocation ,
+                                                   location: userLocationDict)
+            }
+            
+            if let pointLocationDict = UserDefaults.standard.dictionary(forKey: UserDefaults.Keys.pointAnnotationCoordiante) as? [String : Double] {
+                self.setDistanceFromLocationLabelConfig(textMessage: NSLocalizedString("away from pin", comment: "") ,
+                                                        label : self.distanceFromPin ,
+                                                   location: pointLocationDict)
+            }
+
         }
         SearchHistoryService.saveAutopark(detail)
+        
+       
     }
 }

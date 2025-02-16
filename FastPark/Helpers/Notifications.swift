@@ -16,4 +16,7 @@ extension Notification.Name{
     static let shouldHideSideBar = Notification.Name("shouldHideSideBar")
     static let annotationClicked = Notification.Name("annotationClicked")
     static let districtSelected = Notification.Name("districtSelected")
+    static let autoparkSelected = Notification.Name("autoparkSelected")
+    static let favoritesUpdated = Notification.Name("favoritesUpdated")
+    
 }

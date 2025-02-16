@@ -50,6 +50,7 @@ class SearchVC: UIViewController {
         
         NotificationCenter.default.addObserver(self, selector: #selector(closeKeyboard), name: .presentationShrinked, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(handleDistricSelected), name: .districtSelected, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(handlePresentationExpanded), name: .presentatonExpanded, object: nil)
         searchVM.delegate = self
     }
     
@@ -166,8 +167,8 @@ extension SearchVC : UITableViewDelegate , UITableViewDataSource{
         }
 
         // Apply new height constraint
-        var newHeight = 100 * CGFloat(searchedDistricts.count)
-        if newHeight > 4 * 100 {newHeight = 4 * 100}
+        var newHeight = 450 * CGFloat(searchedDistricts.count)
+        if newHeight > 4 * 100 {newHeight = 400}
         let heightConstraint = searchResults.heightAnchor.constraint(equalToConstant: newHeight)
         heightConstraint.isActive = true
 
@@ -180,14 +181,14 @@ extension SearchVC : UITableViewDelegate , UITableViewDataSource{
     private func configureSearchResults(){
         searchResults.layer.cornerRadius = 12
         searchResults.clipsToBounds = true
-        searchResults.backgroundColor = .textfieldBackground
+        searchResults.backgroundColor = .barBackground
         
         searchResults.delegate = self
         searchResults.dataSource = self
         searchResults.showsVerticalScrollIndicator = true
         searchResults.canCancelContentTouches = false
         searchResults.register(UINib(nibName: SearchListCell.nibName, bundle: nil), forCellReuseIdentifier: SearchListCell.reuseID)
-    
+        
     }
 }
 
@@ -239,7 +240,6 @@ extension SearchVC : UICollectionViewDelegate , UICollectionViewDataSource{
             }
             
             let selectedPark = SearchHistoryService.getAutoparkHistory()[indexPath.row]
-            print(SearchHistoryService.getAutoparkHistory().count)
             cell.configureLabelsWith(parkDetails: selectedPark)
             
             return cell
@@ -253,7 +253,9 @@ extension SearchVC : UICollectionViewDelegate , UICollectionViewDataSource{
             let chosenDistrict = districtSearchHistory[indexPath.row]
             NotificationCenter.default.post(name: .districtSelected, object: chosenDistrict)
         }else{
-            // TODO: - Autoparks history selection here !
+            let autoparksSearchHistory = SearchHistoryService.getAutoparkHistory()
+            let chosenAutopark = autoparksSearchHistory[indexPath.row]
+            NotificationCenter.default.post(name: .autoparkSelected, object: chosenAutopark)
         }
     }
     
@@ -312,11 +314,11 @@ extension SearchVC{
         searchWorkItem = workItem
 
         // Execute after 0.5 seconds (adjust delay as needed)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.6, execute: workItem)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.4, execute: workItem)
     }
     
     @objc private func handleEndEditing(){
-        searchTF.placeholder = "Semt Ara"
+        searchTF.placeholder = NSLocalizedString("Search District", comment: "")
         searchTF.text = ""
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
             self.textfieldDidChanged(self.searchTF)
@@ -330,8 +332,8 @@ extension SearchVC{
         districtHistoryCollectionView.reloadData()
     }
     
-    @objc private func reloadAutoparkHistory(){
-        print("should reload")
+    // MARK: - Acts as viewdidLoad
+    @objc private func handlePresentationExpanded(){
         DispatchQueue.main.async {
             self.autoparksHistoryCollectionView.reloadData()
         }
@@ -352,7 +354,6 @@ extension SearchVC : SearchVMDelegate{
     
     // MARK: - Returns the fetched districts shown own table view:
     func didReturnDistricts(districts: [District]) {
-        print(districts)
         self.searchedDistricts = districts
     }
 }

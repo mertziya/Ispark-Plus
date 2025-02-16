@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6B46D5D2D600C97006DF6FE /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B46D5B2D600C97006DF6FE /* FavoritesTableViewCell.swift */; };
+		C6B46D5E2D600C97006DF6FE /* FavoritesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B46D5C2D600C97006DF6FE /* FavoritesTableViewCell.xib */; };
+		C6B46D602D60AE10006DF6FE /* FavoritesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B46D5F2D60AE10006DF6FE /* FavoritesService.swift */; };
+		C6B46D622D60C312006DF6FE /* DropdownMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B46D612D60C312006DF6FE /* DropdownMenuView.swift */; };
+		C6B46D642D60CD4C006DF6FE /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B46D632D60CD4C006DF6FE /* Bundle.swift */; };
+		C6B46D662D613AFC006DF6FE /* UserDeffaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B46D652D613AFC006DF6FE /* UserDeffaultsKeys.swift */; };
 		C6DFD3222D58C54800B2A893 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD3182D58C54800B2A893 /* AppDelegate.swift */; };
 		C6DFD3242D58C54800B2A893 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD31E2D58C54800B2A893 /* SceneDelegate.swift */; };
 		C6DFD3252D58C54800B2A893 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFD31F2D58C54800B2A893 /* MainVC.swift */; };
@@ -48,6 +54,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C6B46D5B2D600C97006DF6FE /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
+		C6B46D5C2D600C97006DF6FE /* FavoritesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesTableViewCell.xib; sourceTree = "<group>"; };
+		C6B46D5F2D60AE10006DF6FE /* FavoritesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesService.swift; sourceTree = "<group>"; };
+		C6B46D612D60C312006DF6FE /* DropdownMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownMenuView.swift; sourceTree = "<group>"; };
+		C6B46D632D60CD4C006DF6FE /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		C6B46D652D613AFC006DF6FE /* UserDeffaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDeffaultsKeys.swift; sourceTree = "<group>"; };
 		C6DFD2FD2D58C52100B2A893 /* FastPark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastPark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6DFD3182D58C54800B2A893 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6DFD3192D58C54800B2A893 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -176,6 +188,7 @@
 			children = (
 				C6DFD3182D58C54800B2A893 /* AppDelegate.swift */,
 				C6DFD31E2D58C54800B2A893 /* SceneDelegate.swift */,
+				C6B46D632D60CD4C006DF6FE /* Bundle.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -193,6 +206,9 @@
 				C6DFD39B2D5E20CB00B2A893 /* HistoryCollectionViewCell.xib */,
 				C6DFD39E2D5F792900B2A893 /* SearchListCell.swift */,
 				C6DFD39F2D5F792900B2A893 /* SearchListCell.xib */,
+				C6B46D5B2D600C97006DF6FE /* FavoritesTableViewCell.swift */,
+				C6B46D5C2D600C97006DF6FE /* FavoritesTableViewCell.xib */,
+				C6B46D612D60C312006DF6FE /* DropdownMenuView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -219,6 +235,7 @@
 				C6DFD35D2D5B4DEA00B2A893 /* Alerts.swift */,
 				C6DFD35F2D5B95DA00B2A893 /* LoadingView.swift */,
 				C6DFD37D2D5C0BFA00B2A893 /* HapticFeedBackManager.swift */,
+				C6B46D652D613AFC006DF6FE /* UserDeffaultsKeys.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -229,6 +246,7 @@
 				C6DFD34C2D5A0ADA00B2A893 /* UrlEndpoints.swift */,
 				C6DFD34A2D5A03BC00B2A893 /* ParkService.swift */,
 				C6DFD3982D5E1A2200B2A893 /* SearchHistoryService.swift */,
+				C6B46D5F2D60AE10006DF6FE /* FavoritesService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -312,6 +330,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6B46D5E2D600C97006DF6FE /* FavoritesTableViewCell.xib in Resources */,
 				C6DFD3972D5D54E000B2A893 /* ilceler.json in Resources */,
 				C6DFD38E2D5CF2E200B2A893 /* PriceListCell.xib in Resources */,
 				C6DFD3712D5BC33500B2A893 /* Localizable.strings in Resources */,
@@ -333,13 +352,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6DFD3492D592EE400B2A893 /* Notifications.swift in Sources */,
+				C6B46D642D60CD4C006DF6FE /* Bundle.swift in Sources */,
 				C6DFD3942D5D4E5C00B2A893 /* SearchVM.swift in Sources */,
 				C6DFD38D2D5CF2E200B2A893 /* PriceListCell.swift in Sources */,
 				C6DFD3222D58C54800B2A893 /* AppDelegate.swift in Sources */,
 				C6DFD3472D59231700B2A893 /* Constants.swift in Sources */,
 				C6DFD3A02D5F792900B2A893 /* SearchListCell.swift in Sources */,
+				C6B46D622D60C312006DF6FE /* DropdownMenuView.swift in Sources */,
 				C6DFD39C2D5E20CB00B2A893 /* HistoryCollectionViewCell.swift in Sources */,
 				C6DFD3922D5D4B9200B2A893 /* ilceler.json in Sources */,
+				C6B46D662D613AFC006DF6FE /* UserDeffaultsKeys.swift in Sources */,
 				C6DFD35C2D5A578200B2A893 /* ParkAnnotationView.swift in Sources */,
 				C6DFD34D2D5A0ADA00B2A893 /* UrlEndpoints.swift in Sources */,
 				C6DFD32F2D58C66C00B2A893 /* Park.swift in Sources */,
@@ -347,10 +369,12 @@
 				C6DFD3312D58C67200B2A893 /* ParkDetails.swift in Sources */,
 				C6DFD3522D5A518D00B2A893 /* ParkAnnotation.swift in Sources */,
 				C6DFD3242D58C54800B2A893 /* SceneDelegate.swift in Sources */,
+				C6B46D602D60AE10006DF6FE /* FavoritesService.swift in Sources */,
 				C6DFD3452D591EB300B2A893 /* SearchVCPresentation.swift in Sources */,
 				C6DFD3992D5E1A2200B2A893 /* SearchHistoryService.swift in Sources */,
 				C6DFD34F2D5A0CC400B2A893 /* MapVM.swift in Sources */,
 				C6DFD33C2D58FC3300B2A893 /* SideBarVC.swift in Sources */,
+				C6B46D5D2D600C97006DF6FE /* FavoritesTableViewCell.swift in Sources */,
 				C6DFD3332D58C91100B2A893 /* ParkMapView.swift in Sources */,
 				C6DFD34B2D5A03BC00B2A893 /* ParkService.swift in Sources */,
 				C6DFD3962D5D501900B2A893 /* District.swift in Sources */,
@@ -396,10 +420,14 @@
 				DEVELOPMENT_TEAM = DU4MNZ89TN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FastPark/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Park İstanbul";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app needs access to your location both in foreground and background.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This app requires continuous location access for better tracking.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs access to your location to show your position on the map.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -408,9 +436,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mertziya.FastPark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -424,10 +456,14 @@
 				DEVELOPMENT_TEAM = DU4MNZ89TN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FastPark/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Park İstanbul";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app needs access to your location both in foreground and background.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This app requires continuous location access for better tracking.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs access to your location to show your position on the map.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -436,9 +472,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mertziya.FastPark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

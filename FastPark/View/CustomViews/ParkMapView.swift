@@ -13,10 +13,12 @@ class ParkMapView : MKMapView, MKMapViewDelegate , CLLocationManagerDelegate{
     
     //Properties:
     private let locationManager = CLLocationManager()
+    var hasCenteredOnUserLocation = false
 
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
         self.delegate = self
     }
     
@@ -35,23 +37,37 @@ class ParkMapView : MKMapView, MKMapViewDelegate , CLLocationManagerDelegate{
     // Decides how the point annotation should look
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if annotation is MKUserLocation {
-            return nil  // Don't customize user's location annotation
-        }
-
-        let identifier = "CustomParkAnnotation"
-        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? ParkAnnotationView
-
-        if annotationView == nil {
-            annotationView = ParkAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-        } else {
-            annotationView?.annotation = annotation
+            return nil // Show default blue dot for user location
         }
 
         if let parkAnnotation = annotation as? ParkAnnotation {
+            // Your custom ParkAnnotationView logic
+            let identifier = "CustomParkAnnotation"
+            var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? ParkAnnotationView
+
+            if annotationView == nil {
+                annotationView = ParkAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+            } else {
+                annotationView?.annotation = annotation
+            }
+
             annotationView?.configure(with: parkAnnotation)
+            return annotationView
         }
 
-        return annotationView
+        // Handle other annotations (e.g., Searched Point Annotation)
+        let defaultIdentifier = "DefaultPinAnnotation"
+        var pinView = mapView.dequeueReusableAnnotationView(withIdentifier: defaultIdentifier) as? MKPinAnnotationView
+
+        if pinView == nil {
+            pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: defaultIdentifier)
+            pinView?.pinTintColor = .red
+            pinView?.canShowCallout = true
+        } else {
+            pinView?.annotation = annotation
+        }
+
+        return pinView
     }
     
     // Configures the map annotation points:
@@ -80,7 +96,18 @@ class ParkMapView : MKMapView, MKMapViewDelegate , CLLocationManagerDelegate{
     
     // Removes all annotations from the map view:
     func clearAnnotations() {
-        self.removeAnnotations(self.annotations)
+        clearParkAnnotations()
+    }
+    
+    func clearParkAnnotations() {
+        let parkAnnotations = self.annotations.filter { $0 is ParkAnnotation }
+        self.removeAnnotations(parkAnnotations)
+    }
+    
+    func clearDefaultAnnotation() {
+        UserDefaults.standard.removeObject(forKey: UserDefaults.Keys.pointAnnotationCoordiante)
+        let defaultAnnotation = self.annotations.filter { $0 is MKPointAnnotation }
+        self.removeAnnotations(defaultAnnotation)
     }
     
     // Focuses on the map's given coordinate with the given zoom level:
@@ -108,6 +135,7 @@ class ParkMapView : MKMapView, MKMapViewDelegate , CLLocationManagerDelegate{
         self.showsUserLocation = true // Show user's location on the map
         
         locationManager.delegate = self
+        locationManager.startUpdatingLocation()
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
     }
@@ -127,8 +155,25 @@ class ParkMapView : MKMapView, MKMapViewDelegate , CLLocationManagerDelegate{
     // CLLocationManagerDelegate method
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let userLocation = locations.last?.coordinate {
-            let region = MKCoordinateRegion(center: userLocation, latitudinalMeters: 5000, longitudinalMeters: 5000)
-            self.setRegion(region, animated: true)
+            
+            let locationDict: [String: Double] = [
+                "latitude": userLocation.latitude,
+                "longitude": userLocation.longitude
+            ]
+            
+            UserDefaults.standard.set(locationDict, forKey: UserDefaults.Keys.userLocationCoordinate)
+
+            // Center only the first time
+            if !hasCenteredOnUserLocation {
+                let region = MKCoordinateRegion(
+                    center: userLocation,
+                    latitudinalMeters: 5000,
+                    longitudinalMeters: 5000
+                )
+                self.setRegion(region, animated: true)
+
+                hasCenteredOnUserLocation = true
+            }
         }
     }
     
@@ -147,5 +192,68 @@ class ParkMapView : MKMapView, MKMapViewDelegate , CLLocationManagerDelegate{
             break
         }
 
+    }
+    
+    
+    func createAnnotationForSearchedPoint(longitude: Double, latitude: Double) {
+        
+        clearDefaultAnnotation()
+
+        let coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = coordinate
+        annotation.title = "Searched Location"
+
+        self.addAnnotation(annotation)
+
+        // Optionally zoom into the annotation
+        let region = MKCoordinateRegion(center: coordinate, latitudinalMeters: 1000, longitudinalMeters: 1000)
+        self.setRegion(region, animated: true)
+        
+        let locationDict: [String: Double] = [
+            "latitude": coordinate.latitude,
+            "longitude": coordinate.longitude
+        ]
+        UserDefaults.standard.set(locationDict, forKey: UserDefaults.Keys.pointAnnotationCoordiante)
+    }
+    
+    
+    // For handling adding pin from the main vc:
+    
+    
+    func setupTapGesture() {
+        self.alpha = 0.8
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleMapTap(_:)))
+        tapGesture.name = "mapTapGesture" //
+        self.addGestureRecognizer(tapGesture)
+    }
+
+    
+
+    @objc private func handleMapTap(_ gesture: UITapGestureRecognizer) {
+        let touchPoint = gesture.location(in: self)
+        let coordinate = self.convert(touchPoint, toCoordinateFrom: self)
+
+        clearDefaultAnnotation()
+
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = coordinate
+        annotation.title = "Pinned Location"
+        self.addAnnotation(annotation)
+
+        let locationDict: [String: Double] = [
+            "latitude": coordinate.latitude,
+            "longitude": coordinate.longitude
+        ]
+        UserDefaults.standard.set(locationDict, forKey: UserDefaults.Keys.pointAnnotationCoordiante)
+        
+        removeTapGesture()
+    }
+    
+    func removeTapGesture() {
+        self.alpha = 1.0
+        if let tapGesture = self.gestureRecognizers?.first(where: { $0.name == "mapTapGesture" }) {
+            self.removeGestureRecognizer(tapGesture)
+        }
     }
 }

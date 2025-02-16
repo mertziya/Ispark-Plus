@@ -15,4 +15,5 @@ struct ParkDetails : Codable{
     var updateDate, workHours, parkType: String?
     var freeTime, monthlyFee: Int?
     var tariff, district, address, areaPolygon: String?
+    var date : Date?
 }

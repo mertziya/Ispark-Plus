@@ -16,16 +16,21 @@ class MainVC: UIViewController {
     
     private var sidebarVC: SideBarVC? // For handling the sidebar functionality, this child view controller is used.
     
+    private var selectedDistrict : District?
+    
+    
     // MARK: - UI Elements:
     var mapView = ParkMapView()
     
     private var searchIcon = UIButton()
     private var hideIcon = UIButton()
+    private var addPinButton = UIButton()
 
     // MARK: - Lifecycles:
     override func viewDidLoad() {
         super.viewDidLoad()
         mapVM.delegate = self
+        
         
         setupUIConstraints()
         setupUIDesignandFunction()
@@ -35,8 +40,12 @@ class MainVC: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(hideSidebar), name: .shouldHideSideBar, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(handleAnnotationClick(_:)), name: .annotationClicked, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(handleDistrictSelected(_:)), name: .districtSelected, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(handleAutoparkSelected(_:)), name: .autoparkSelected, object: nil)
         
+        intitializeSystemPreferences()
     }
+    
+    
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -54,6 +63,9 @@ class MainVC: UIViewController {
         NotificationCenter.default.removeObserver(self, name: .menuButtonTapped, object: nil)
         NotificationCenter.default.removeObserver(self, name: .shouldHideSideBar, object: nil)
         NotificationCenter.default.removeObserver(self, name: .annotationClicked, object: nil)
+        NotificationCenter.default.removeObserver(self, name: .districtSelected, object: nil)
+        NotificationCenter.default.removeObserver(self, name: .autoparkSelected, object: nil)
+
     }
 }
 
@@ -67,10 +79,12 @@ extension MainVC : UIViewControllerTransitioningDelegate{
         view.addSubview(mapView)
         view.addSubview(searchIcon)
         view.addSubview(hideIcon)
+        view.addSubview(addPinButton)
                 
         mapView.translatesAutoresizingMaskIntoConstraints = false
         searchIcon.translatesAutoresizingMaskIntoConstraints = false
         hideIcon.translatesAutoresizingMaskIntoConstraints = false
+        addPinButton.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             mapView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
             mapView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
@@ -86,6 +100,11 @@ extension MainVC : UIViewControllerTransitioningDelegate{
             hideIcon.centerXAnchor.constraint(equalTo: searchIcon.centerXAnchor),
             hideIcon.heightAnchor.constraint(equalToConstant: 32),
             hideIcon.widthAnchor.constraint(equalToConstant: 128),
+            
+            addPinButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 60),
+            addPinButton.widthAnchor.constraint(equalToConstant: 128),
+            addPinButton.heightAnchor.constraint(equalToConstant: 32),
+            addPinButton.centerXAnchor.constraint(equalTo: hideIcon.centerXAnchor)
             
         ])
     }
@@ -106,9 +125,9 @@ extension MainVC : UIViewControllerTransitioningDelegate{
         searchIcon.layer.cornerRadius = 32 / 2
         
         searchIcon.layer.shadowColor = UIColor.black.cgColor
-        searchIcon.layer.shadowOffset = CGSize(width: 2, height: 2) // Controls the direction
-        searchIcon.layer.shadowOpacity = 1.0 // Adjust the visibility
-        searchIcon.layer.shadowRadius = 6 // Controls the blur
+        searchIcon.layer.shadowOffset = CGSize(width: 1, height: 1) // Controls the direction
+        searchIcon.layer.shadowOpacity = 1 // Adjust the visibility
+        searchIcon.layer.shadowRadius = 4 // Controls the blur
         
         searchIcon.addTarget(self, action: #selector(handleSearchIconTapped), for: .touchUpInside)
         
@@ -127,6 +146,21 @@ extension MainVC : UIViewControllerTransitioningDelegate{
         hideIcon.layer.shadowRadius = 6 // Controls the blur
         
         hideIcon.addTarget(self, action: #selector(handleHideButton), for: .touchUpInside)
+        
+        //Configure Add Pin Button:
+        addPinButton.setTitle(NSLocalizedString("Add Location", comment: ""), for: .normal)
+        addPinButton.setTitleColor(.textfieldBackground, for: .normal)
+        addPinButton.backgroundColor = .logo
+        addPinButton.setImage(UIImage(systemName: "mappin"), for: .normal)
+        addPinButton.tintColor = .textfieldBackground
+        addPinButton.layer.cornerRadius = 32 / 2
+        
+        addPinButton.layer.shadowColor = UIColor.black.cgColor
+        addPinButton.layer.shadowOffset = CGSize(width: 2, height: 2) // Controls the direction
+        addPinButton.layer.shadowOpacity = 1.0 // Adjust the visibility
+        addPinButton.layer.shadowRadius = 6 // Controls the blur
+        
+        addPinButton.addTarget(self, action: #selector(handleAddPin), for: .touchUpInside)
         
     }
     
@@ -191,7 +225,8 @@ extension MainVC{
     
     @objc private func handleHideButton(){
         DispatchQueue.main.async {
-            self.mapView.clearAnnotations()
+            self.mapView.clearParkAnnotations()
+            self.mapView.clearDefaultAnnotation()
         }
     }
     
@@ -241,12 +276,24 @@ extension MainVC{
         if let district = notification.object as? District{
             
             mapVM.fetchParksWith(districtName: district.district ?? "")
-            DispatchQueue.main.async {
-                self.mapView.focusMap(latitude: Double(district.lat!)!, longitude: Double(district.lng!)!, zoomLevel: 0.03)
-            }
+            
+            self.selectedDistrict = district
+            
             SearchHistoryService.saveDistrict(district)
             
         }
+    }
+    
+    @objc private func handleAutoparkSelected(_ notification : Notification){
+        self.mapView.alpha = 1
+        if let parkDetails = notification.object as? ParkDetails{
+            mapVM.fetchAllParksWith(parkID : parkDetails.parkID)
+            self.selectedDistrict = District(lat: parkDetails.lat, lng: parkDetails.lng)
+        }
+    }
+    
+    @objc private func handleAddPin(){
+        mapView.setupTapGesture()
     }
     
 }
@@ -254,23 +301,61 @@ extension MainVC{
 // MARK: - Map View Model
 extension MainVC : MapVMDelegate{
     func isLoadingParks(isLoading: Bool) {
-        DispatchQueue.main.async {
-            isLoading ? LoadingView.showLoading(on: self , loadingMessage: NSLocalizedString("Autoparks are loading...", comment: "")) : LoadingView.hideLoading(from: self)
+        if isLoading{
+            LoadingView.showLoading(on: self , loadingMessage: NSLocalizedString("Autoparks are loading...", comment: ""))
         }
     }
     
     func didReturnWith(error: any Error) {
         DispatchQueue.main.async {
             Alerts.showErrorAlert(on: self, title: NSLocalizedString("Warning", comment: ""), message: error.localizedDescription)
+            LoadingView.hideLoading(from: self)
         }
     }
     
     func didFetchParks(with parks: [Park]) {
+
         DispatchQueue.main.async {
+            
             self.mapView.clearAnnotations()
             self.mapView.configureAnnotations(parks: parks)
+            
+            // Create annotation here
+            if let district = self.selectedDistrict,
+               let lat = Double(district.lat ?? "0.0"),
+               let lng = Double(district.lng ?? "0.0"){
+                self.mapView.focusMap(latitude: lat, longitude: lng, zoomLevel: 0.03)
+                self.mapView.createAnnotationForSearchedPoint(longitude: lng, latitude: lat)
+            }
+            
+            LoadingView.hideLoading(from: self)
+        
+            // Esnures that selected Districts is cleaned after showing it on the map.
+            self.selectedDistrict = nil
         }
+        
+       
     }
     
     func didFetchParkDetails(with detail: ParkDetails) {} // Won't be used
+}
+
+
+// MARK: - Others:
+extension MainVC {
+    private func intitializeSystemPreferences(){
+        // Save the system configuartions to user defaults:
+        let defaults = UserDefaults.standard
+
+        if defaults.object(forKey: "isDarkModeEnabled") == nil {
+            let isDarkMode = UITraitCollection.current.userInterfaceStyle == .dark
+            defaults.set(isDarkMode, forKey: "isDarkModeEnabled")
+        }
+        if defaults.object(forKey: "AppLanguage") == nil {
+            defaults.setValue(Locale.preferredLanguages.first ?? "en", forKey: "AppLanguage")
+        }
+        if defaults.object(forKey: "AppLanguageString") == nil {
+            defaults.setValue(NSLocalizedString("Default", comment: ""), forKey: "AppLanguageString")
+        }
+    }
 }

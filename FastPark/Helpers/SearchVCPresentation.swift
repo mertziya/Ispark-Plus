@@ -35,6 +35,8 @@ class SearchVCPresentation: UIPresentationController {
         NotificationCenter.default.addObserver(self, selector: #selector(hideView), name: .menuButtonTapped, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(unhideView), name: .sideBarClosed, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(shrinkVC), name: .districtSelected, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(shrinkVC), name: .autoparkSelected, object: nil)
+
 
         return CGRect(x: 0,
                       y: containerView.bounds.height - currentHeight!,

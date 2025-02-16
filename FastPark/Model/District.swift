@@ -15,4 +15,5 @@ struct District : Codable{
     var neighborhood : String?
     var lat : String?
     var lng: String?
+    var date : Date?
 }

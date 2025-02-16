@@ -51,7 +51,7 @@ class SearchVM{
                     
                     var placeName = "noname"
                     if item.placemark.name != "" || item.placemark.name != nil{ placeName = item.placemark.name! }
-                    if item.placemark.title != "" || item.placemark.name != nil{ placeName = item.placemark.title! }
+                    else if item.placemark.title != "" || item.placemark.name != nil{ placeName = item.placemark.title! }
 
                     
                     let searchedItem = District(

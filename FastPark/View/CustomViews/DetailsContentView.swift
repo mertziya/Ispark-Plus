@@ -209,7 +209,9 @@ extension DetailsContentView : UITableViewDelegate , UITableViewDataSource{
             self.fullnessProgress.progress = percentage
             self.fullnessProgress.transform = CGAffineTransform(scaleX: 1, y: 2) // Adjust Y scale
             
-            self.fullnessProgress.trackTintColor = .systemBackground
+            self.fullnessProgress.trackTintColor = .clear
+            self.fullnessProgress.backgroundColor = .systemBackground
+            
             switch percentage{
             case 0...0.5:
                 self.fullnessProgress.progressTintColor = .systemGreen

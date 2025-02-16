@@ -24,7 +24,7 @@ class MapVM{
     
     func fetchAllParks(){
         delegate?.isLoadingParks(isLoading: true)
-        DispatchQueue.global().asyncAfter(deadline: .now()+0.5) {
+        DispatchQueue.global().async {
             ParkService.fetchAllIsparks { res in
                 switch res{
                 case .failure(let error):
@@ -57,6 +57,27 @@ class MapVM{
         self.delegate?.isLoadingParks(isLoading: false)
     }
     
+    func fetchAllParksWith(parkID : Int?){
+        delegate?.isLoadingParks(isLoading: true)
+        ParkService.fetchAllIsparks { res in
+            switch res{
+            case .failure(let error):
+                self.delegate?.didReturnWith(error: error)
+            case .success(let allParks):
+                let parksThatHaveID = allParks.filter { park in
+                    park.parkID == parkID
+                }
+                if parksThatHaveID.count != 0{
+                    self.delegate?.didFetchParks(with: parksThatHaveID)
+                }else{
+                    self.delegate?.didReturnWith(error: ErrorTypes.noParksError)
+                }
+            }
+        }
+        delegate?.isLoadingParks(isLoading: false)
+    }
+
+    
     
     func fetchParkDetails(with parkID : Int){
         delegate?.isLoadingParks(isLoading: true)
@@ -72,7 +93,6 @@ class MapVM{
             self.delegate?.isLoadingParks(isLoading: false)
         }
     }
-    
     
     
 }

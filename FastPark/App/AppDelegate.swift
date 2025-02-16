@@ -14,6 +14,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        Bundle.swizzleLocalization()
+
+        // Load saved language if exists
+        if let languageCode = UserDefaults.standard.string(forKey: "AppLanguage"), !languageCode.isEmpty {
+            Bundle.setLanguage(languageCode)
+        }
+        
         // Override point for customization after application launch.
         return true
     }

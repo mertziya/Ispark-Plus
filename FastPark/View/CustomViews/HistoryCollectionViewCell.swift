@@ -14,6 +14,7 @@ class HistoryCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var districtNameLabel: UILabel!
     @IBOutlet weak var mahalleLabel: UILabel!
+    @IBOutlet weak var historyLabel: UILabel!
     
     
     override func awakeFromNib() {
@@ -30,15 +31,46 @@ class HistoryCollectionViewCell: UICollectionViewCell {
     
     func configureLabelsWith(district : District){
         districtNameLabel.text = district.district
-        mahalleLabel.text = district.neighborhood
+        if district.neighborhood == "-"{
+            mahalleLabel.text = district.place
+        }else{
+            mahalleLabel.text = district.neighborhood
+        }
+        
+        historyLabel.text = getWhenDoesItSaved(district.date)
+
     }
     
     func configureLabelsWith(parkDetails : ParkDetails){
         districtNameLabel.text = parkDetails.parkName
         mahalleLabel.text = parkDetails.workHours
         
-        districtNameLabel.font = UIFont.systemFont(ofSize: 14, weight: .regular)
+        districtNameLabel.font = UIFont.systemFont(ofSize: 18, weight: .medium)
         mahalleLabel.font = UIFont.systemFont(ofSize: 18, weight: .bold)
+        
+        historyLabel.text = getWhenDoesItSaved(parkDetails.date)
     }
 
+    private func getWhenDoesItSaved(_ date: Date?) -> String {
+        guard let date = date else { return "nil" }
+
+        let now = Date()
+        let components = Calendar.current.dateComponents([.day, .hour, .minute, .second], from: date, to: now)
+
+        if let days = components.day, days > 0 {
+            return "\(days) \(NSLocalizedString("days ago ", comment: ""))"
+        }
+        if let hours = components.hour, hours > 0 {
+            return "\(hours) \(NSLocalizedString("hours ago", comment: ""))"
+        }
+        if let minutes = components.minute, minutes > 0 {
+            return "\(minutes) \(NSLocalizedString("minutes ago", comment: ""))"
+        }
+        if let seconds = components.second, seconds > 0 {
+            return "\(seconds) \(NSLocalizedString("seconds ago", comment: ""))"
+        }
+
+        return "Just now"
+    }
+    
 }

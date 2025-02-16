@@ -40,6 +40,31 @@
 "No History" = "Arama Geçmişi Yok";
 "Delete History" = "Geçmişi Sil";
 "Are you sure you want to delete history?" = "Arama geçmişinini silmek istediğinden emin misin?";
+"days ago" = "gün önce";
+"hours ago" = "saat önce";
+"minutes ago" = "dakika önce";
+"seconds ago" = "saniye önce";
+"Just Now" = "Şimdi";
+"Favorites:" = "Favoriler:";
+"Edit" = "Düzenle";
+"Settings:" = "Ayarlar:";
+"Dark Mode" = "Karanlık Mod";
+"Default" = "Varsayılan";
+"Turkish" = "Türkçe";
+"English" = "İngilizce";
+"Language" = "Dil";
+"Add to favorites" = "Favorilere Ekle";
+"Remove from favoties" = "Favorilerden Çıkar";
+"REMOVE" = "ÇIKAR";
+"Capacity Limit" = "Kapasite Limiti";
+"You can only add 30 objects to favorites" = "Favorilere en fazla 30 obje ekleyebilirsin";
+"Remove" = "Kaldır";
+"Are you sure you want to remove this park from favorites?" = "Bu park favorilerden kaldırılsın mı?";
+"empty places" = "boş yer";
+"away from pin" = "iğneden uzaklık";
+"away from you" = "uzağında";
+"Add Location" = "Konum Ekle";
+"Remove from favorites" = "Favorilerden kaldır";
 
 
 
