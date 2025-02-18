@@ -1,4 +1,5 @@
-# İstanbul Park IOS Application:
+# Otopark İstanbul IOS Application:  
+[![App Store](https://img.shields.io/badge/App%20Store-blue?style=flat&logo=app-store&logoColor=white)](https://apps.apple.com/tr/app/otopark-i-stanbul/id6742071622)
 
 ### Data:
 * [İspark Web Service](https://ulasav.csb.gov.tr/dataset/34-ispark-otopark-detay-bilgileri-web-servisi/resource/4a9fe667-a884-4352-a2ff-310a1116b87d)
@@ -6,6 +7,9 @@
 
 ### Interface Design Resource:
 * None
+
+### External Libraries:
+* No third part library is used.
 
 ### Demo Video:
 
